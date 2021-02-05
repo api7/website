@@ -1,6 +1,12 @@
 {
   "zh-CN": [
     {
+      "title": "Apache APISIX 助力企业数字化转型",
+      "cover": "https://apache.org/logos/res/apisix/apisix.png",
+      "date": "2021-02-04",
+      "path": "/zh/blog/apache-apisix-helps-enterprises-transform-digitally"
+    },
+    {
       "title": "初探 Kubernetes Service API",
       "cover": "https://kubernetes-sigs.github.io/service-apis/images/api-model.png",
       "date": "2020-12-18",
@@ -56,6 +62,12 @@
     }
   ],
   "en-US": [
+    {
+      "title": "Apache APISIX helps enterprises transform digitally",
+      "cover": "https://apache.org/logos/res/apisix/apisix.png",
+      "date": "2021-02-04",
+      "path": "/en/blog/apache-apisix-helps-enterprises-transform-digitally"
+    },
     {
       "title": "A First Look at Kubernetes Service API",
       "cover": "https://kubernetes-sigs.github.io/service-apis/images/api-model.png",
