@@ -127,6 +127,12 @@
       "cover": "https://pic4.zhimg.com/80/v2-596a56dceaf120f846ce07484e4c091b_1440w.jpg",
       "date": "2018-09-03",
       "path": "/en/blog/analysis-of-inaccurate-distribution-of-wrk-latency"
+    },
+    {
+      "title": "Stable Product Delivery with Cypress",
+      "cover": "https://apache.org/logos/res/apisix/apisix.png",
+      "date": "2021-02-07",
+      "path": "/en/blog/stable-product-delivery-with-cypress"
     }
   ]
 }
