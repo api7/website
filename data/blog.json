@@ -59,6 +59,12 @@
       "cover": "https://pic4.zhimg.com/80/v2-596a56dceaf120f846ce07484e4c091b_1440w.jpg",
       "date": "2018-09-03",
       "path": "/zh/blog/analysis-of-inaccurate-distribution-of-wrk-latency"
+    },  
+    {
+      "title": "使用 Cypress 让产品持续稳定交付",
+      "cover": "https://apache.org/logos/res/apisix/apisix.png",
+      "date": "2021-02-07",
+      "path": "/zh/blog/stable-product-delivery-with-cypress"
     }
   ],
   "en-US": [
