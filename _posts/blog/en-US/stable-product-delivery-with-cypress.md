@@ -23,7 +23,7 @@ Puppeteer has the best performance. However, testing is not the focus of Puppete
 
 TestCafe is surprisingly easy to install, it has a built-in waiting mechanism so that users don't have to actively sleep waiting for page interactions, and it supports concurrent multi-browser testing, which is helpful for multi-browser compatibility testing. The disadvantage is that its debugging process is not so user-friendly, and you have to run a new use case after each test case change. For the developers, they need to have some basic Javascript syntax. Secondly, its running speed is relatively slow for several other frameworks, especially when executing withText () to find elements.
 
-After a comprehensive comparison, we finally chose Cypress as our front-end E2E framework, listing four main reasons.
+After a comprehensive comparison, we finally chose Cypress as our front-end E2E framework, listing four main reasons:
 
 1. Simple syntax
 
@@ -52,24 +52,27 @@ Cypress's documentation structure is clearer and more comprehensive. In the earl
 
 There are currently 49 test cases written for the APISIX Dashboard. We configured the corresponding CI in GitHub Action to ensure that the code passes before each merge to ensure code quality. We share the use of Cypress in APISIX Dashboard with you by referring to Cypress best practices and combining them with our project.
 
-![image](https://uploader.shimo.im/f/mkJzQHKxJQxa3bjh.gif?fileGuid=vcryQKgp6gVjPjdR)
+![image](https://static.apiseven.com/202102/apisix-dashboard-e2e.gif)
 
-![image](https://uploader.shimo.im/f/39Lj9afDcr6qmtit.png!thumbnail?fileGuid=vcryQKgp6gVjPjdR)
+![image](https://static.apiseven.com/202102/image.png)
 
 1. Commonly used functions are encapsulated into commands.
 
 Take login as an example, login is an essential part of entering the system, so we encapsulate it as a command, so that the login command can be called before each case run.
 
 ```javaScript
-Cypress.Commands.add('login', () => {
-  const { SERVE_ENV = 'dev' } = Cypress.env();
-  cy.request('POST', `${defaultSettings.serveUrlMap[SERVE_ENV]}/apisix/admin/user/login`, {
-    username: 'user',
-    password: 'user',
-  }).then((res) => {
-    expect(res.body.code).to.equal(0);
-    localStorage.setItem('token', res.body.data.token);
-  });
+Cypress.Commands.add("login", () => {
+  cy.request(
+    "POST",
+    'http://127.0.0.1/apisix/admin/user/login',
+    {
+      username: "user",
+      password: "user",
+    }
+  ).then((res) => {
+    expect(res.body.code).to.equal(0);
+    localStorage.setItem("token", res.body.data.token);
+  });
 });
 ```
 
@@ -99,9 +102,14 @@ To make it more intuitive for the user to understand the meaning of the test cod
   };
 ```
 
-3. Remove cy.wait()
+3. Remove cy.wait(someTime)
 
-We used cy.wait() in the early days of cypress, but found that cy.wait() relies too much on the network environment and the performance of the test machine, which can cause test cases to report errors when the network environment or machine performance is poor.
+We used cy.wait(someTime) in the early days of Cypress, but found that cy.wait(someTime) relies too much on the network environment and the performance of the test machine, which can cause test cases to report errors when the network environment or machine performance is poor. The recommended practice is to use it in conjunction with cy.intercpet() to explicitly specify the network resources to wait for.
+
+```javascript
+cy.intercept("https://apisix.apache.org/").as("fetchURL");
+cy.wait("@fetchURL");
+```
 
 ## Summary
 
