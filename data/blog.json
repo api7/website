@@ -1,6 +1,12 @@
 {
   "zh-CN": [
     {
+      "title": "使用 Cypress 让产品持续稳定交付",
+      "cover": "https://static.apiseven.com/logo/cypress.png",
+      "date": "2021-02-07",
+      "path": "/zh/blog/stable-product-delivery-with-cypress"
+    },
+    {
       "title": "Apache APISIX 助力企业数字化转型",
       "cover": "https://apache.org/logos/res/apisix/apisix.png",
       "date": "2021-02-04",
@@ -59,15 +65,15 @@
       "cover": "https://pic4.zhimg.com/80/v2-596a56dceaf120f846ce07484e4c091b_1440w.jpg",
       "date": "2018-09-03",
       "path": "/zh/blog/analysis-of-inaccurate-distribution-of-wrk-latency"
-    },  
-    {
-      "title": "使用 Cypress 让产品持续稳定交付",
-      "cover": "https://static.apiseven.com/logo/cypress.png",
-      "date": "2021-02-07",
-      "path": "/zh/blog/stable-product-delivery-with-cypress"
     }
   ],
   "en-US": [
+    {
+      "title": "Stable Product Delivery with Cypress",
+      "cover": "https://static.apiseven.com/logo/cypress.png",
+      "date": "2021-02-07",
+      "path": "/en/blog/stable-product-delivery-with-cypress"
+    },
     {
       "title": "Apache APISIX helps enterprises transform digitally",
       "cover": "https://apache.org/logos/res/apisix/apisix.png",
@@ -127,12 +133,6 @@
       "cover": "https://pic4.zhimg.com/80/v2-596a56dceaf120f846ce07484e4c091b_1440w.jpg",
       "date": "2018-09-03",
       "path": "/en/blog/analysis-of-inaccurate-distribution-of-wrk-latency"
-    },
-    {
-      "title": "Stable Product Delivery with Cypress",
-      "cover": "https://static.apiseven.com/logo/cypress.png",
-      "date": "2021-02-07",
-      "path": "/en/blog/stable-product-delivery-with-cypress"
     }
   ]
 }

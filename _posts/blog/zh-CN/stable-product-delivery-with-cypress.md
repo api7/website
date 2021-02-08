@@ -3,7 +3,7 @@ title: "使用 Cypress 让产品持续稳定交付"
 date: 2021-02-07
 ---
 
-作者：孙毅
+作者：[孙毅](https://github.com/LiteSun)
 
 ## 背景
 

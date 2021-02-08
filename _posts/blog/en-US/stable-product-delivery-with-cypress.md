@@ -3,7 +3,7 @@ title: "Stable Product Delivery with Cypress"
 date: 2021-02-07
 ---
 
-Author: Sun Yi
+Author: [Sun Yi](https://github.com/LiteSun)
 
 ## Background
 
