@@ -104,7 +104,7 @@ To make it more intuitive for the user to understand the meaning of the test cod
 
 3. Remove cy.wait(someTime)
 
-We used cy.wait(someTime) in the early days of Cypress, but found that cy.wait(someTime) relies too much on the network environment and the performance of the test machine, which can cause test cases to report errors when the network environment or machine performance is poor. The recommended practice is to use it in conjunction with cy.intercpet() to explicitly specify the network resources to wait for.
+We used cy.wait(someTime) in the early days of Cypress, but found that cy.wait(someTime) relies too much on the network environment and the performance of the test machine, which can cause test cases to report errors when the network environment or machine performance is poor. The recommended practice is to use it in conjunction with cy.intercept() to explicitly specify the network resources to wait for.
 
 ```javascript
 cy.intercept("https://apisix.apache.org/").as("fetchURL");

@@ -104,7 +104,7 @@ const domSelector = {
 
 3. 移除 cy.wait(someTime)
 
-我们在使用 Cypress 的前期使用 cy.wait(someTime)，但在使用中发现，cy.wait(someTime) 过度依赖网络环境以及测试机器的性能，当网络环境或者机器性能差时，会导致测试案例报错。推荐的做法是配合 cy.intercpet() 使用以明确指定需要等待的网络资源。
+我们在使用 Cypress 的前期使用 cy.wait(someTime)，但在使用中发现，cy.wait(someTime) 过度依赖网络环境以及测试机器的性能，当网络环境或者机器性能差时，会导致测试案例报错。推荐的做法是配合 cy.intercept() 使用以明确指定需要等待的网络资源。
 
 ```javascript
 cy.intercept('https://apisix.apache.org/').as('fetchURL');
