@@ -20,7 +20,7 @@
     },
     {
       "title": "初探 Kubernetes Service API",
-      "cover": "https://kubernetes-sigs.github.io/service-apis/images/api-model.png",
+      "cover": "https://gateway-api.sigs.k8s.io/images/api-model.png",
       "date": "2020-12-18",
       "path": "/zh/blog/a-first-look-at-kubernetes-service-api"
     },
