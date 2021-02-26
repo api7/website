@@ -1,6 +1,12 @@
 {
   "zh-CN": [
     {
+      "title": "使用 Helm Charts 安装 Apache APISIX",
+      "cover": "https://apache.org/logos/res/apisix/apisix.png",
+      "date": "2021-02-26",
+      "path": "/zh/blog/install-apache-apisix-from-helm-charts"
+    },
+    {
       "title": "Amazon EKS 和 APISIX ingress controller 如何配合使用来管理复杂流量",
       "cover": "https://apache.org/logos/res/apisix/apisix.png",
       "date": "2021-02-07",
@@ -74,6 +80,12 @@
     }
   ],
   "en-US": [
+    {
+      "title": "Install Apache APISIX from Helm Charts",
+      "cover": "https://apache.org/logos/res/apisix/apisix.png",
+      "date": "2021-02-26",
+      "path": "/en/blog/install-apache-apisix-from-helm-charts"
+    },
     {
       "title": "Stable Product Delivery with Cypress",
       "cover": "https://static.apiseven.com/logo/cypress.png",
