@@ -5,6 +5,8 @@ date: 2021-02-26
 
 作者: [张超](https://github.com/tokers)
 
+<!-- markdown-link-check-disable -->
+
 日前[支流科技](https://www.apiseven.com/)提供了一个在线 Helm Charts 仓库 https://charts.apiseven.com, 用户可通过该仓库轻松安装 Apache APISIX、Apache apisix-dashboard 和 Apache apisix-ingress-controller （而不需要提前 clone 对应的项目）。
 
 ## 如何使用
@@ -18,6 +20,8 @@ date: 2021-02-26
    $ helm repo update
    ```
 
+<!-- markdown-link-check-enable -->
+
 2. 查看仓库中可用的 Charts 包
 
    ```
@@ -30,7 +34,7 @@ date: 2021-02-26
 
 3. 安装 Apache APISIX 到目标 Kubernetes 集群中
 
-    ```
+   ```
    $ helm install apisix-gw apisix/apisix --namespace default
 
    NAME: apisix-gw
@@ -41,9 +45,9 @@ date: 2021-02-26
    TEST SUITE: None
    NOTES:
    1. Get the application URL by running these commands:
-     export NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services apisix-gw-gateway)
-     export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
-     echo http://$NODE_IP:$NODE_PORT
+    export NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services apisix-gw-gateway)
+    export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
+    echo http://$NODE_IP:$NODE_PORT
    ```
 
 ## 另请参阅

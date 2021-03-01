@@ -11,12 +11,16 @@ A few days ago, [Zhiliu Inc](https://www.apiseven.com/) released an online Helm 
 
 Just a few steps to install Apache APISIX
 
+<!-- markdown-link-check-disable -->
+
 1. Add the repository and fetch the update
 
    ```
    $ helm repo add apisix https://charts.apiseven.com
    $ helm repo update
    ```
+
+<!-- markdown-link-check-enable -->
 
 2. Check out the available charts in repository
 
