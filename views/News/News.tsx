@@ -3,7 +3,7 @@ import { NextPage } from "next";
 import { TFunction } from "next-i18next";
 import { NextSeo } from "next-seo";
 
-import Nav from "@/components/Nav";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FooterLinks from "@/components/FooterLinks";
 
@@ -21,7 +21,7 @@ const News: NextPage<Props, any> = ({ t, list = [] }) => {
     <SWrapper>
       <NextSeo title={t(`common:news`)} />
       <div>
-        <Nav />
+        <Navbar />
         <div className="cover">
           <div className="box">
             <h1>{t(`common:news`)}</h1>

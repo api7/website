@@ -8,7 +8,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import Nav from "@/components/Nav";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FooterLinks from "@/components/FooterLinks";
 
@@ -26,7 +26,7 @@ const About: NextPage<Props, any> = ({ t, list = [] }) => {
     <SWrapper>
       <NextSeo title={t(`common:about`)} />
       <div>
-        <Nav />
+        <Navbar />
         <div className="cover">
           <div className="box">
             <h1>{t(`common:about`)}</h1>

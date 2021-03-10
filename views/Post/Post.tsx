@@ -8,7 +8,7 @@ import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import gfm from "remark-gfm";
 
-import Nav from "@/components/Nav";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FooterLinks from "@/components/FooterLinks";
 import { withTranslation } from "../../i18n";
@@ -111,7 +111,7 @@ const Page: NextPage<Props, any> = ({ t, content, data = {}, isSimple }) => {
         ></script>
       </Head>
       <div>
-        <Nav />
+        <Navbar />
         <div>
           {content === undefined && <h2>{t("common:notFound")}</h2>}
           {content !== undefined && (
