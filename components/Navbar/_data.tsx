@@ -48,12 +48,12 @@ export const links: Link[] = [
     children: [
       {
         label: '预约演示',
-        description: 'Get updates, articles and insights from the team.',
+        description: '联系我们，预约产品演示',
         href: '/form-api7-trial',
         icon: <MdWeb />,
       }, {
         label: '商业支持',
-        description: 'Get updates, articles and insights from the team.',
+        description: '获取 API7 产品商业支持内容',
         href: '/business-support',
         icon: <MdWeb />,
       }, {
@@ -68,9 +68,21 @@ export const links: Link[] = [
     label: '资源',
     children: [
       {
+        label: '博客',
+        description: '阅读 API7 相关产品博客内容',
+        href: '/blog',
+        icon: <MdWeb />,
+      },
+      {
+        label: '用户案例',
+        description: '阅读全球领先企业与 API7 产品的故事',
+        href: '/usercases',
+        icon: <IoGrid />,
+      },
+      {
         label: '获取帮助',
-        description: 'Read our documentation and FAQs, or get in touch.',
-        href: '#',
+        description: '联系我们获取更多帮助',
+        href: 'mailto:wenming@api7.ai',
         icon: <IoHelpBuoy />,
       },
       {
@@ -78,18 +90,6 @@ export const links: Link[] = [
         description: '观看 Apache APISIX DevCon 2020 大会录像',
         href: '/resources/apisix-devcon-2020',
         icon: <IoCalendar />,
-      },
-      {
-        label: '用户案例',
-        description: 'Do even more with Assistants, plugins and integrations.',
-        href: '/usercases',
-        icon: <IoGrid />,
-      },
-      {
-        label: '博客',
-        description: 'Get updates, articles and insights from the team.',
-        href: '/blog',
-        icon: <MdWeb />,
       },
     ],
   },

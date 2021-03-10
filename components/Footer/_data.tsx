@@ -18,14 +18,14 @@ export const links: LinkGroupData[] = [
       {
         label: "API 网关",
         href: "https://github.com/apache/apisix",
+        badge: (
+          <Badge colorScheme="blue" variant="solid" fontSize="0.625rem">
+            Hot
+          </Badge>
+        ),
       }, {
         label: "k8s Ingress Controller",
         href: "https://github.com/apache/apisix-ingress-controller",
-        badge: (
-          <Badge colorScheme="blue" variant="solid" fontSize="0.625rem">
-            New
-          </Badge>
-        ),
       }, {
         label: "服务网格",
         href: "#"
