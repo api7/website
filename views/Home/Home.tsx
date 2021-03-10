@@ -4,9 +4,8 @@ import { TFunction } from "next-i18next";
 import { I18nContext } from "react-i18next";
 import { NextPage } from "next";
 
-import Nav from "@/components/Nav";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FooterLinks from "@/components/FooterLinks";
 import { withTranslation } from "../../i18n";
 
 import { SBlock1, SSection, SBlock2, SButton, SPluginChart } from "./style";
@@ -23,38 +22,38 @@ const Home: NextPage<Props, any> = ({ t }) => {
   const certs =
     language === "en-US"
       ? [
-          {
-            name: t("home-text10"),
-            src: "https://static.apiseven.com/logo-linux-silver-member.png",
-            href: "https://www.linuxfoundation.org/",
-          },
-          {
-            name: t("home-text11"),
-            src: "https://static.apiseven.com/logo-tars-foundation.png",
-            href: "https://tarscloud.org/",
-          },
-        ]
+        {
+          name: t("home-text10"),
+          src: "https://static.apiseven.com/logo-linux-silver-member.png",
+          href: "https://www.linuxfoundation.org/",
+        },
+        {
+          name: t("home-text11"),
+          src: "https://static.apiseven.com/logo-tars-foundation.png",
+          href: "https://tarscloud.org/",
+        },
+      ]
       : [
-          {
-            name: t("home-text8"),
-            src: "https://static.apiseven.com/logo-huawei-compatible.png",
-            href: "/zh/cert/huawei-stack-8.0",
-          },
-          {
-            name: t("home-text9"),
-            src: "https://static.apiseven.com/logo-huawei-compatible.png",
-            href: "/zh/cert/huawei-kunpeng",
-          }, {
-            name: t("home-text12"),
-            src: "https://static.apiseven.com/%E5%8F%AF%E4%BF%A1%E4%BA%91.jpeg",
-            href: "/zh/cert/trusted-cloud"
-          }
-        ];
+        {
+          name: t("home-text8"),
+          src: "https://static.apiseven.com/logo-huawei-compatible.png",
+          href: "/zh/cert/huawei-stack-8.0",
+        },
+        {
+          name: t("home-text9"),
+          src: "https://static.apiseven.com/logo-huawei-compatible.png",
+          href: "/zh/cert/huawei-kunpeng",
+        }, {
+          name: t("home-text12"),
+          src: "https://static.apiseven.com/%E5%8F%AF%E4%BF%A1%E4%BA%91.jpeg",
+          href: "/zh/cert/trusted-cloud"
+        }
+      ];
 
   return (
     <>
       <NextSeo title={t("common:homepage")} />
-      <Nav />
+      <Navbar />
       <SBlock1>
         <span>{t("home-block1-title")}</span>
         <br />
@@ -236,7 +235,6 @@ const Home: NextPage<Props, any> = ({ t }) => {
           </SButton>
         </div>
       </SBlock2>
-      <FooterLinks />
       <Footer />
     </>
   );
