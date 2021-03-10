@@ -10,7 +10,6 @@ import "react-vertical-timeline-component/style.min.css";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FooterLinks from "@/components/FooterLinks";
 
 import { withTranslation } from "../../i18n";
 import { SWrapper } from "./style";

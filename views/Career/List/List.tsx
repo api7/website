@@ -5,7 +5,6 @@ import { TFunction } from "next-i18next";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FooterLinks from "@/components/FooterLinks";
 import { withTranslation } from "../../../i18n";
 import {
   SSection1,
