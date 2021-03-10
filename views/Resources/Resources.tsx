@@ -37,9 +37,7 @@ const Resources: NextPage<Props, any> = ({ t, list = [] }) => {
       <div>
         <Nav />
         <div className="cover">
-          <div className="box">
-            <h1>Apache APISIX Devcon 2020</h1>
-          </div>
+          <div className="box"><h1>Apache APISIX Devcon 2020</h1></div>
         </div>
         <section>
           <div className="container">
