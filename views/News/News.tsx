@@ -42,7 +42,6 @@ const News: NextPage<Props, any> = ({ t, list = [] }) => {
             </div>
           ))}
         </div>
-        <FooterLinks />
         <Footer />
       </div>
     </SWrapper>

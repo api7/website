@@ -161,7 +161,6 @@ const About: NextPage<Props, any> = ({ t, list = [] }) => {
             </div>
           </div>
         </div>
-        <FooterLinks />
         <Footer />
       </div>
     </SWrapper>

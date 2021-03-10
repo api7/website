@@ -45,7 +45,6 @@ const PostList: NextPage<Props, any> = ({ t, type, list = [] }) => {
             </div>
           ))}
         </div>
-        <FooterLinks />
         <Footer />
       </div>
     </SWrapper>

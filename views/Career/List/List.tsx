@@ -137,7 +137,6 @@ const CareerList: NextPage<Props, any> = ({ t }) => {
               </div>
             </SSection3>
           </SSection2>
-          <FooterLinks />
           <Footer />
         </div>
       </div>

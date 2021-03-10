@@ -144,7 +144,6 @@ const Page: NextPage<Props, any> = ({ t, content, data = {}, isSimple }) => {
             </div>
           )}
         </div>
-        <FooterLinks />
         <Footer />
       </div>
     </>

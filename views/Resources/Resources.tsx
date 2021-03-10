@@ -63,7 +63,6 @@ const Resources: NextPage<Props, any> = ({ t, list = [] }) => {
             </ul>
           </div>
         </section>
-        <FooterLinks />
         <Footer />
       </div>
     </SWrapper>

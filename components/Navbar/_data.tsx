@@ -38,7 +38,7 @@ export const links: Link[] = [
       }, {
         label: "Service Mesh",
         href: "#",
-        description: "",
+        description: "敬请期待",
         icon: <IoHelpBuoy />
       }
     ]
