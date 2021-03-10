@@ -12,7 +12,6 @@ import { Logo } from '../Logo'
 import { SocialLink } from './SocialLink'
 import { links, socialLinks } from './_data'
 import { LinkGroup } from './LinkGroup'
-import { SubscribeForm } from './SubscribeForm'
 
 export const App = () => (
   <Box as="footer" bg={mode('gray.50', 'gray.800')}>
@@ -32,7 +31,7 @@ export const App = () => (
         <SimpleGrid
           flex="1"
           w={{ base: 'full', lg: 'auto' }}
-          maxW={{ lg: '3xl' }}
+          maxW={{ lg: '6xl' }}
           columns={{ base: 1, md: 2, lg: 4 }}
           fontSize="sm"
           marginEnd={{ md: '4', lg: '16' }}
@@ -41,22 +40,6 @@ export const App = () => (
             <LinkGroup key={idx} data={group} />
           ))}
         </SimpleGrid>
-        <Box
-          flex="2"
-          maxW={{ lg: '420px' }}
-          ml={{ lg: 'auto' }}
-          fontSize="sm"
-          mt={{ base: '12', lg: 0 }}
-        >
-          <Text casing="uppercase" mb={{ base: 6, lg: 10 }} fontWeight="bold" letterSpacing="wide">
-            Subscribe to our newsletter!
-          </Text>
-          <Text lineHeight="tall">
-            Get Overflow resources, curated content, and design inspiration delivered straight into
-            your inbox. Be the first to learn the news about new features and product updates.
-          </Text>
-          <SubscribeForm />
-        </Box>
       </Flex>
 
       <Flex
