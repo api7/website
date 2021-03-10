@@ -6,12 +6,11 @@ export default () => {
   return (
     <Box as="header" bgGradient="linear(to-r, blue.500, purple.500)" color="white" py="2">
       <Text px="10" align={{ base: 'start', md: 'center' }} fontSize="sm" position="relative">
-        <b>Did you buy a license yet? </b>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        <b>Apache APISIX Ingress Controller 正式加入 ASF</b>
         <Box
           as="a"
-          href="#"
-          target="_self"
+          href="https://github.com/apache/apisix-ingress-controller"
+          target="_blank"
           py="1"
           px="4"
           mx={{ base: '3', md: '5' }}
@@ -22,7 +21,7 @@ export default () => {
           rounded="sm"
           whiteSpace="nowrap"
         >
-          Check it Out
+          了解更多
         </Box>
         <IconButton
           position={{ base: 'absolute', md: 'relative' }}

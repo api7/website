@@ -40,13 +40,13 @@ export default () => {
               查看详情
             </Button>
           </Box>
-          <Img
+          {/* <Img
             pos="relative"
             marginEnd="-20rem"
             w="56rem"
             src="https://res.cloudinary.com/adebayosegun/image/upload/v1611835286/Chakra%20UI/screenshot-base.png"
             alt="Screening talent"
-          />
+          /> */}
         </Stack>
       </Box>
     </Box>
