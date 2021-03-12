@@ -17,7 +17,7 @@ type Props = {
 
 const getParameterByName = (name, url = '') => {
   name = name.replace(/[\[\]]/g, "\\$&");
-  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+  let regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
     results = regex.exec(url);
   if (!results) return null;
   if (!results[2]) return "";
@@ -32,7 +32,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       <NextSeo title={t(`common:contributor-graph`)} />
       <Nav />
       <div className="iframeBox">
-        <iframe src={"https://contributor-graph.apiseven.com/?repo=" + repo }></iframe>
+        <iframe src={"https://contributor-graph.apiseven.com/?repo=" + repo}></iframe>
       </div>
       <FooterLinks />
       <Footer />
