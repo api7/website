@@ -25,14 +25,14 @@ const getParameterByName = (name, url = '') => {
 };
 
 const Contributor: NextPage<Props, any> = ({ t, url }) => {
-  const repo = getParameterByName('repo', url)
+  const repo = getParameterByName('repo', url);
 
   return (
     <SWrapper>
       <NextSeo title={t(`common:contributor-graph`)} />
       <Nav />
       <div className="iframeBox">
-        <iframe src="https://contributor-graph.apiseven.com/"></iframe>
+        <iframe src={"https://contributor-graph.apiseven.com/?repo=" + repo } data-repo={getParameterByName('repo')}></iframe>
       </div>
       <FooterLinks />
       <Footer />
