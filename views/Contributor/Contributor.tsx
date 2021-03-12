@@ -32,7 +32,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       <NextSeo title={t(`common:contributor-graph`)} />
       <Nav />
       <div className="iframeBox">
-        <iframe src={"https://contributor-graph.apiseven.com/?repo=" + repo } data-repo={getParameterByName('repo')}></iframe>
+        <iframe src={"https://contributor-graph.apiseven.com/?repo=" + repo }></iframe>
       </div>
       <FooterLinks />
       <Footer />
