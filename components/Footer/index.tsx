@@ -32,7 +32,7 @@ export const App = () => (
         <SimpleGrid
           flex="1"
           w={{ base: 'full', lg: 'auto' }}
-          maxW={{ lg: '2xl' }}
+          maxW={{ lg: '3xl' }}
           columns={{ base: 1, md: 2, lg: 4 }}
           spacing={{ base: '12', md: '10' }}
           fontSize="sm"
