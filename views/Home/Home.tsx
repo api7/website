@@ -8,13 +8,13 @@ import HomeFeature2 from '@/components/HomeFeature2'
 import HomeFeature3 from '@/components/HomeFeature3'
 import HomeFeature4 from '@/components/HomeFeature4'
 import HomeHero from '@/components/HomeHero'
-import Newsletter from '@/components/Newsletter'
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 import { withTranslation } from "../../i18n";
 import HomeBanner from "@/components/HomeBanner";
+import HomeCTA from "@/components/HomeCTA";
 
 type Props = {
   t: TFunction;
@@ -66,7 +66,7 @@ const Home: NextPage<Props, any> = ({ t }) => {
       <HomeFeature1 />
       <HomeFeature3 />
       <HomeFeature4 />
-      <Newsletter />
+      <HomeCTA />
       <Footer />
     </>
   );

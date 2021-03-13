@@ -17,13 +17,13 @@ export const SubscribeForm = () => (
   >
     <Box mt="8" display={{ md: 'flex' }} maxW="xl">
       <FormControl id="email" marginEnd="-1px">
-        <FormLabel srOnly>Enter your email</FormLabel>
+        <FormLabel srOnly>在此输入您的邮箱</FormLabel>
         <Input
           roundedEnd={{ md: '0' }}
           mb={{ base: '2', lg: '0' }}
           flex="1"
           bg={mode('white', 'gray.900')}
-          placeholder="Your email"
+          placeholder="在此输入您的邮箱"
         />
       </FormControl>
       <Button
@@ -36,7 +36,7 @@ export const SubscribeForm = () => (
         fontWeight="bold"
         letterSpacing="wide"
       >
-        Subscribe
+        提交订阅
       </Button>
     </Box>
   </form>

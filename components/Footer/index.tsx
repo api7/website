@@ -12,6 +12,7 @@ import { Logo } from '../Logo'
 import { SocialLink } from './SocialLink'
 import { links, socialLinks } from './_data'
 import { LinkGroup } from './LinkGroup'
+import { SubscribeForm } from './SubscribeForm'
 
 export const App = () => (
   <Box as="footer" bg={mode('gray.50', 'gray.800')}>
@@ -31,8 +32,9 @@ export const App = () => (
         <SimpleGrid
           flex="1"
           w={{ base: 'full', lg: 'auto' }}
-          maxW={{ lg: '6xl' }}
+          maxW={{ lg: '2xl' }}
           columns={{ base: 1, md: 2, lg: 4 }}
+          spacing={{ base: '12', md: '10' }}
           fontSize="sm"
           marginEnd={{ md: '4', lg: '16' }}
         >
@@ -40,6 +42,21 @@ export const App = () => (
             <LinkGroup key={idx} data={group} />
           ))}
         </SimpleGrid>
+        <Box
+          flex="2"
+          maxW={{ lg: '420px' }}
+          ml={{ lg: 'auto' }}
+          fontSize="sm"
+          mt={{ base: '12', lg: 0 }}
+        >
+          <Text casing="uppercase" mb={{ base: 6, lg: 10 }} fontWeight="bold" letterSpacing="wide">
+            订阅邮件
+          </Text>
+          <Text lineHeight="tall">
+            订阅 API7 邮件列表，及时获得产品最新动态与学习资源。
+          </Text>
+          <SubscribeForm />
+        </Box>
       </Flex>
 
       <Flex
