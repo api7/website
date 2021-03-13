@@ -1,52 +1,42 @@
-import { Heading, SimpleGrid, Stack, Text, useColorModeValue } from '@chakra-ui/react'
+import {
+  Heading, Box, Stack, Text, useColorModeValue, StackDivider, useColorModeValue as mode,
+} from '@chakra-ui/react'
 import * as React from 'react'
+import { FaHeart } from 'react-icons/fa'
+
 import { Stat } from './Stat'
 
 const App = () => (
-  <Stack
-    as="section"
-    maxW="7xl"
-    mx="auto"
-    px={{ base: '6', md: '8' }}
-    py={{ base: '12', md: '20' }}
-    spacing="12"
-  >
-    <Stack maxW="xl" spacing="6">
-      <Heading size="2xl" fontWeight="extrabold">
-        基于由社区驱动的开源软件
+  <>
+    <Box as="section" maxW="7xl" mx="auto" px={{ base: '6', md: '8' }} py={{ base: '12', md: '20' }}>
+      <Box mb="12" textAlign="center">
+        <Heading size="2xl" fontWeight="extrabold" lineHeight="normal">
+          开源软件 <Box
+            display="inline-block"
+            mx="1"
+            color={mode('blue.500', 'blue.300')}
+            fontSize="2xl"
+            role="img"
+            aria-label="Love"
+            as={FaHeart}
+          /> 活跃社区
       </Heading>
-      <Text
-        fontSize="lg"
-        fontWeight="medium"
-        color={useColorModeValue('gray.600', 'whiteAlpha.700')}
-      >
-        为全球领先企业所信任，活跃的社区与优秀的贡献者是成功的关键。
+        <Text
+          fontSize="lg"
+          mt="4"
+          fontWeight="medium"
+          color={useColorModeValue('gray.600', 'whiteAlpha.700')}
+        >
+          为全球领先企业所信任，活跃的社区与优秀的贡献者是成功的关键。
       </Text>
-    </Stack>
-    <SimpleGrid mx="auto" spacing={{ base: '10', md: '20' }} columns={{ base: 1, md: 3 }}>
-      <Stat
-        title="Mobile revenue"
-        value="+30%"
-        accentColor={useColorModeValue('green.500', 'green.300')}
-      >
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-      </Stat>
-      <Stat
-        title="New customers"
-        value="34K"
-        accentColor={useColorModeValue('blue.500', 'blue.300')}
-      >
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-      </Stat>
-      <Stat
-        title="Last year’s revenue"
-        value="$234K"
-        accentColor={useColorModeValue('pink.500', 'pink.300')}
-      >
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-      </Stat>
-    </SimpleGrid>
-  </Stack>
+      </Box>
+      <Stack spacing="8" direction={{ base: 'column', md: 'row' }} divider={<StackDivider />}>
+        <Stat title="Amet minim mollit non deserunt ullamco." value="85%" />
+        <Stat title="Amet minim mollit non deserunt ullamco." value="3/4" />
+        <Stat title="Amet minim mollit non deserunt ullamco." value="45K" />
+      </Stack>
+    </Box>
+  </>
 )
 
 export default App
