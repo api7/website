@@ -14,7 +14,7 @@ import * as React from 'react'
 import { FaArrowRight, FaFileSignature, FaHandsHelping, FaHeadset } from 'react-icons/fa'
 import { Feature } from './Feature'
 
-export default () => {
+const App = () => {
   return (
     <Box as="section" bg={mode('gray.50', 'gray.800')} py="20">
       <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
@@ -81,3 +81,5 @@ export default () => {
     </Box>
   )
 }
+
+export default App

@@ -1,7 +1,7 @@
 import { Box, Button, Heading, Text } from '@chakra-ui/react'
 import * as React from 'react'
 
-export default () => {
+const App = () => {
   return (
     <Box as="section">
       <Box
@@ -21,3 +21,5 @@ export default () => {
     </Box>
   )
 }
+
+export default App

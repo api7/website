@@ -2,7 +2,7 @@ import { Box, IconButton, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import { HiX } from 'react-icons/hi'
 
-export default () => {
+const App = () => {
   return (
     <Box as="header" bgGradient="linear(to-r, blue.500, purple.500)" color="white" py="2">
       <Text px="10" align={{ base: 'start', md: 'center' }} fontSize="sm" position="relative">
@@ -38,3 +38,5 @@ export default () => {
     </Box>
   )
 }
+
+export default App

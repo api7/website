@@ -5,8 +5,9 @@ import { I18nContext } from "react-i18next";
 import { NextPage } from "next";
 import HomeFeature1 from '@/components/HomeFeature1'
 import HomeFeature2 from '@/components/HomeFeature2'
+import HomeFeature3 from '@/components/HomeFeature3'
+import HomeFeature4 from '@/components/HomeFeature4'
 import HomeHero from '@/components/HomeHero'
-import HomeLogoWall from '@/components/HomeLogoWall'
 import Newsletter from '@/components/Newsletter'
 
 import Navbar from "@/components/Navbar";
@@ -63,7 +64,8 @@ const Home: NextPage<Props, any> = ({ t }) => {
       <HomeHero />
       <HomeFeature2 />
       <HomeFeature1 />
-      <HomeLogoWall />
+      <HomeFeature3 />
+      <HomeFeature4 />
       <Newsletter />
       <Footer />
     </>

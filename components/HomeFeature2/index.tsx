@@ -13,7 +13,7 @@ import * as React from 'react'
 import { SampleLogo } from './SampleLogo'
 import { Testimonial } from './Testimonial'
 
-export default () => {
+const App = () => {
   return (
     <Box as="section" py="24" bg={mode('gray.100', 'gray.800')}>
       <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
@@ -49,3 +49,5 @@ export default () => {
     </Box>
   )
 }
+
+export default App

@@ -28,7 +28,7 @@ const SubscribeForm = () => {
   )
 }
 
-export default () => {
+const App = () => {
   return (
     <Box as="section" py="12">
       <Box maxW={{ base: 'xl', md: '5xl' }} mx="auto">
@@ -57,3 +57,5 @@ export default () => {
     </Box>
   )
 }
+
+export default App
