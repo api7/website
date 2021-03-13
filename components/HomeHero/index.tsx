@@ -62,7 +62,7 @@ const App = () => {
             letterSpacing="wide"
             color={mode('gray.600', 'gray.400')}
           >
-            Trusted by over 6,000 brands
+            Trusted by companies from World
           </Text>
           <SimpleGrid
             mt="8"
