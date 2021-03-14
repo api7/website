@@ -3,10 +3,11 @@ import { NextSeo } from "next-seo";
 import { TFunction } from "next-i18next";
 import { I18nContext } from "react-i18next";
 import { NextPage } from "next";
-import HomeFeature1 from '@/components/HomeFeature1'
+
 import HomeFeature2 from '@/components/HomeFeature2'
 import HomeFeature3 from '@/components/HomeFeature3'
 import HomeFeature4 from '@/components/HomeFeature4'
+import HomeFeature5 from '@/components/HomeFeature5'
 import HomeHero from '@/components/HomeHero'
 
 import Navbar from "@/components/Navbar";
@@ -63,8 +64,8 @@ const Home: NextPage<Props, any> = ({ t }) => {
       <Navbar />
       <HomeHero />
       <HomeFeature3 />
-      <HomeFeature1 />
       <HomeFeature2 />
+      <HomeFeature5 />
       <HomeFeature4 />
       <HomeCTA />
       <Footer />
