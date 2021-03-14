@@ -1,42 +1,53 @@
 import {
-  Heading, Box, Stack, Text, useColorModeValue, StackDivider, useColorModeValue as mode,
+  Box,
+  Center,
+  Grid,
+  Heading,
+  Stack,
+  StackProps,
+  Text,
+  Image,
+  useColorModeValue as mode,
 } from '@chakra-ui/react'
 import * as React from 'react'
-import { FaHeart } from 'react-icons/fa'
+import { SampleLogo } from './SampleLogo'
+import { Testimonial } from './Testimonial'
 
-import { Stat } from './Stat'
+const App = () => {
+  return (
+    <Box as="section" py="24" bg={mode('gray.100', 'gray.800')}>
+      <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
+        <Grid templateColumns={{ base: '1fr', md: '792px 1fr' }} gap="64px">
+          <Box>
+            <Center
+              bg={mode('white', 'gray.700')}
+              shadow="lg"
+              minH={{ base: '320px', lg: '480px' }}
+              rounded="lg"
+            >
+              <Box>
+                <Image src="https://static.apiseven.com/2020/05/1594881772-Canvas-1.png" />
+              </Box>
+            </Center>
+          </Box>
+          <Box>
+            <Heading size="2xl" letterSpacing="tight" fontWeight="extrabold">
+              下一代云原生 API 管理平台
+            </Heading>
 
-const App = () => (
-  <>
-    <Box as="section" maxW="7xl" mx="auto" px={{ base: '6', md: '8' }} py={{ base: '12', md: '20' }}>
-      <Box mb="12" textAlign="center">
-        <Heading size="2xl" fontWeight="extrabold" lineHeight="normal">
-          开源软件 <Box
-            display="inline-block"
-            mx="1"
-            color={mode('blue.500', 'blue.300')}
-            fontSize="2xl"
-            role="img"
-            aria-label="Love"
-            as={FaHeart}
-          /> 活跃社区
-      </Heading>
-        <Text
-          fontSize="lg"
-          mt="4"
-          fontWeight="medium"
-          color={useColorModeValue('gray.600', 'whiteAlpha.700')}
-        >
-          为全球领先企业所信任，活跃的社区与优秀的贡献者是成功的关键。
-      </Text>
+            <Testimonial
+              logo={<SampleLogo />}
+              author="Susan Mana"
+              company="Executive director"
+              image="https://images.unsplash.com/photo-1531078215167-91fcfe45b39e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2598&q=80"
+            >
+              支持混合云、多数据中心、Kubernetes 等部署方式，帮助您快速、安全地处理业务数据，并进行动态扩展
+            </Testimonial>
+          </Box>
+        </Grid>
       </Box>
-      <Stack spacing="8" direction={{ base: 'column', md: 'row' }} divider={<StackDivider />}>
-        <Stat title="Amet minim mollit non deserunt ullamco." value="85%" />
-        <Stat title="Amet minim mollit non deserunt ullamco." value="3/4" />
-        <Stat title="Amet minim mollit non deserunt ullamco." value="45K" />
-      </Stack>
     </Box>
-  </>
-)
+  )
+}
 
 export default App

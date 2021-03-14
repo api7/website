@@ -62,9 +62,9 @@ const Home: NextPage<Props, any> = ({ t }) => {
       <HomeBanner />
       <Navbar />
       <HomeHero />
-      <HomeFeature2 />
-      <HomeFeature1 />
       <HomeFeature3 />
+      <HomeFeature1 />
+      <HomeFeature2 />
       <HomeFeature4 />
       <HomeCTA />
       <Footer />

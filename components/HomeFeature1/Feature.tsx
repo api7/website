@@ -1,29 +1,23 @@
-import { Box, SimpleGrid, Stack, Text, useColorModeValue as mode } from '@chakra-ui/react'
+import { Box, Stack, Text, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
 
 interface FeatureProps {
-  icon: React.ReactElement
   title: string
-  children: React.ReactNode
+  children: string
+  icon: React.ReactElement
 }
 
 export const Feature = (props: FeatureProps) => {
   const { title, children, icon } = props
   return (
-    <Box>
-      <Box color={mode('blue.500', 'blue.300')} fontSize="5xl">
-        {icon}
-      </Box>
-      <Stack mt="6">
-        <Text as="h3" color={mode('blue.500', 'blue.300')} fontSize="xl" fontWeight="extrabold">
+    <Stack spacing="6" direction={{ base: 'column', md: 'row' }}>
+      <Box fontSize="6xl">{icon}</Box>
+      <Stack spacing="1">
+        <Text fontWeight="extrabold" fontSize="lg">
           {title}
         </Text>
-        <Text pr="6" lineHeight="tall">
-          {children}
-        </Text>
+        <Box color={mode('gray.600', 'gray.400')}>{children}</Box>
       </Stack>
-    </Box>
+    </Stack>
   )
 }
-
-export default Feature
