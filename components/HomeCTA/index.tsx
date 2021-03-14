@@ -12,7 +12,7 @@ const App = () => {
         textAlign="center"
       >
         <Text fontWeight="semibold" color={useColorModeValue('blue.600', 'blue.200')}>
-          Prices now start at just $23/month
+          我们支持灵活的计费方式
         </Text>
         <Heading
           my="4"
@@ -22,19 +22,19 @@ const App = () => {
           letterSpacing="tight"
           lineHeight="1.2"
         >
-          Get your dev team working with{' '}
+          让{' '}
           <Box
             as="mark"
             bg="unset"
             color={useColorModeValue('blue.600', 'blue.200')}
             whiteSpace="nowrap"
           >
-            Chakra UI
+            API7
           </Box>
+          {' '}为您的产品赋能
         </Heading>
         <Text fontSize="lg" maxW="xl" mx="auto">
-          Your business is going places - are your products? Ship products to customers with speed
-          using Chakra UI Pro
+          使用灵活可靠的 API7 作为您的流量管理平台，减少通用业务研发、保障您的业务稳定。
         </Text>
         <Stack
           direction={{ base: 'column', sm: 'row' }}
@@ -54,7 +54,7 @@ const App = () => {
             fontWeight="bold"
             flex={{ md: '1' }}
           >
-            Get started free
+            预约演示
           </Button>
           <Button
             as="a"
@@ -66,7 +66,7 @@ const App = () => {
             px="10"
             fontWeight="bold"
           >
-            Talk to an expert
+            与网关专家聊一聊
           </Button>
         </Stack>
       </Box>

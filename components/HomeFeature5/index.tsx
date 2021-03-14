@@ -27,7 +27,12 @@ const App = () => (
           fontWeight="medium"
           color={useColorModeValue('gray.600', 'whiteAlpha.700')}
         >
-          为全球领先企业所信任，活跃的社区与优秀的贡献者是成功的关键。
+          API7 基于{' '}
+          <Box as="a" href="https://apisix.apache.org/" target="_blank">
+            Apache APISIX
+          </Box>
+          {' '}
+          构建，活跃的社区与优秀的贡献者是产品可靠的关键。
       </Text>
       </Box>
       <Stack spacing="8" direction={{ base: 'column', md: 'row' }} divider={<StackDivider />}>

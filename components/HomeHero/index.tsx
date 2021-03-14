@@ -34,7 +34,7 @@ const App = () => {
           </Box>
         </Stack>
       </Box>
-      <Box as="section" pt={{ base: '40', md: '64' }} pb="24">
+      <Box as="section" pt={{ base: '44' }}>
         <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
           <Text
             fontWeight="bold"
@@ -47,14 +47,20 @@ const App = () => {
             Trusted by companies from World
           </Text>
           <SimpleGrid
-            mt="8"
+            mt="10"
             columns={{ base: 1, md: 2, lg: 6 }}
             color="gray.500"
             alignItems="center"
             justifyItems="center"
-            spacing={{ base: '12', lg: '24' }}
+            spacing={{ base: '12', lg: '12' }}
             fontSize="2xl"
           >
+            <Logos.ChatMonkey />
+            <Logos.Wakanda />
+            <Logos.Lighthouse />
+            <Logos.Plumtic />
+            <Logos.WorkScout />
+            <Logos.Finnik />
             <Logos.ChatMonkey />
             <Logos.Wakanda />
             <Logos.Lighthouse />
