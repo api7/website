@@ -78,9 +78,9 @@ export const links: Link[] = [
         icon: <IoCalendar />,
       },
       {
-        label: '获取帮助',
-        description: '联系我们获取更多帮助',
-        href: 'mailto:wenming@api7.ai',
+        label: '产品文档',
+        description: '敬请期待',
+        href: '#',
         icon: <IoHelpBuoy />,
       },
     ],

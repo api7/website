@@ -27,18 +27,17 @@ const App = () => (
           fontWeight="medium"
           color={useColorModeValue('gray.600', 'whiteAlpha.700')}
         >
-          API7 基于{' '}
+          基于 Apache 软件基金会
           <Box as="a" href="https://apisix.apache.org/" target="_blank">
-            Apache APISIX
+            顶级项目
           </Box>
-          {' '}
-          构建，活跃的社区与优秀的贡献者是产品可靠的关键。
+          构建产品，活跃的社区与优秀的贡献者是产品可靠的关键。
       </Text>
       </Box>
       <Stack spacing="8" direction={{ base: 'column', md: 'row' }} divider={<StackDivider />}>
-        <Stat title="Amet minim mollit non deserunt ullamco." value="85%" />
-        <Stat title="Amet minim mollit non deserunt ullamco." value="3/4" />
-        <Stat title="Amet minim mollit non deserunt ullamco." value="45K" />
+        <Stat title="腾讯云、中国移动等优质用户" value="45+" maxW="13rem" />
+        <Stat title="GitHub Stars" value="4.7K" />
+        <Stat title="活跃贡献者" value="200+" />
       </Stack>
     </Box>
   </>
