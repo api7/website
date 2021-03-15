@@ -36,10 +36,10 @@ export const links: LinkGroupData[] = [
     title: "资源",
     links: [
       {
-        label: "案例",
+        label: "用户案例",
         href: "/usercases"
       }, {
-        label: "博客",
+        label: "技术博客",
         href: "/blog"
       }, {
         label: "视频",
