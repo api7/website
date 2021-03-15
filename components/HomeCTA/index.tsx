@@ -34,7 +34,7 @@ const App = () => {
           {' '}为您的产品赋能
         </Heading>
         <Text fontSize="lg" maxW="xl" mx="auto">
-          使用灵活可靠的企业级 API 网关作为您的流量管理平台，减少通用组件研发、保障您的业务稳定。
+          灵活可靠的企业级 API 网关将作为您的流量管理平台，减少通用组件研发、保障您的业务稳定。
         </Text>
         <Stack
           direction={{ base: 'column', sm: 'row' }}
