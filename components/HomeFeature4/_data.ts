@@ -8,7 +8,7 @@ export const data: BlogData[] = [
     description:
       'Amazon Elastic Kubernetes Service（Amazon EKS）作为一种托管的 Kubernetes 服务，您可以在亚马逊云科技上轻松运行 Kubernetes 负载而无需对控制平面或节点进行安装和维护。',
     type: '博客',
-    tags: [],
+    tags: ['k8s', 'Ingress Controller', 'Amazon'],
     href: '/zh/blog/how-Amazon-EKS-and-APISIX-ingress-controller-work-together-to-manage-complex-traffic'
   }, {
     image:
@@ -17,7 +17,7 @@ export const data: BlogData[] = [
     description:
       '空中云汇（Airwallex）引入高性能开源网关 Apache APISIX 后提高了哪些性能，它的网关选型和网关架构是什么？以及它的分布式路由管理的结构是怎样的？',
     type: '视频',
-    tags: [],
+    tags: ['Airwallex', 'Apache APISIX', '微服务'],
     href: '/zh/apisix-devcon-2020/airwallex'
   },
   {
