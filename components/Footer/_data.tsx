@@ -57,7 +57,7 @@ export const links: LinkGroupData[] = [
         label: "关于我们",
         href: "/about"
       }, {
-        label: "诚聘英才",
+        label: "工作机会",
         href: "/careers"
       }, {
         label: "新闻报道",

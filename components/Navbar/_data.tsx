@@ -90,7 +90,7 @@ export const links: Link[] = [
     href: "/news"
   },
   {
-    label: "诚聘英才",
+    label: "工作机会",
     href: "/careers"
   }
 ]
