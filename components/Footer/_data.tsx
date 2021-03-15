@@ -42,10 +42,10 @@ export const links: LinkGroupData[] = [
         label: "技术博客",
         href: "/blog"
       }, {
-        label: "视频",
-        href: "https://space.bilibili.com/551921247"
-      }, {
-        label: "开发者大会",
+        label: "DevCon",
+        href: "#"
+      }, , {
+        label: "产品文档",
         href: "#"
       }
     ]

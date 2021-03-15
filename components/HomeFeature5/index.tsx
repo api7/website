@@ -35,9 +35,9 @@ const App = () => (
       </Text>
       </Box>
       <Stack spacing="8" direction={{ base: 'column', md: 'row' }} divider={<StackDivider />}>
-        <Stat title="腾讯云、中国移动等优质用户" value="45+" maxW="13rem" />
-        <Stat title="GitHub Stars" value="4.7K" />
         <Stat title="活跃贡献者" value="200+" />
+        <Stat title="GitHub Stars" value="4,700+" />
+        <Stat title="下载量" value="150,000+" />
       </Stack>
     </Box>
   </>
