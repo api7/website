@@ -3,47 +3,31 @@ import { BlogData } from './BlogCard'
 export const data: BlogData[] = [
   {
     image:
-      'https://images.unsplash.com/photo-1573164574472-797cdf4a583a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzaWduZXIlMjB3b3JraW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-    title: '2020 Chakra UI Developer Survey',
+      'https://static.apiseven.com/202102/WechatIMG3731.jpeg',
+    title: 'Amazon EKS 和 APISIX ingress controller 如何配合使用来管理复杂流量',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt fugiat nulla pariatur.',
-    type: 'article',
-    tags: ['community', 'research'],
-    author: {
-      image:
-        'https://images.unsplash.com/photo-1553267751-1c148a7280a1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8Z3V5JTIwc21pbGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      name: 'Sammy Tom',
-      title: 'Director of Relations',
-    },
+      'Amazon Elastic Kubernetes Service（Amazon EKS）作为一种托管的 Kubernetes 服务，您可以在亚马逊云科技上轻松运行 Kubernetes 负载而无需对控制平面或节点进行安装和维护。',
+    type: '博客',
+    tags: [],
+    href: '/zh/blog/how-Amazon-EKS-and-APISIX-ingress-controller-work-together-to-manage-complex-traffic'
+  }, {
+    image:
+      'https://static.apiseven.com/Snip20210315_.png',
+    title: 'APISIX 与微服务网关模式在 Airwallex 的实践',
+    description:
+      '空中云汇（Airwallex）引入高性能开源网关 Apache APISIX 后提高了哪些性能，它的网关选型和网关架构是什么？以及它的分布式路由管理的结构是怎样的？',
+    type: '视频',
+    tags: [],
+    href: '/zh/apisix-devcon-2020/airwallex'
   },
   {
     image:
-      'https://images.unsplash.com/photo-1573496774426-fe3db3dd1731?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8ZGVzaWduZXIlMjB3b3JraW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-    title: 'Women in Tech learning Chakra UI',
+      'https://static.apiseven.com/logo/geely-1.png',
+    title: '支流科技与吉利汽车：产业数字化，「智造」未来',
     description:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur fugiat nulla pariatur.',
-    type: 'video',
-    tags: ['firebase'],
-    author: {
-      image:
-        'https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8d29tYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      name: 'Angelina Gates',
-      title: 'Director of Relations',
-    },
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1558655146-d09347e92766?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZGVzaWduZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-    title: 'Using Chakra UI in Sketch',
-    description:
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    type: 'webinar',
-    tags: ['animations', 'ionic'],
-    author: {
-      image:
-        'https://images.unsplash.com/photo-1514836894203-facaaeba1140?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGFmcmljYSUyMHdvbWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      name: 'Busola Banks',
-      title: 'Director of Relations',
-    },
+      '云原生已经成为全球企业数字化转型关键的驱动力，支流科技与吉利合作，实现对 API 的集中管理、可视化和安全保障，为吉利下一个「千万辆」时代打好基础。',
+    type: '案例',
+    tags: [],
+    href: '/zh/usercase/geely'
   },
 ]

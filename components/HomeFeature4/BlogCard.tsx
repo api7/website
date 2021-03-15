@@ -2,10 +2,10 @@ import { Box, BoxProps, Heading, Text, useColorModeValue as mode } from '@chakra
 import * as React from 'react'
 import { BlogAuthor } from './BlogAuthor'
 import { BlogMedia } from './BlogMedia'
-import { BlogMeta } from './BlogMeta'
+import { BlogMeta, BlogMetaProps } from './BlogMeta'
 
 export interface BlogData {
-  type: 'article' | 'webinar' | 'video'
+  type: BlogMetaProps['type']
   tags: string[]
   title: string
   description: string
@@ -37,7 +37,7 @@ export const BlogCard = (props: BlogCardProps) => {
               {title}
             </Heading>
           </Box>
-          <Text color={mode('gray.600', 'gray.400')} lineHeight="tall">
+          <Text color={mode('gray.600', 'gray.400')} lineHeight="tall" textAlign="justify">
             {description}
           </Text>
         </Box>

@@ -15,14 +15,6 @@ export interface Link {
 
 export const links: Link[] = [
   {
-    label: "首页",
-    href: "/"
-  },
-  {
-    label: "新闻报道",
-    href: "/news"
-  },
-  {
     label: "开源项目",
     children: [
       {
@@ -44,7 +36,7 @@ export const links: Link[] = [
     ]
   },
   {
-    label: "商业产品和支持",
+    label: "商业支持",
     children: [
       {
         label: '预约演示',
@@ -65,10 +57,10 @@ export const links: Link[] = [
     ]
   },
   {
-    label: '资源',
+    label: '学习资源',
     children: [
       {
-        label: '博客',
+        label: '技术博客',
         description: '阅读 API7 相关产品博客内容',
         href: '/blog',
         icon: <MdWeb />,
@@ -80,18 +72,22 @@ export const links: Link[] = [
         icon: <IoGrid />,
       },
       {
+        label: '开发者大会',
+        description: '观看 Apache APISIX DevCon 2020 大会录像',
+        href: '/resources/apisix-devcon-2020',
+        icon: <IoCalendar />,
+      },
+      {
         label: '获取帮助',
         description: '联系我们获取更多帮助',
         href: 'mailto:wenming@api7.ai',
         icon: <IoHelpBuoy />,
       },
-      {
-        label: 'DevCon',
-        description: '观看 Apache APISIX DevCon 2020 大会录像',
-        href: '/resources/apisix-devcon-2020',
-        icon: <IoCalendar />,
-      },
     ],
+  },
+  {
+    label: "新闻报道",
+    href: "/news"
   },
   {
     label: "诚聘英才",

@@ -9,11 +9,10 @@ const App = () => {
       <Box maxW={{ base: 'xl', md: '2xl', lg: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
         <Box textAlign="center" maxW="md" mx="auto">
           <Heading size="2xl" fontWeight="extrabold" letterSpacing="tight">
-            博客 & 新闻
+            学习资源
           </Heading>
           <Text mt="4" fontSize="lg" color={mode('gray.600', 'gray.400')}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus
-            atque, ducimus sed.
+            技术博客、用户案例、开发者大会
           </Text>
         </Box>
         <SimpleGrid mt="14" columns={{ base: 1, lg: 3 }} spacing="14">

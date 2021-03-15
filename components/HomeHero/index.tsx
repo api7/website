@@ -34,18 +34,8 @@ const App = () => {
           </Box>
         </Stack>
       </Box>
-      <Box as="section" pt={{ base: '44' }}>
+      <Box as="section" pt={{ base: '30' }}>
         <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
-          <Text
-            fontWeight="bold"
-            fontSize="sm"
-            textAlign="center"
-            textTransform="uppercase"
-            letterSpacing="wide"
-            color={mode('gray.600', 'gray.400')}
-          >
-            Trusted by companies from World
-          </Text>
           <SimpleGrid
             mt="10"
             columns={{ base: 1, md: 2, lg: 6 }}
