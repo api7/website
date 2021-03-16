@@ -80,7 +80,7 @@ export const members: Member[] = [
     role: '',
     image:
       'https://avatars.githubusercontent.com/u/34589752?s=460&u=2f2571e012f090037edb71dc6ffc612f78262e5f&v=4',
-    name: 'Shuyang Wu',
+    name: '吴舒旸',
     github: 'https://github.com/yiyiyimu',
     description: '@gatech CSE master (at home), @apache apisix / @chaos-mesh committer',
   }, , {
