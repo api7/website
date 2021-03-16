@@ -16,7 +16,7 @@ export const members: Member[] = [
     name: '温铭',
     twitter: 'https://twitter.com/_WenMing',
     github: 'https://github.com/moonming',
-    description: 'PMC Chair of Apache APISIX',
+    description: 'Apache Member / PMC Chair of Apache APISIX',
   },
   {
     role: 'Co-Founder / CTO',
@@ -25,5 +25,13 @@ export const members: Member[] = [
     name: '王院生',
     github: 'https://github.com/membphis',
     description: 'Apache APISIX Founder & PMC',
+  }, {
+    role: 'Technical Consultant',
+    image:
+      'https://www.tetrate.io/about/img/people/sheng-wu.jpg',
+    name: '吴晟',
+    github: 'https://github.com/wu-sheng',
+    twitter: 'https://twitter.com/wusheng1108',
+    description: 'Apache Board / Apache SkyWalking Founder',
   }
 ]
