@@ -17,7 +17,7 @@ export const links: LinkGroupData[] = [
     links: [
       {
         label: "API 网关",
-        href: "https://github.com/apache/apisix",
+        href: "http://apisix.apache.org/",
         badge: (
           <Badge colorScheme="blue" variant="solid" fontSize="0.625rem">
             Hot
@@ -42,8 +42,8 @@ export const links: LinkGroupData[] = [
         label: "技术博客",
         href: "/blog"
       }, {
-        label: "DevCon",
-        href: "#"
+        label: "开发者大会",
+        href: "/resources/apisix-devcon-2020"
       }, , {
         label: "产品文档",
         href: "#"
@@ -67,7 +67,7 @@ export const links: LinkGroupData[] = [
         href: "/news"
       }, {
         label: "申请成为合作伙伴",
-        href: "wenming@api7.ai"
+        href: "mailto:wenming@api7.ai"
       }
     ]
   },
