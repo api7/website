@@ -46,7 +46,7 @@ const App = () => {
         >
           <Button
             as="a"
-            href="#"
+            href="/form-api7-trial"
             size="lg"
             h="16"
             px="10"
@@ -60,7 +60,7 @@ const App = () => {
             as="a"
             flex={{ md: '1' }}
             variant="outline"
-            href="#"
+            href="mailto:wenming@api7.ai"
             size="lg"
             h="16"
             px="10"

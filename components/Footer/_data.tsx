@@ -85,7 +85,7 @@ export const links: LinkGroupData[] = [
         href: "#"
       }, {
         label: "wenming@api7.ai",
-        href: "wenming@api7.ai"
+        href: "mailto:wenming@api7.ai"
       }
     ]
   },
