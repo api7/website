@@ -9,7 +9,7 @@ const App = () => {
       <Box maxW={{ base: 'xl', md: '2xl', lg: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
         <Box textAlign="center" maxW="md" mx="auto">
           <Heading size="2xl" fontWeight="extrabold" letterSpacing="tight">
-            学习资源
+            相关资源
           </Heading>
           <Text mt="4" fontSize="lg" color={mode('gray.600', 'gray.400')}>
             技术博客、用户案例、开发者大会

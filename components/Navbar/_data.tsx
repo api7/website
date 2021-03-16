@@ -61,7 +61,7 @@ export const links: Link[] = [
     ]
   },
   {
-    label: '学习资源',
+    label: '相关资源',
     children: [
       {
         label: '技术博客',

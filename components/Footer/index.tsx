@@ -53,7 +53,7 @@ export const App = () => (
             订阅邮件
           </Text>
           <Text lineHeight="tall">
-            订阅 API7 邮件列表，及时获得产品最新动态与学习资源。
+            订阅 API7 邮件列表，及时获得产品最新动态与相关资源。
           </Text>
           <SubscribeForm />
         </Box>
