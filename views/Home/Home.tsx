@@ -10,11 +10,7 @@ import HomeFeature4 from '@/components/HomeFeature4'
 import HomeFeature5 from '@/components/HomeFeature5'
 import HomeHero from '@/components/HomeHero'
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-
 import { withTranslation } from "../../i18n";
-import HomeBanner from "@/components/HomeBanner";
 import HomeCTA from "@/components/HomeCTA";
 
 type Props = {
@@ -60,15 +56,13 @@ const Home: NextPage<Props, any> = ({ t }) => {
   return (
     <>
       <NextSeo title={t("common:homepage")} />
-      <HomeBanner />
-      <Navbar />
+
       <HomeHero />
       <HomeFeature3 />
       <HomeFeature2 />
       <HomeFeature5 />
       <HomeFeature4 />
       <HomeCTA />
-      <Footer />
     </>
   );
 };

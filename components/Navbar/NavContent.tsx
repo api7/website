@@ -55,7 +55,7 @@ const DesktopNavContent = (props: FlexProps) => {
   return (
     <Flex className="nav-content__desktop" align="center" justify="space-between" {...props}>
       <Box as="a" href="#" rel="home">
-        <VisuallyHidden>Envelope</VisuallyHidden>
+        <VisuallyHidden>API7</VisuallyHidden>
         <Logo />
       </Box>
       <HStack as="ul" id="nav__primary-menu" aria-label="Main Menu" listStyleType="none">

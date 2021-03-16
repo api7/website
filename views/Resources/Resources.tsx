@@ -3,9 +3,6 @@ import { NextPage } from "next";
 import { TFunction } from "next-i18next";
 import { NextSeo } from "next-seo";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-
 import { withTranslation } from "../../i18n";
 import { SWrapper } from "./style";
 import data from "../../data/devcon.json";
@@ -34,7 +31,6 @@ const Resources: NextPage<Props, any> = ({ t, list = [] }) => {
     <SWrapper>
       <NextSeo title="Apache APISIX Devcon 2020" />
       <div>
-        <Navbar />
         <div className="cover">
           <div className="box"><h1>Apache APISIX Devcon 2020</h1></div>
         </div>
@@ -62,7 +58,6 @@ const Resources: NextPage<Props, any> = ({ t, list = [] }) => {
             </ul>
           </div>
         </section>
-        <Footer />
       </div>
     </SWrapper>
   );
