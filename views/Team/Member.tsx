@@ -9,7 +9,7 @@ import {
   VisuallyHidden,
 } from '@chakra-ui/react'
 import * as React from 'react'
-import { FaLinkedinIn, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 interface Props {
   image: string
@@ -17,11 +17,12 @@ interface Props {
   role: string
   twitter?: string
   linkedIn?: string
+  github?: string
   children: React.ReactNode
 }
 
 export const Member = (props: Props) => {
-  const { image, name, role, twitter, linkedIn, children } = props
+  const { image, name, role, twitter, linkedIn, github, children } = props
   return (
     <Flex direction="column" align="center" textAlign="center">
       <Img alt={name} w="40" h="40" rounded="full" objectFit="cover" src={image} />
@@ -41,14 +42,24 @@ export const Member = (props: Props) => {
         {children}
       </Text>
       <HStack mt="5" spacing="3">
-        <Link isExternal color={useColorModeValue('blue.600', 'blue.300')} href={twitter}>
-          <VisuallyHidden>{`${name}'s Twitter page`}</VisuallyHidden>
-          <FaTwitter aria-hidden />
-        </Link>
-        <Link isExternal color={useColorModeValue('blue.600', 'blue.300')} href={linkedIn}>
-          <VisuallyHidden>{`${name}'s Linkedin page`}</VisuallyHidden>
-          <FaLinkedinIn aria-hidden />
-        </Link>
+        {twitter && (
+          <Link isExternal color={useColorModeValue('blue.600', 'blue.300')} href={twitter}>
+            <VisuallyHidden>{`${name}'s Twitter page`}</VisuallyHidden>
+            <FaTwitter aria-hidden />
+          </Link>
+        )}
+        {linkedIn && (
+          <Link isExternal color={useColorModeValue('blue.600', 'blue.300')} href={linkedIn}>
+            <VisuallyHidden>{`${name}'s Linkedin page`}</VisuallyHidden>
+            <FaLinkedinIn aria-hidden />
+          </Link>
+        )}
+        {github && (
+          <Link isExternal color={useColorModeValue('blue.600', 'blue.300')} href={github}>
+            <VisuallyHidden>{`${name}'s GitHub page`}</VisuallyHidden>
+            <FaGithub aria-hidden />
+          </Link>
+        )}
       </HStack>
     </Flex>
   )

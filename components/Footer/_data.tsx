@@ -54,8 +54,11 @@ export const links: LinkGroupData[] = [
     title: "公司",
     links: [
       {
-        label: "关于我们",
+        label: "公司介绍",
         href: "/about"
+      }, {
+        label: "团队成员",
+        href: "/team"
       }, {
         label: "工作机会",
         href: "/careers"

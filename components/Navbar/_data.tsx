@@ -15,6 +15,10 @@ export interface Link {
 
 export const links: Link[] = [
   {
+    label: "新闻报道",
+    href: "/news"
+  },
+  {
     label: "开源项目",
     children: [
       {
@@ -86,8 +90,8 @@ export const links: Link[] = [
     ],
   },
   {
-    label: "新闻报道",
-    href: "/news"
+    label: "团队成员",
+    href: "/team"
   },
   {
     label: "工作机会",

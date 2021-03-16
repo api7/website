@@ -13,11 +13,10 @@ export const App = () => (
     >
       <Box textAlign="center">
         <Heading size="3xl" letterSpacing="tight" mb="5" fontWeight="extrabold">
-          About the team
+          团队成员
         </Heading>
         <Text fontSize="xl" maxW="2xl" mx="auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          支流科技成立于2019年，团队成员热爱开源、技术背景深厚。
         </Text>
       </Box>
       <SimpleGrid mt="20" columns={{ base: 1, md: 2, lg: 3 }} spacingX="6" spacingY="16">
@@ -27,8 +26,9 @@ export const App = () => (
             role={member.role}
             image={member.image}
             name={member.name}
-            twitter="#"
-            linkedIn="#"
+            twitter={member.twitter}
+            linkedIn={member.linkedin}
+            github={member.github}
           >
             {member.description}
           </Member>
