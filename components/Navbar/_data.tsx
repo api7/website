@@ -23,7 +23,7 @@ export const links: Link[] = [
     children: [
       {
         label: "Apache APISIX",
-        href: "https://github.com/apache/apisix",
+        href: "http://apisix.apache.org/",
         description: "高性能、可扩展的微服务 API 网关",
         icon: <IoHelpBuoy />
       }, {
