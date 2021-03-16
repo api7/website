@@ -1,50 +1,67 @@
 import {
   Box,
+  Button,
   Center,
-  Grid,
   Heading,
+  Img,
   Stack,
-  StackProps,
   Text,
-  Image,
   useColorModeValue as mode,
 } from '@chakra-ui/react'
 import * as React from 'react'
-import { SampleLogo } from './SampleLogo'
-import { Testimonial } from './Testimonial'
+import { FaArrowRight } from 'react-icons/fa'
 
-const App = () => {
+export const App = () => {
   return (
-    <Box as="section" py="24" bg={mode('gray.100', 'gray.800')}>
+    <Box as="section" bg={mode('gray.100', 'gray.800')} py="20">
       <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
-        <Grid templateColumns={{ base: '1fr', md: '360px 1fr' }} gap="64px">
-          <Box>
-            <Heading size="2xl" letterSpacing="tight" fontWeight="extrabold">
+        <Stack spacing={{ base: '4', lg: '20' }} direction={{ base: 'column', lg: 'row' }}>
+          <Box maxW={{ lg: 'lg' }}>
+            <Heading
+              size="2xl"
+              mt="10"
+              fontWeight="extrabold"
+              letterSpacing="tight"
+              lineHeight="normal"
+            >
               低代码 API 网关
             </Heading>
-
-            <Testimonial
-              logo={<SampleLogo />}
-              author="Susan Mana"
-              company="Executive director"
-              image="https://images.unsplash.com/photo-1531078215167-91fcfe45b39e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2598&q=80"
+            <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')} textAlign="justify">
+              企业需求千差万别，不用二次开发的 API 网关才是根本的解决之道。从开发工程师，到运维、测试、安全工程师，甚至产品经理，都可以让 Apache APISIX 的 40 多个插件协同合作，创造属于自己的接入层。
+            </Text>
+            <Button
+              className="group"
+              mt="8"
+              colorScheme="blue"
+              size="lg"
+              px="8"
+              fontWeight="bold"
+              h="14"
+              iconSpacing="3"
+              rightIcon={
+                <Box
+                  as={FaArrowRight}
+                  fontSize="sm"
+                  transition="transform 0.2s"
+                  _groupHover={{ transform: 'translateX(2px)' }}
+                />
+              }
             >
-              &ldquo; 企业需求千差万别，不用二次开发的 API 网关才是根本的解决之道。<br />从开发工程师，到运维、测试、安全工程师，甚至产品经理，都可以让 Apache APISIX 的 40 多个插件协同合作，创造属于自己的接入层 &rdquo;
-            </Testimonial>
+              了解更多
+            </Button>
           </Box>
-          <Box>
-            <Center
-              bg={mode('white', 'gray.700')}
-              shadow="lg"
-              minH={{ base: '320px', lg: '480px' }}
-              rounded="lg"
-            >
-              <Box>
-                <Image src="https://static.apiseven.com/low-code-api-gateway-example-zh-CN.gif" />
-              </Box>
-            </Center>
-          </Box>
-        </Grid>
+          <Center flex="1" shadow="lg" minH="26rem" maxW={{ lg: 'xl' }}>
+            <Img
+              objectFit="contain"
+              w="full"
+              h="full"
+              htmlWidth="576px"
+              htmlHeight="420px"
+              src="https://static.apiseven.com/low-code-api-gateway-example-zh-CN.gif"
+              alt="低代码 API 网关"
+            />
+          </Center>
+        </Stack>
       </Box>
     </Box>
   )

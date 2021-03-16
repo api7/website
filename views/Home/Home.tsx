@@ -58,8 +58,8 @@ const Home: NextPage<Props, any> = ({ t }) => {
       <NextSeo title={t("common:homepage")} />
 
       <HomeHero />
-      <HomeFeature3 />
       <HomeFeature2 />
+      <HomeFeature3 />
       <HomeFeature5 />
       <HomeFeature4 />
       <HomeCTA />
