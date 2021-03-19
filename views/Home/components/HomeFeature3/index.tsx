@@ -10,7 +10,6 @@ import {
 import { NextPage } from 'next'
 import * as React from 'react'
 import { TFunction } from "next-i18next";
-import { I18nContext } from "react-i18next";
 import { withTranslation } from 'i18n';
 
 type Props = {

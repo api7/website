@@ -6,7 +6,7 @@ import { I18nContext } from "react-i18next";
 
 import { EN_US_data, ZH_CN_data } from './_data'
 import { BlogCard } from './BlogCard'
-import { withTranslation } from '../../i18n'
+import { withTranslation } from '../../../../i18n'
 
 type Props = {
   t: TFunction;

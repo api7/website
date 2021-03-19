@@ -4,14 +4,14 @@ import { TFunction } from "next-i18next";
 import { I18nContext } from "react-i18next";
 import { NextPage } from "next";
 
-import HomeFeature2 from '@/components/HomeFeature2'
-import HomeFeature3 from '@/components/HomeFeature3'
-import HomeFeature4 from '@/components/HomeFeature4'
-import HomeFeature5 from '@/components/HomeFeature5'
-import HomeHero from '@/components/HomeHero'
+import HomeFeature2 from './components/HomeFeature2'
+import HomeFeature3 from './components/HomeFeature3'
+import HomeFeature4 from './components/HomeFeature4'
+import HomeFeature5 from './components/HomeFeature5'
+import HomeHero from './components/HomeHero'
 
 import { withTranslation } from "../../i18n";
-import HomeCTA from "@/components/HomeCTA";
+import HomeCTA from "@/views/Home/components/HomeCTA";
 
 type Props = {
   t: TFunction;

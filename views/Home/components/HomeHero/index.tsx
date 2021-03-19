@@ -13,7 +13,7 @@ import { TFunction } from 'next-i18next';
 import * as React from 'react'
 import { I18nContext } from "react-i18next";
 
-import { SubscribeForm } from '../SubscribeForm'
+import { SubscribeForm } from '@/components/SubscribeForm'
 
 type Props = {
   t: TFunction;

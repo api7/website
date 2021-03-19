@@ -7,7 +7,7 @@ import { NextPage } from 'next'
 import { TFunction } from "next-i18next";
 
 import { Stat } from './Stat'
-import { withTranslation } from '../../i18n'
+import { withTranslation } from '../../../../i18n'
 
 type Props = {
   t: TFunction;
