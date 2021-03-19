@@ -1,10 +1,7 @@
 {
-    "career-block1-title": "Apache APISIX,",
-    "career-block1-desc": "Congratulations to Apache APISIX for becoming a TLP of the ASF",
-    "career-text1": "View more",
     "career-card-name": "Engineer",
     "career-card-name2": "Growth",
-    "career-card-title1": "Technical Support Engineer (base in Shanghai)",
+    "career-card-title1": "Technical Support Engineer",
     "career-card-desc1": "Provide after-sales technical support for API gateway products and solutions such as Apache APISIX, APISEVEN, etc. to resolve user issues and ensure stable operation of the system.",
     "career-text2": "View details",
     "career-card-title2": "Senior Nginx Development Engineer",
@@ -12,5 +9,15 @@
     "career-card-title3": "Senior R&D Engineer",
     "career-card-desc3": "Development of the next-generation API management and analysis platform based on Apache APISIX.",
     "career-card-title4": "Go Development Engineer",
-    "career-card-desc4": "Responsible for the design and architecture of the Apache APISIX control plane."
+    "career-card-desc4": "Responsible for the design and architecture of the Apache APISIX control plane.",
+    "career-card-title5": "Head of Growth",
+    "career-card-desc5": "Growthing of open source communities and company commercial products.",
+    "career-card-title6": "Server Development Engineer (Internship)",
+    "career-card-desc6": "Complete development tasks for Apache APISIX and surrounding open source projects.",
+    "career-card-title7": "Head of Developer Relations and Ecology",
+    "career-card-desc7": "Connect with members of the open source community in a variety of ways, whether face-to-face, blogs, forums, or other social channels and events.",
+    "career-card-title8": "Technical Writer",
+    "career-card-desc8": "Responsible for the planning, writing and maintenance of the company's product user manuals, operation manuals and other related content.",
+    "career-card-title9": "Customer Success Architect",
+    "career-card-desc9": "Extensive experience in software development and operations and maintenance related work."
 }

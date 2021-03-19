@@ -5,8 +5,8 @@
   "showcases": "用户案例",
   "commercial-products-and-support": "商业产品和支持",
   "business-support": "商业支持",
-  "trial": "API7 预约演示",
   "job": "工作机会",
+  "trial": "预约演示",
   "createdAt": "创建时间",
   "updatedAt": "更新时间",
   "notFound": "找不到该资源",
@@ -18,5 +18,8 @@
   "blog": "博客",
   "usercase": "用户案例",
   "news": "新闻报道",
-  "about": "公司介绍"
+  "about": "关于我们",
+  "help": "获取帮助",
+  "resources": "资源",
+  "contributor-graph": "贡献者趋势"
 }

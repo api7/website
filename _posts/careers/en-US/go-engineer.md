@@ -2,6 +2,7 @@
 title: Go Engineer
 date: 2020-10-17 15:03:00
 ---
+
 ### Content
 
 1. Responsible for the design and architecture of the Apache APISIX control plane;
@@ -14,6 +15,9 @@ date: 2020-10-17 15:03:00
 2. Good coding habits, comfortable with test-driven development;
 3. Good English literacy skills;
 4. Contributors to open source projects preferred.
+
+### Additional
+We're a remote work company with employees in 6 cities across China, and we do all of our collaboration through GitHub, Slack and Google Docs.
 
 ### Contact
 

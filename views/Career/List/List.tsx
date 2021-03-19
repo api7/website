@@ -25,26 +25,26 @@ type Props = {
 const CareerList: NextPage<Props, any> = ({ t }) => {
   const list = [
     {
-      title: "客户成功架构师",
-      description: "有丰富的软件开发和运维相关工作经验。",
+      title: t("career-card-title9"),
+      description: t("career-card-desc9"),
       href: "/careers/customer-success-architect",
       type: t("career-card-name2")
     },
     {
-      title: "技术文档工程师",
-      description: "负责公司产品用户手册、操作手册等相关内容的策划编写及维护。",
+      title: t("career-card-title8"),
+      description: t("career-card-desc8"),
       href: "/careers/technical-writer",
       type: t("career-card-name2")
     },
     {
-      title: "开发者关系和生态负责人",
-      description: "与开源社区成员进行各种联系，无论是面对面、博客、论坛，还是其他社交渠道和活动。",
+      title: t("career-card-title7"),
+      description: t("career-card-desc7"),
       href: "/careers/head-of-developer-relations-and-ecology",
       type: t("career-card-name2")
     },
     {
-      title: "服务端开发工程师（实习）",
-      description: "完成 Apache APISIX 以及周边开源项目的开发任务。",
+      title: t("career-card-title6"),
+      description: t("career-card-desc6"),
       href: "/careers/server-development-engineer",
       type: t("career-card-name")
     },
@@ -89,16 +89,9 @@ const CareerList: NextPage<Props, any> = ({ t }) => {
             <div className="background-overlay"></div>
             <div className="container">
               <div className="row">
-                <h2 className="heading-title">
-                  {t("career-block1-title")}
-                  <br /> {t("career-block1-desc")}
-                </h2>
                 <div className="button-wrapper">
                   <a href="#courses" className="elementor-button" role="button">
                     {" "}
-                    <span className="elementor-button-content-wrapper">
-                      {t("career-text1")}
-                    </span>
                   </a>
                 </div>
               </div>

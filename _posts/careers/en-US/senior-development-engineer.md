@@ -16,6 +16,9 @@ date: 2020-10-19 13:19:00
 3. Good English literacy skills;
 4. Contributors to open source projects preferred;
 
+### Additional
+We're a remote work company with employees in 6 cities across China, and we do all of our collaboration through GitHub, Slack and Google Docs.
+
 ### Contact
 
 [wenming@api7.ai](mailto:wenming@api7.ai)
