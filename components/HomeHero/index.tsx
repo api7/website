@@ -7,10 +7,23 @@ import {
   Text,
   useColorModeValue as mode,
 } from '@chakra-ui/react'
+import { withTranslation } from 'i18n';
+import { NextPage } from 'next';
+import { TFunction } from 'next-i18next';
 import * as React from 'react'
+import { I18nContext } from "react-i18next";
+
 import { SubscribeForm } from '../SubscribeForm'
 
-const App = () => {
+type Props = {
+  t: TFunction;
+};
+
+const App: NextPage<Props, any> = ({ t }) => {
+  const {
+    i18n: { language },
+  } = React.useContext(I18nContext);
+
   return (
     <Box as="section" bg={mode('gray.50', 'gray.800')} pt="24" pb="12" overflow="hidden">
       <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
@@ -23,12 +36,12 @@ const App = () => {
         >
           <Box flex="1" maxW={{ lg: '2xl' }} pt="10">
             <Heading as="h1" size="3xl" mt="8" fontWeight="extrabold">
-              Drive enterprise digital transformation
+              {t("home-block1-title")}
             </Heading>
             <Text color={mode('gray.600', 'gray.400')} mt="25" fontSize="xl">
-              Manage and visualize enterprise-critical business traffic such as APIs and microservices to accelerate enterprise business decisions through big data and artificial intelligence (AI)
+              {t("home-block1-desc")}
             </Text>
-            <SubscribeForm />
+            <SubscribeForm language={language} />
           </Box>
         </Stack>
       </Box>
@@ -56,4 +69,8 @@ const App = () => {
   )
 }
 
-export default App
+App.getInitialProps = async () => ({
+  namespacesRequired: ["common", "home"],
+});
+
+export default withTranslation("home")(App);

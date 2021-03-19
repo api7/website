@@ -14,9 +14,14 @@ import { NavLink } from './NavLink'
 import { NavMenu } from './NavMenu'
 import { Submenu } from './Submenu'
 import { ToggleButton } from './ToggleButton'
-import { links } from './_data'
+import { Link } from './_data'
 
-const MobileNavContext = (props: FlexProps) => {
+type Props = FlexProps & {
+  links: Link[];
+  language?: string
+}
+
+const MobileNavContext = ({ links, language, ...props }: Props) => {
   const { isOpen, onToggle } = useDisclosure()
   return (
     <>
@@ -29,7 +34,7 @@ const MobileNavContext = (props: FlexProps) => {
         </Box>
         <Box visibility={{ base: 'hidden', sm: 'visible' }}>
           <Button as="a" colorScheme="blue">
-            Get Started
+            {language === 'zh-CN' ? '立即开始' : 'Get Started'}
           </Button>
         </Box>
       </Flex>
@@ -43,15 +48,15 @@ const MobileNavContext = (props: FlexProps) => {
             </NavLink.Mobile>
           ),
         )}
-        <Button colorScheme="blue" w="full" size="lg" mt="5">
-          Request Demo
+        <Button as="a" href="/form-api7-trial" colorScheme="blue" w="full" size="lg" mt="5">
+          {language === 'zh-CN' ? '预约演示' : 'Request Demo'}
         </Button>
       </NavMenu>
     </>
   )
 }
 
-const DesktopNavContent = (props: FlexProps) => {
+const DesktopNavContent = ({ links, language, ...props }: Props) => {
   return (
     <Flex className="nav-content__desktop" align="center" justify="space-between" {...props}>
       <Box as="a" href="#" rel="home">
@@ -70,8 +75,8 @@ const DesktopNavContent = (props: FlexProps) => {
         ))}
       </HStack>
       <HStack spacing="8" minW="240px" justify="space-between">
-        <Button as="a" href="#" colorScheme="blue" fontWeight="bold">
-          Request Demo
+        <Button as="a" href="/form-api7-trial" colorScheme="blue" fontWeight="bold">
+          {language === 'zh-CN' ? '预约演示' : 'Request Demo'}
         </Button>
       </HStack>
     </Flex>

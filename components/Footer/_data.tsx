@@ -11,7 +11,7 @@ export interface LinkGroupData {
   }>
 }
 
-export const links: LinkGroupData[] = [
+export const EN_US_links: LinkGroupData[] = [
   {
     title: "Product",
     links: [
@@ -76,6 +76,80 @@ export const links: LinkGroupData[] = [
         href: "#"
       }, {
         label: "Building 2, Hangzhou Fortune Financial Center",
+        href: "#"
+      }, {
+        label: "wenming@api7.ai",
+        href: "mailto:wenming@api7.ai"
+      }
+    ]
+  },
+]
+
+export const ZH_CN_links: LinkGroupData[] = [
+  {
+    title: "产品",
+    links: [
+      {
+        label: "API 网关",
+        href: "http://apisix.apache.org/",
+        badge: (
+          <Badge colorScheme="blue" variant="solid" fontSize="0.625rem">
+            Hot
+          </Badge>
+        ),
+      }, {
+        label: "k8s Ingress Controller",
+        href: "https://github.com/apache/apisix-ingress-controller",
+      }, {
+        label: "服务网格",
+        href: "#"
+      }
+    ]
+  },
+  {
+    title: "相关资源",
+    links: [
+      {
+        label: "用户案例",
+        href: "/usercases"
+      }, {
+        label: "技术博客",
+        href: "/blog"
+      }, {
+        label: "开发者大会",
+        href: "/resources/apisix-devcon-2020"
+      }, , {
+        label: "产品文档",
+        href: "#"
+      }
+    ]
+  },
+  {
+    title: "支流科技",
+    links: [
+      {
+        label: "关于我们",
+        href: "/about"
+      }, {
+        label: "团队成员",
+        href: "/team"
+      }, {
+        label: "工作机会",
+        href: "/careers"
+      }, {
+        label: "新闻报道",
+        href: "/news"
+      }
+    ]
+  },
+  {
+    title: "联系我们",
+    links: [
+      {
+        label: "深圳软件产业基地 5E 座",
+        href: "#"
+      }, {
+        label: "杭州财富金融中心 2 幢 46 楼",
         href: "#"
       }, {
         label: "wenming@api7.ai",

@@ -7,7 +7,11 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 
-export const SubscribeForm = () => (
+type Props = {
+  language: string
+}
+
+export const SubscribeForm: React.FC<Props> = ({ language }) => (
   <form id="subscribe-form" method="post" action="https://tinyletter.com/api7">
     <Box mt="8" display={{ md: 'flex' }} maxW="xl">
       <FormControl id="email" marginEnd="-1px">
@@ -16,7 +20,7 @@ export const SubscribeForm = () => (
           mb={{ base: '2', lg: '0' }}
           flex="1"
           bg={mode('white', 'gray.900')}
-          placeholder="Work email"
+          placeholder={language === 'zh-CN' ? '请输入您的邮箱' : 'Work email'}
           type="email"
           id="email"
           name="email"
@@ -33,7 +37,7 @@ export const SubscribeForm = () => (
         letterSpacing="wide"
         type="submit"
       >
-        Subscribe
+        {language === "zh-CN" ? '立即订阅' : 'Subscribe'}
       </Button>
     </Box>
   </form>

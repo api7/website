@@ -13,7 +13,7 @@ export interface Link {
   }>
 }
 
-export const links: Link[] = [
+export const EN_US_Links: Link[] = [
   {
     label: 'Blog',
     href: '/blog',
@@ -112,4 +112,105 @@ export const links: Link[] = [
       }
     ]
   },
+]
+
+export const ZH_CN_Links: Link[] = [
+  {
+    label: '技术博客',
+    href: '/blog',
+  },
+  {
+    label: "开源项目",
+    children: [
+      {
+        label: "Apache APISIX",
+        href: "http://apisix.apache.org/",
+        description: "高性能、可扩展的微服务 API 网关",
+        icon: <IoHelpBuoy />
+      }, {
+        label: "Apache APISIX Ingress Controller",
+        href: "https://github.com/apache/apisix-ingress-controller",
+        description: "基于 Apache APISIX 并集成 Kubernetes 集群管理能力，支持申明式动态配置入口流量的分发规则。",
+        icon: <IoHelpBuoy />
+      }, {
+        label: "Service Mesh",
+        href: "#",
+        description: "敬请期待",
+        icon: <IoHelpBuoy />
+      }
+    ]
+  },
+
+  {
+    label: '相关资源',
+    children: [
+      {
+        label: '用户案例',
+        description: '阅读全球领先企业与深圳支流科技产品的故事',
+        href: '/usercases',
+        icon: <IoGrid />,
+      },
+      {
+        label: '开发者大会',
+        description: '观看 Apache APISIX DevCon 2020 大会录像',
+        href: '/resources/apisix-devcon-2020',
+        icon: <IoCalendar />,
+      },
+      {
+        label: '产品文档',
+        description: '敬请期待',
+        href: '#',
+        icon: <IoHelpBuoy />,
+      },
+    ],
+  }, {
+    label: "商业支持",
+    children: [
+      {
+        label: '商业支持',
+        description: '获取 API7 产品商业支持内容',
+        href: '/business-support',
+        icon: <IoGrid />,
+      }, {
+        label: '预约演示',
+        description: '联系我们，预约产品演示。',
+        href: '/form-api7-trial',
+        icon: <IoCalendar />,
+      }, {
+        label: "Apache APISIX vs API7",
+        href: "/apisix-vs-api7",
+        description: "产品能力、商业支持对比",
+        icon: <IoHelpBuoy />
+      }
+    ]
+  },
+  {
+    label: '支流科技',
+    children: [
+      {
+        label: '关于我们',
+        description: '关于深圳支流科技',
+        href: '/about',
+        icon: <MdWeb />,
+      },
+      {
+        label: "新闻报道",
+        description: "获取支流科技新闻报道",
+        href: "/news",
+        icon: <MdWeb />
+      },
+      {
+        label: '团队成员',
+        description: '',
+        href: '/team',
+        icon: <MdWeb />,
+      },
+      {
+        label: '工作机会',
+        description: '与我们一起构建云原生产品',
+        href: '/careers',
+        icon: <MdWeb />,
+      },
+    ],
+  }
 ]

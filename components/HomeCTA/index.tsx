@@ -1,7 +1,16 @@
 import { Box, Button, Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react'
-import * as React from 'react'
+import React, { useContext } from "react";
+import { NextSeo } from "next-seo";
+import { TFunction } from "next-i18next";
+import { I18nContext } from "react-i18next";
+import { NextPage } from "next";
+import { withTranslation } from 'i18n';
 
-const App = () => {
+type Props = {
+  t: TFunction;
+};
+
+const App: NextPage<Props, any> = ({ t }) => {
   return (
     <Box as="section">
       <Box
@@ -12,7 +21,7 @@ const App = () => {
         textAlign="center"
       >
         <Text fontWeight="semibold" color={useColorModeValue('blue.600', 'blue.200')}>
-          We support flexible billing options
+          {t("home-text25")}
         </Text>
         <Heading
           my="4"
@@ -22,18 +31,19 @@ const App = () => {
           letterSpacing="tight"
           lineHeight="1.2"
         >
-          Empower your products with{' '}
+          {t("home-text26")}{' '}
           <Box
             as="mark"
             bg="unset"
             color={useColorModeValue('blue.600', 'blue.200')}
             whiteSpace="nowrap"
           >
-            API7
+            {t("home-text27")}
           </Box>
+          {t("home-text28")}
         </Heading>
         <Text fontSize="lg" maxW="xl" mx="auto">
-          Flexible and reliable Enterprise API gateways will serve as your traffic management platform, reducing generic component development and securing your business stability.
+          {t("home-text31")}
         </Text>
         <Stack
           direction={{ base: 'column', sm: 'row' }}
@@ -53,7 +63,7 @@ const App = () => {
             fontWeight="bold"
             flex={{ md: '1' }}
           >
-            Request Demo
+            {t("home-text29")}
           </Button>
           <Button
             as="a"
@@ -65,7 +75,7 @@ const App = () => {
             px="10"
             fontWeight="bold"
           >
-            Talk with API Expert
+            {t("home-text30")}
           </Button>
         </Stack>
       </Box>
@@ -73,4 +83,9 @@ const App = () => {
   )
 }
 
-export default App
+App.getInitialProps = async () => ({
+  namespacesRequired: ["common", "home"],
+});
+
+export default withTranslation("home")(App);
+

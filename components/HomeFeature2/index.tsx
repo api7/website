@@ -8,10 +8,21 @@ import {
   Text,
   useColorModeValue as mode,
 } from '@chakra-ui/react'
+import { withTranslation } from 'i18n'
 import * as React from 'react'
-import { FaArrowRight } from 'react-icons/fa'
+import { I18nContext, TFunction } from "next-i18next";
+import { NextPage } from "next";
 
-export const App = () => {
+type Props = {
+  t: TFunction;
+};
+
+const App: NextPage<Props, any> = ({ t }) => {
+  const {
+    i18n: {
+      language
+    }
+  } = React.useContext(I18nContext)
   return (
     <Box as="section" bg={mode('gray.100', 'gray.800')} py="20">
       <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
@@ -24,10 +35,10 @@ export const App = () => {
               letterSpacing="tight"
               lineHeight="normal"
             >
-              Low-Code API Gateway
+              {t("home-text23")}
             </Heading>
             <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')} textAlign="justify">
-              Low-code API gateway, processing traffic faster and more efficiently. From Developers to Operations, Quality Assurance and Security, and even PM, more than 40 plugins of Apache APISIX can work together to create your own plugin.
+              {t("home-text24")}
             </Text>
             {/* <Button
               className="group"
@@ -57,7 +68,7 @@ export const App = () => {
               h="full"
               htmlWidth="576px"
               htmlHeight="420px"
-              src="https://static.apiseven.com/low-code-api-gateway-example-zh-CN.gif"
+              src={`https://static.apiseven.com/low-code-api-gateway-example-${language}.gif`}
               alt="Low-Code API Gateway"
             />
           </Center>
@@ -67,4 +78,8 @@ export const App = () => {
   )
 }
 
-export default App
+App.getInitialProps = async () => ({
+  namespacesRequired: ["common", "home"],
+});
+
+export default withTranslation("home")(App);

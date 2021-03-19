@@ -14,7 +14,7 @@ import { I18nContext } from "react-i18next";
 
 import { Logo } from '../Logo'
 import { SocialLink } from './SocialLink'
-import { links, socialLinks } from './_data'
+import { EN_US_links, ZH_CN_links, socialLinks } from './_data'
 import { LinkGroup } from './LinkGroup'
 import { SubscribeForm } from '../SubscribeForm'
 import { withTranslation } from "../../i18n";
@@ -27,6 +27,8 @@ const App: NextPage<Props, any> = ({ t }) => {
   const {
     i18n: { language },
   } = useContext(I18nContext);
+
+  const links = language === "zh-CN" ? ZH_CN_links : EN_US_links
 
   return (
     <Box as="footer" bg={mode('gray.50', 'gray.800')}>
@@ -64,12 +66,16 @@ const App: NextPage<Props, any> = ({ t }) => {
             mt={{ base: '12', lg: 0 }}
           >
             <Text casing="uppercase" mb={{ base: 6, lg: 10 }} fontWeight="bold" letterSpacing="wide">
-              Subscribe
+              {
+                language === 'zh-CN' ? '邮件订阅' : 'Subscribe'
+              }
             </Text>
             <Text lineHeight="tall">
-              Get Overflow resources and curated content delivered straight into your inbox. Be the first to learn the news about new features and product updates.
+              {
+                language === 'zh-CN' ? '订阅深圳支流科技邮件列表，及时获得产品最新动态与相关资源。' : 'Get Overflow resources and curated content delivered straight into your inbox. Be the first to learn the news about new features and product updates.'
+              }
             </Text>
-            <SubscribeForm />
+            <SubscribeForm language={language} />
           </Box>
         </Flex>
 
@@ -100,7 +106,13 @@ const App: NextPage<Props, any> = ({ t }) => {
             </HStack>
           </Stack>
           <Box>
-            <Text>Copyright &copy;Zhiliu Technology {new Date().getFullYear()}. All rights reserved.</Text>
+            {
+              language === 'zh-CN' ? (
+                <Text>版权所有 &copy; {new Date().getFullYear()} 深圳支流科技有限公司 保留一切权利</Text>
+              ) : (
+                <Text>Copyright &copy;Zhiliu Technology {new Date().getFullYear()}. All rights reserved.</Text>
+              )
+            }
             {
               language === 'zh-CN' && (
                 <Text mt="2">

@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Center,
   Heading,
   Img,
@@ -8,10 +7,17 @@ import {
   Text,
   useColorModeValue as mode,
 } from '@chakra-ui/react'
+import { NextPage } from 'next'
 import * as React from 'react'
-import { FaArrowRight } from 'react-icons/fa'
+import { TFunction } from "next-i18next";
+import { I18nContext } from "react-i18next";
+import { withTranslation } from 'i18n';
 
-export const App = () => {
+type Props = {
+  t: TFunction;
+};
+
+const App: NextPage<Props, any> = ({ t }) => {
   return (
     <Box as="section" bg={mode('gray.100', 'gray.800')} py="20">
       <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
@@ -24,7 +30,7 @@ export const App = () => {
               htmlWidth="576px"
               htmlHeight="420px"
               src="https://static.apiseven.com/2020/05/1594881772-Canvas-1.png"
-              alt="下一代云原生 API 管理平台"
+              alt={t("home-text21")}
             />
           </Center>
           <Box maxW={{ lg: 'lg' }}>
@@ -35,10 +41,10 @@ export const App = () => {
               letterSpacing="tight"
               lineHeight="normal"
             >
-              Next Generation Cloud Native API Management Platform
+              {t("home-block5-title")}
             </Heading>
             <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')}>
-              Supports hybrid cloud, multi-data center, Kubernetes and other deployment methods to help you process business data quickly and securely, and scale dynamically.
+              {t("home-block5-desc")}
             </Text>
             {/* <Button
               className="group"
@@ -67,4 +73,8 @@ export const App = () => {
   )
 }
 
-export default App
+App.getInitialProps = async () => ({
+  namespacesRequired: ["common", "home"],
+});
+
+export default withTranslation("home")(App);
