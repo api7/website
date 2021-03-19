@@ -85,18 +85,6 @@ const CareerList: NextPage<Props, any> = ({ t }) => {
       <NextSeo title={t("common:job")} />
       <div className="wrapper default">
         <div className="elementor-section-wrap">
-          <SSection1>
-            <div className="background-overlay"></div>
-            <div className="container">
-              <div className="row">
-                <div className="button-wrapper">
-                  <a href="#courses" className="elementor-button" role="button">
-                    {" "}
-                  </a>
-                </div>
-              </div>
-            </div>
-          </SSection1>
           <SSection2>
             <div className="widget-wrap">
               <div id="courses" className="menu-anchor"></div>

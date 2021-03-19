@@ -7,8 +7,12 @@ import {
   useDisclosure,
   VisuallyHidden,
   useColorModeValue as mode,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
 } from '@chakra-ui/react'
-import * as React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Logo } from '@/components/Logo'
 import { NavLink } from './NavLink'
 import { NavMenu } from './NavMenu'
@@ -23,6 +27,15 @@ type Props = FlexProps & {
 
 const MobileNavContext = ({ links, language, ...props }: Props) => {
   const { isOpen, onToggle } = useDisclosure()
+
+  const [zhLang, setZhLang] = useState("/zh");
+  const [enLang, setEnLang] = useState("/en");
+
+  useEffect(() => {
+    setEnLang(location.pathname.replace("/zh", "/en"));
+    setZhLang(location.pathname.replace("/en", "/zh"));
+  }, []);
+
   return (
     <>
       <Flex align="center" justify="space-between" className="nav-content__mobile" {...props}>
@@ -51,12 +64,30 @@ const MobileNavContext = ({ links, language, ...props }: Props) => {
         <Button as="a" href="/form-api7-trial" colorScheme="blue" w="full" size="lg" mt="5">
           {language === 'zh-CN' ? '预约演示' : 'Request Demo'}
         </Button>
+
+        <Menu>
+          <MenuButton width="full" as={Button} mt="2">
+            {language === 'zh-CN' ? 'English' : '简体中文'}
+          </MenuButton>
+          <MenuList>
+            <MenuItem as="a" href={zhLang}>简体中文</MenuItem>
+            <MenuItem as="a" href={enLang}>English</MenuItem>
+          </MenuList>
+        </Menu>
       </NavMenu>
     </>
   )
 }
 
 const DesktopNavContent = ({ links, language, ...props }: Props) => {
+  const [zhLang, setZhLang] = useState("/zh");
+  const [enLang, setEnLang] = useState("/en");
+
+  useEffect(() => {
+    setEnLang(location.pathname.replace("/zh", "/en"));
+    setZhLang(location.pathname.replace("/en", "/zh"));
+  }, []);
+
   return (
     <Flex className="nav-content__desktop" align="center" justify="space-between" {...props}>
       <Box as="a" href="#" rel="home">
@@ -78,6 +109,16 @@ const DesktopNavContent = ({ links, language, ...props }: Props) => {
         <Button as="a" href="/form-api7-trial" colorScheme="blue" fontWeight="bold">
           {language === 'zh-CN' ? '预约演示' : 'Request Demo'}
         </Button>
+
+        <Menu>
+          <MenuButton as={Button}>
+            {language === 'zh-CN' ? 'English' : '简体中文'}
+          </MenuButton>
+          <MenuList>
+            <MenuItem as="a" href={zhLang}>简体中文</MenuItem>
+            <MenuItem as="a" href={enLang}>English</MenuItem>
+          </MenuList>
+        </Menu>
       </HStack>
     </Flex>
   )
