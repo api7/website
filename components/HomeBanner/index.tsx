@@ -1,12 +1,19 @@
 import { Box, IconButton, Text } from '@chakra-ui/react'
-import * as React from 'react'
 import { HiX } from 'react-icons/hi'
+import { withTranslation } from 'i18n'
+import React from "react";
+import { TFunction } from "next-i18next";
+import { NextPage } from "next";
 
-const App = () => {
+type Props = {
+  t: TFunction;
+};
+
+const App: NextPage<Props, any> = ({ t }) => {
   return (
     <Box as="header" bgGradient="linear(to-r, blue.500, purple.500)" color="white" py="2">
       <Text px="10" align={{ base: 'start', md: 'center' }} fontSize="sm" position="relative">
-        <b>Apache APISIX Ingress Controller donated to the ASF</b>
+        <b>{t("text4")}</b>
         <Box
           as="a"
           href="https://github.com/apache/apisix-ingress-controller"
@@ -21,7 +28,7 @@ const App = () => {
           rounded="sm"
           whiteSpace="nowrap"
         >
-          Learn More
+          {t("text5")}
         </Box>
         <IconButton
           position={{ base: 'absolute', md: 'relative' }}
@@ -39,4 +46,8 @@ const App = () => {
   )
 }
 
-export default App
+App.getInitialProps = async () => ({
+  namespacesRequired: ["common"],
+});
+
+export default withTranslation("common")(App);

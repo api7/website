@@ -1,12 +1,20 @@
 import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/react'
+import { withTranslation } from 'i18n'
 import { NextSeo } from 'next-seo'
-import * as React from 'react'
+import React from "react";
+import { TFunction } from "next-i18next";
+import { NextPage } from "next";
+
 import { Member } from './Member'
 import { members } from './_data'
 
-export const App = () => (
+type Props = {
+  t: TFunction;
+};
+
+const App: NextPage<Props, any> = ({ t }) => (
   <>
-    <NextSeo title="People" />
+    <NextSeo title={t("team-text1")} />
     <Box as="section">
       <Box
         mx="auto"
@@ -16,11 +24,11 @@ export const App = () => (
       >
         <Box textAlign="center">
           <Heading size="3xl" letterSpacing="tight" mb="5" fontWeight="extrabold">
-            People
-        </Heading>
+            {t("team-text1")}
+          </Heading>
           <Text fontSize="xl" maxW="2xl" mx="auto">
-            No one can whistle a symphony. It takes a whole orchestra to play it
-        </Text>
+            {t("team-text2")}
+          </Text>
         </Box>
         <SimpleGrid mt="20" columns={{ base: 1, md: 2, lg: 3 }} spacingX="6" spacingY="16">
           {members.filter(item => item.type === 'team').map((member, idx) => (
@@ -46,11 +54,11 @@ export const App = () => (
       >
         <Box textAlign="center">
           <Heading size="3xl" letterSpacing="tight" mb="5" fontWeight="extrabold">
-            Advisors
-        </Heading>
+            {t("team-text3")}
+          </Heading>
           <Text fontSize="xl" maxW="2xl" mx="auto">
-            A successful team is a group of many hands and one mind
-        </Text>
+            {t("team-text4")}
+          </Text>
         </Box>
         <SimpleGrid mt="20" columns={{ base: 1, md: 2, lg: 3 }} spacingX="6" spacingY="16">
           {members.filter(item => item.type === 'adviser').map((member, idx) => (
@@ -72,4 +80,8 @@ export const App = () => (
   </>
 )
 
-export default App
+App.getInitialProps = async () => ({
+  namespacesRequired: ["common", "team"],
+});
+
+export default withTranslation("team")(App);
