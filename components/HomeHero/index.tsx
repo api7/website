@@ -8,7 +8,7 @@ import {
   useColorModeValue as mode,
 } from '@chakra-ui/react'
 import * as React from 'react'
-import { SubscribeForm } from './SubscribeForm'
+import { SubscribeForm } from '../SubscribeForm'
 
 const App = () => {
   return (
@@ -35,7 +35,7 @@ const App = () => {
       <Box as="section" pt={{ base: '30' }}>
         <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
           <SimpleGrid
-            mt="4"
+            mt="16"
             columns={{ base: 1, md: 2, lg: 6 }}
             color="gray.500"
             alignItems="center"
@@ -48,7 +48,7 @@ const App = () => {
             <Image src="https://static.apiseven.com/brand/logo%20horizontal%20w.%20background.png" />
             <Image src="https://static.apiseven.com/brand/Untitled2.svg" />
             <Image src="https://p3.ssl.qhimg.com/t011e94f0b9ed8e66b0.png" />
-            <Image src="https://static.apiseven.com/2020/05/1588907670-WechatIMG631.png" />
+            <Image src="https://static.apiseven.com/brand/1588907670-WechatIMG631-removebg-preview.png" />
           </SimpleGrid>
         </Box>
       </Box>

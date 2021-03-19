@@ -12,7 +12,7 @@ import { Logo } from '../Logo'
 import { SocialLink } from './SocialLink'
 import { links, socialLinks } from './_data'
 import { LinkGroup } from './LinkGroup'
-import { SubscribeForm } from './SubscribeForm'
+import { SubscribeForm } from '../SubscribeForm'
 
 export const App = () => (
   <Box as="footer" bg={mode('gray.50', 'gray.800')}>
