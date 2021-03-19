@@ -72,7 +72,7 @@ const App: NextPage<Props, any> = ({ t }) => {
             </Text>
             <Text lineHeight="tall">
               {
-                language === 'zh-CN' ? '订阅深圳支流科技邮件列表，及时获得产品最新动态与相关资源。' : 'Get Overflow resources and curated content delivered straight into your inbox. Be the first to learn the news about new features and product updates.'
+                language === 'zh-CN' ? '订阅支流科技邮件列表，及时获得产品最新动态与相关资源。' : 'Get Overflow resources and curated content delivered straight into your inbox. Be the first to learn the news about new features and product updates.'
               }
             </Text>
             <SubscribeForm language={language} />

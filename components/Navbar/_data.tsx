@@ -189,7 +189,7 @@ export const ZH_CN_Links: Link[] = [
     children: [
       {
         label: '关于我们',
-        description: '关于深圳支流科技',
+        description: '关于支流科技',
         href: '/about',
         icon: <MdWeb />,
       },
