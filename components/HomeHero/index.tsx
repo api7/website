@@ -10,8 +10,6 @@ import {
 import * as React from 'react'
 import { SubscribeForm } from './SubscribeForm'
 
-import * as Logos from './Brands'
-
 const App = () => {
   return (
     <Box as="section" bg={mode('gray.50', 'gray.800')} pt="24" pb="12" overflow="hidden">
