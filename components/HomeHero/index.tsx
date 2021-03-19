@@ -1,6 +1,6 @@
 import {
   Box,
-  Button,
+  Image,
   Heading,
   SimpleGrid,
   Stack,
@@ -45,18 +45,12 @@ const App = () => {
             spacing={{ base: '12', lg: '12' }}
             fontSize="2xl"
           >
-            <Logos.ChatMonkey />
-            <Logos.Wakanda />
-            <Logos.Lighthouse />
-            <Logos.Plumtic />
-            <Logos.WorkScout />
-            <Logos.Finnik />
-            <Logos.ChatMonkey />
-            <Logos.Wakanda />
-            <Logos.Lighthouse />
-            <Logos.Plumtic />
-            <Logos.WorkScout />
-            <Logos.Finnik />
+            <Image src="https://static.apiseven.com/brand/tencent.svg" />
+            <Image src="https://static.apiseven.com/brand/Airwallex%20Logo%20-%20White.svg" />
+            <Image src="https://static.apiseven.com/brand/logo%20horizontal%20w.%20background.png" />
+            <Image src="https://static.apiseven.com/brand/Untitled2.svg" />
+            <Image src="https://p3.ssl.qhimg.com/t011e94f0b9ed8e66b0.png" />
+            <Image src="https://static.apiseven.com/2020/05/1588907670-WechatIMG631.png" />
           </SimpleGrid>
         </Box>
       </Box>
