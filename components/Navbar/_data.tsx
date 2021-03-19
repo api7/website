@@ -146,7 +146,7 @@ export const ZH_CN_Links: Link[] = [
     children: [
       {
         label: '用户案例',
-        description: '阅读全球领先企业与深圳支流科技产品的故事',
+        description: '阅读全球领先企业与深圳支流科技的故事',
         href: '/usercases',
         icon: <IoGrid />,
       },
@@ -195,13 +195,13 @@ export const ZH_CN_Links: Link[] = [
       },
       {
         label: "新闻报道",
-        description: "获取支流科技新闻报道",
+        description: "获取支流科技相关新闻",
         href: "/news",
         icon: <MdWeb />
       },
       {
         label: '团队成员',
-        description: '',
+        description: '团队成员热爱开源、技术背景深厚',
         href: '/team',
         icon: <MdWeb />,
       },
