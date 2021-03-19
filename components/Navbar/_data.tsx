@@ -54,18 +54,17 @@ export const EN_US_Links: Link[] = [
         description: 'Watch Apache APISIX DevCon 2020 Records',
         href: '/resources/apisix-devcon-2020',
         icon: <IoCalendar />,
-      },
-      {
-        label: 'Documentation',
-        description: 'Coming soon',
-        href: '#',
-        icon: <IoHelpBuoy />,
       }, {
         label: 'Contributor Graph',
         description: 'Generate Contributor Graph from GitHub',
         href: '/contributor-graph',
         icon: <IoHelpBuoy />,
-      },
+      }, {
+        label: 'Documentation',
+        description: 'Coming soon',
+        href: '#',
+        icon: <IoHelpBuoy />,
+      }
     ],
   },
   {
@@ -160,18 +159,18 @@ export const ZH_CN_Links: Link[] = [
         description: '观看 Apache APISIX DevCon 2020 大会录像',
         href: '/resources/apisix-devcon-2020',
         icon: <IoCalendar />,
-      },
-      {
-        label: '产品文档',
-        description: '敬请期待',
-        href: '#',
-        icon: <IoHelpBuoy />,
       }, {
         label: '贡献者趋势',
         description: '获取开源项目贡献者趋势图',
         href: '/contributor-graph',
         icon: <IoHelpBuoy />,
       },
+      {
+        label: '产品文档',
+        description: '敬请期待',
+        href: '#',
+        icon: <IoHelpBuoy />,
+      }
     ],
   }, {
     label: "商业支持",
