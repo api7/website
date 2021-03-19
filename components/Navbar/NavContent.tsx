@@ -44,7 +44,7 @@ const MobileNavContext = (props: FlexProps) => {
           ),
         )}
         <Button colorScheme="blue" w="full" size="lg" mt="5">
-          预约演示
+          Request Demo
         </Button>
       </NavMenu>
     </>
@@ -71,7 +71,7 @@ const DesktopNavContent = (props: FlexProps) => {
       </HStack>
       <HStack spacing="8" minW="240px" justify="space-between">
         <Button as="a" href="#" colorScheme="blue" fontWeight="bold">
-          预约演示
+          Request Demo
         </Button>
       </HStack>
     </Flex>

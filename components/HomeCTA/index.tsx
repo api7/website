@@ -12,7 +12,7 @@ const App = () => {
         textAlign="center"
       >
         <Text fontWeight="semibold" color={useColorModeValue('blue.600', 'blue.200')}>
-          我们支持灵活的计费方式
+          We support flexible billing options
         </Text>
         <Heading
           my="4"
@@ -22,7 +22,7 @@ const App = () => {
           letterSpacing="tight"
           lineHeight="1.2"
         >
-          使用{' '}
+          Empower your products with{' '}
           <Box
             as="mark"
             bg="unset"
@@ -31,10 +31,9 @@ const App = () => {
           >
             API7
           </Box>
-          {' '}为您的产品赋能
         </Heading>
         <Text fontSize="lg" maxW="xl" mx="auto">
-          灵活可靠的企业级 API 网关将作为您的流量管理平台，减少通用组件研发、保障您的业务稳定。
+          Flexible and reliable Enterprise API gateways will serve as your traffic management platform, reducing generic component development and securing your business stability.
         </Text>
         <Stack
           direction={{ base: 'column', sm: 'row' }}
@@ -54,7 +53,7 @@ const App = () => {
             fontWeight="bold"
             flex={{ md: '1' }}
           >
-            预约演示
+            Request Demo
           </Button>
           <Button
             as="a"
@@ -66,7 +65,7 @@ const App = () => {
             px="10"
             fontWeight="bold"
           >
-            与网关专家聊一聊
+            Talk with API Expert
           </Button>
         </Stack>
       </Box>

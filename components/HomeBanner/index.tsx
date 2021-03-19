@@ -6,7 +6,7 @@ const App = () => {
   return (
     <Box as="header" bgGradient="linear(to-r, blue.500, purple.500)" color="white" py="2">
       <Text px="10" align={{ base: 'start', md: 'center' }} fontSize="sm" position="relative">
-        <b>Apache APISIX Ingress Controller 正式加入 ASF</b>
+        <b>Apache APISIX Ingress Controller donated to the ASF</b>
         <Box
           as="a"
           href="https://github.com/apache/apisix-ingress-controller"
@@ -21,7 +21,7 @@ const App = () => {
           rounded="sm"
           whiteSpace="nowrap"
         >
-          了解更多
+          Learn More
         </Box>
         <IconButton
           position={{ base: 'absolute', md: 'relative' }}

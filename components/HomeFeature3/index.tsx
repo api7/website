@@ -35,10 +35,10 @@ export const App = () => {
               letterSpacing="tight"
               lineHeight="normal"
             >
-              下一代云原生 API 管理平台
+              Next Generation Cloud Native API Management Platform
             </Heading>
             <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')}>
-              支持混合云、多数据中心、Kubernetes 等部署方式，帮助您快速、安全地处理业务数据，并进行动态扩展
+              Supports hybrid cloud, multi-data center, Kubernetes and other deployment methods to help you process business data quickly and securely, and scale dynamically.
             </Text>
             <Button
               className="group"
@@ -58,7 +58,7 @@ export const App = () => {
                 />
               }
             >
-              了解更多
+              Learn More
             </Button>
           </Box>
         </Stack>

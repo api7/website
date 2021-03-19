@@ -21,12 +21,12 @@ const App = () => {
           justify="center"
           mb="20"
         >
-          <Box flex="1" maxW={{ lg: 'xl' }} pt="10">
+          <Box flex="1" maxW={{ lg: '2xl' }} pt="10">
             <Heading as="h1" size="3xl" mt="8" fontWeight="extrabold">
-              驱动企业数字化转型
+              Drive enterprise digital transformation
             </Heading>
             <Text color={mode('gray.600', 'gray.400')} mt="25" fontSize="xl">
-              管理并可视化 API 和微服务等企业关键业务流量，通过大数据和人工智能（AI）加速企业业务决策
+              Manage and visualize enterprise-critical business traffic such as APIs and microservices to accelerate enterprise business decisions through big data and artificial intelligence (AI)
             </Text>
             <SubscribeForm />
           </Box>

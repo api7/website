@@ -24,10 +24,10 @@ export const App = () => {
               letterSpacing="tight"
               lineHeight="normal"
             >
-              低代码 API 网关
+              Low-Code API Gateway
             </Heading>
             <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')} textAlign="justify">
-              企业需求千差万别，不用二次开发的 API 网关才是根本的解决之道。从开发工程师，到运维、测试、安全工程师，甚至产品经理，都可以让 Apache APISIX 的 40 多个插件协同合作，创造属于自己的接入层。
+              Low-code API gateway, processing traffic faster and more efficiently. From Developers to Operations, Quality Assurance and Security, and even PM, more than 40 plugins of Apache APISIX can work together to create your own plugin.
             </Text>
             <Button
               className="group"
@@ -47,7 +47,7 @@ export const App = () => {
                 />
               }
             >
-              了解更多
+              Learn More
             </Button>
           </Box>
           <Center flex="1" shadow="lg" minH="26rem" maxW={{ lg: 'xl' }}>
@@ -58,7 +58,7 @@ export const App = () => {
               htmlWidth="576px"
               htmlHeight="420px"
               src="https://static.apiseven.com/low-code-api-gateway-example-zh-CN.gif"
-              alt="低代码 API 网关"
+              alt="Low-Code API Gateway"
             />
           </Center>
         </Stack>

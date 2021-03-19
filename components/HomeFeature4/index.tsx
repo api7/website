@@ -9,11 +9,9 @@ const App = () => {
       <Box maxW={{ base: 'xl', md: '2xl', lg: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
         <Box textAlign="center" maxW="md" mx="auto">
           <Heading size="2xl" fontWeight="extrabold" letterSpacing="tight">
-            相关资源
+            Resources
           </Heading>
-          <Text mt="4" fontSize="lg" color={mode('gray.600', 'gray.400')}>
-            技术博客、用户案例、开发者大会
-          </Text>
+          <Text mt="4" fontSize="lg" color={mode('gray.600', 'gray.400')}></Text>
         </Box>
         <SimpleGrid mt="14" columns={{ base: 1, lg: 3 }} spacing="14">
           {data.map((item, index) => (

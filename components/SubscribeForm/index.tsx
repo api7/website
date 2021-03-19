@@ -16,7 +16,7 @@ export const SubscribeForm = () => (
           mb={{ base: '2', lg: '0' }}
           flex="1"
           bg={mode('white', 'gray.900')}
-          placeholder="请输入您的邮箱"
+          placeholder="Work email"
           type="email"
           id="email"
           name="email"
@@ -33,7 +33,7 @@ export const SubscribeForm = () => (
         letterSpacing="wide"
         type="submit"
       >
-        立即订阅
+        Subscribe
       </Button>
     </Box>
   </form>
