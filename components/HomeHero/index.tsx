@@ -37,7 +37,7 @@ const App = () => {
       <Box as="section" pt={{ base: '30' }}>
         <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
           <SimpleGrid
-            mt="10"
+            mt="4"
             columns={{ base: 1, md: 2, lg: 6 }}
             color="gray.500"
             alignItems="center"
