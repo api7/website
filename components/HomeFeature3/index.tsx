@@ -40,7 +40,7 @@ export const App = () => {
             <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')}>
               Supports hybrid cloud, multi-data center, Kubernetes and other deployment methods to help you process business data quickly and securely, and scale dynamically.
             </Text>
-            <Button
+            {/* <Button
               className="group"
               mt="8"
               colorScheme="blue"
@@ -59,7 +59,7 @@ export const App = () => {
               }
             >
               Learn More
-            </Button>
+            </Button> */}
           </Box>
         </Stack>
       </Box>

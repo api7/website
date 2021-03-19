@@ -29,7 +29,7 @@ export const App = () => {
             <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')} textAlign="justify">
               Low-code API gateway, processing traffic faster and more efficiently. From Developers to Operations, Quality Assurance and Security, and even PM, more than 40 plugins of Apache APISIX can work together to create your own plugin.
             </Text>
-            <Button
+            {/* <Button
               className="group"
               mt="8"
               colorScheme="blue"
@@ -48,7 +48,7 @@ export const App = () => {
               }
             >
               Learn More
-            </Button>
+            </Button> */}
           </Box>
           <Center flex="1" shadow="lg" minH="26rem" maxW={{ lg: 'xl' }}>
             <Img
