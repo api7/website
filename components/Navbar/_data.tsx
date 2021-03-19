@@ -60,6 +60,11 @@ export const EN_US_Links: Link[] = [
         description: 'Coming soon',
         href: '#',
         icon: <IoHelpBuoy />,
+      }, {
+        label: 'Contributor Graph',
+        description: 'Generate Contributor Graph from GitHub',
+        href: '/contributor-graph',
+        icon: <IoHelpBuoy />,
       },
     ],
   },
@@ -160,6 +165,11 @@ export const ZH_CN_Links: Link[] = [
         label: '产品文档',
         description: '敬请期待',
         href: '#',
+        icon: <IoHelpBuoy />,
+      }, {
+        label: '贡献者趋势',
+        description: '获取开源项目贡献者趋势图',
+        href: '/contributor-graph',
         icon: <IoHelpBuoy />,
       },
     ],
