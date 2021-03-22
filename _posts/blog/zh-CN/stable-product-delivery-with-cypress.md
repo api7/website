@@ -52,7 +52,7 @@ Cypress 的文档结构更加清晰全面。在使用初期，我们根据官方
 
 目前 APISIX Dashboard 已经书写 49 个测试案例。我们在 GitHub Action 中配置对应的 CI，确保每次合并代码前测试通过以保证代码质量。我们参考 Cypress 的最佳实践并结合我们的项目，和大家分享一下 Cypress 在 APISIX Dashboard 的使用。
 
-![图片](https://static.apiseven.com/202102/apisix-dashboard-e2e.gif)
+![图片](https://api7-website-1301662268.file.myqcloud.com/202102/apisix-dashboard-e2e.gif)
 
 ![图片](https://static.apiseven.com/202102/image.png)
 
