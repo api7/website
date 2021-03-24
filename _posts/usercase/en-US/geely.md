@@ -1,5 +1,8 @@
 ---
 title: "Zhiliu Technology and Geely: Digitising the industry to Intelligent creation the future"
+avatar: ""
+author: ""
+href: ""
 date: 2020-12-18
 ---  
 

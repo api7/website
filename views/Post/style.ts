@@ -1,44 +1,19 @@
 import styled from "styled-components";
 
 export const SSection1 = styled.div`
-  width: 1228px;
-  left: 0px;
-  background-color: #f4f4ff;
+  max-width: 780px;
   transition-property: background-image, border, border-radius, box-shadow;
   transition-duration: .3s, 0.3s, 0.3s, 0.3s;
   transition-timing-function: ease, ease, ease, ease;
   transition-delay: 0s, 0s, 0s, 0s;
   position: relative;
-  width: 100%;
   display: block;
-`;
-
-export const SBackground = styled.div`
-  border-radius: 0 0 0 0;
-  background-image: url(https://static.apiseven.com/2020/07/Course-BG.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: .05;
-  transition-property: background-image, border, border-radius, box-shadow;
-  transition-duration: .3s, 0.3s, 0.3s, 0.3s;
-  transition-timing-function: ease, ease, ease, ease;
-  transition-delay: 0s, 0s, 0s, 0s;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
+  margin: 0 auto;
 `;
 
 export const SBox1 = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 25px;
-  min-height: 275px;
-  display: -webkit-box;
-  -webkit-box-align: center;
+  padding: 0 1rem;
+  margin: 45px 0;
   align-items: center;
   :after {
     content:'';
@@ -46,45 +21,88 @@ export const SBox1 = styled.div`
     font-size:0;
   }
 
-  @media (min-width: 1200px) {
-    width: 1170px;
-    padding: 0;
+  h1 {
+    text-align: left;
+    color: rgba(41, 41, 41, 1);
+    font-family: fell, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  @media (max-width: 560px) {
+    h1 {
+      font-size: 38px;
+      line-height: 1.4em;
+    }
   }
 `;
 
 export const SInner = styled.div`
-  width: 100%;
-  display: -webkit-box;
   display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  align-content: flex-start; 
+  margin-top: 25px;
 
-  h1 {
-    width: 100%;
-    text-align: left;
-    color: #000;
-    font-family: "Montserrat", sans-serif;
-    font-size: 60px;
+
+  a {
+    box-shadow: none;
+    text-decoration: none;
+    color: #FF2500;
     font-weight: 300;
-    margin: 0;
-    line-height: 1.4;
+
+    :hover {
+      text-decoration: none;
+      opacity: .75;
+    }
   }
 
-  span {
-    width: 100%;
-    color: #000;
-    font-family: "Montserrat", sans-serif;
-    line-height: 1;
-    margin: 0;
-    padding: 2% 0;
+  img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+  }
+
+  p {
+    min-width: 200px;
+    color: rgba(117, 117, 117, 1);
+    font-size: 14px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 0 3%;
+  }
+
+  .left {
+    width: 30%;
+    display: flex;
+
+    div {
+      align-self: flex-end;
+    }
+  }
+
+  .right {
+    width: 70%;
+    align-self: flex-end;
+
+    svg {
+      width: 29px;
+      height: 29px;
+    }
+    
+    ul {
+      float: right;
+      list-style-type: none;
+      display: flex;
+      font-size: 14px;
+      padding: 0 3%;
+
+      li {
+        padding-right: 6px;
+      }
+    }
   }
 
   @media (max-width: 1024px) {
-    h1 {
-      font-size: 46px;
-    }
-
     span {
       padding-top: 5%;
     }
@@ -104,41 +122,38 @@ export const SInner = styled.div`
 `;
 
 export const SSection2 = styled.div`
+  max-width: 780px;
   background-color: rgba(255,255,255,.9098039215686274);
   transition-property: background-image, border, border-radius, box-shadow;
   transition-duration: .3s, 0.3s, 0.3s, 0.3s;
   transition-timing-function: ease, ease, ease;
   transition-delay: 0s, 0s, 0s, 0s;
-  width: 100%;
-  margin: 2% auto;
-  padding: 0 25px;
+  margin: 0 auto;
   position: relative;
   background-color: transparent;
-
-  @media (min-width: 1200px) {
-    width: 1170px;
-    padding: 0;
-  }
 `;
 
 export const SBox2 = styled.div`
-  width: 100%;
-  min-height: 591px;
-  margin: 0 auto;
-
-  @media (max-width: 420px) {
-    min-height: 480px;
-  }
+  padding: 0 1rem 1rem;
 `;
 
 export const SArticle = styled.article`
-  width: 100%;
   font-size: 16px;
   font-family: initial;
   font-weight: 300;
   line-height: 1.618;
+  color: #586376;
   word-break: break-all;
-  -webkit-font-smoothing: antialiased;
+
+  p {
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+  }
 
   h3 {
     display: flex;
@@ -146,20 +161,19 @@ export const SArticle = styled.article`
     font-weight: 300;
   }
 
-  ol {
+  ol, ul {
     margin-top: 0;
     margin-bottom: 30px;
     display: block;
     list-style-type: decimal;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-inline-start: 40px;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+    padding-inline-start: 25px;
   }
 
   p a {
-    -webkit-box-shadow: none;
     box-shadow: none;
     text-decoration: none;
     color: #ff2500;
@@ -216,7 +230,8 @@ export const SArticle = styled.article`
 
   .iframeBox {
     width: 100%;
-    height: 900px
+    height: 600px;
+    padding-bottom: 2em;
   }
 
   @media (max-width: 1300px) {

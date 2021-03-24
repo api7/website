@@ -1,10 +1,12 @@
 ---
 title: "Apache APISIX: How to implement plugin orchestration in API Gateway"
+avatar: ""
 date: 2020-12-14
 ---
 
-<iframe width="100%" height="600px" src="https://www.youtube.com/embed/iEegNXOtEhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-top: 30px"></iframe>
-
+<div class="iframeBox">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/iEegNXOtEhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-top: 30px"></iframe>
+</div>
 
 First let me introduce myself. I am from China, the co-founder of [apiseven](https://www.apiseven.com), which is a Chinese startup company.  I am the VP and PMC member of the open source project [Apache APISIX](https://github.com/apache/apisix). I am also a committer of Apache skywalking. In addition, I am the founder of the qihoo 360 Open Source Committee, Tencent Cloud TVP, and a TOC member of the TARS Foundation. I have more than 40 security patents.
 

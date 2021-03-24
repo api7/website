@@ -2,31 +2,41 @@
   "zh-CN": [
     {
       "title": "支流科技与吉利汽车：产业数字化，「智造」未来",
-      "cover": "https://static.apiseven.com/logo/geely-1.png",
+      "image": "https://static.apiseven.com/logo/geely-1.png",
+      "type": "article",
+      "tags": [],
       "date": "2020-12-18",
       "path": "/zh/usercase/geely"
     },
     {
       "title": "360：Apache APISIX 在基础运维平台项目中的实践",
-      "cover": "https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png",
+      "image": "https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png",
+      "type": "article",
+      "tags": [],
       "date": "2020-12-11 17:16:00",
       "path": "/zh/usercase/360"
     },
     {
       "title": "思必驰：为什么我们重新写了一个 k8s ingress controller？",
-      "cover": "https://static.apiseven.com/2020/05/ef94496d-c0e5-41ff-a56f-a497cdf03218-image.png",
+      "image": "https://static.apiseven.com/2020/05/ef94496d-c0e5-41ff-a56f-a497cdf03218-image.png",
+      "type": "article",
+      "tags": [],
       "date": "2020-12-11 17:16:00",
       "path": "/zh/usercase/aispeech"
     },
     {
       "title": "HelloTalk：基于 OpenResty 和 Apache APISIX 的全球化探索之路",
-      "cover": "https://opentalk-blog.b0.upaiyun.com/prod/2020-01-08/638f50106e81c9d99eb788d4c1d3e9c1",
+      "image": "https://opentalk-blog.b0.upaiyun.com/prod/2020-01-08/638f50106e81c9d99eb788d4c1d3e9c1",
+      "type": "article",
+      "tags": [],
       "date": "2020-12-11 17:16:00",
       "path": "/zh/usercase/hellotalk"
     },
     {
       "title": "腾讯云：为什么选择 Apache APISIX 来实现 k8s ingress controller?",
-      "cover": "https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png",
+      "image": "https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png",
+      "type": "video",
+      "tags": [],
       "date": "2020-12-11 17:16:00",
       "path": "/zh/usercase/tencent-cloud"
     }
@@ -34,31 +44,41 @@
   "en-US": [
     {
       "title": "Zhiliu Technology and Geely: Digitising the industry to Intelligent creation the future",
-      "cover": "https://static.apiseven.com/logo/geely-1.png",
+      "image": "https://static.apiseven.com/logo/geely-1.png",
+      "type": "article",
+      "tags": [],
       "date": "2020-12-18",
       "path": "/en/usercase/geely"
     },
     {
       "title": "360: Apache APISIX in practice in the basic operation and maintenance platform project",
-      "cover": "https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png",
+      "image": "https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png",
+      "type": "article",
+      "tags": [],
       "date": "2020-12-11 17:16:00",
       "path": "/zh/usercase/360"
     },
     {
       "title": "aispeech: Why have we rewritten a k8s ingress controller?",
-      "cover": "https://static.apiseven.com/2020/05/ef94496d-c0e5-41ff-a56f-a497cdf03218-image.png",
+      "image": "https://static.apiseven.com/2020/05/ef94496d-c0e5-41ff-a56f-a497cdf03218-image.png",
+      "type": "article",
+      "tags": [],
       "date": "2020-12-11 17:16:00",
       "path": "/zh/usercase/aispeech"
     },
     {
       "title": "HelloTalk: A Global Exploration Path Based on OpenResty and Apache APISIX",
-      "cover": "https://opentalk-blog.b0.upaiyun.com/prod/2020-01-08/638f50106e81c9d99eb788d4c1d3e9c1",
+      "image": "https://opentalk-blog.b0.upaiyun.com/prod/2020-01-08/638f50106e81c9d99eb788d4c1d3e9c1",
+      "type": "article",
+      "tags": [],
       "date": "2020-12-11 17:16:00",
       "path": "/zh/usercase/hellotalk"
     },
     {
       "title": "Tencent Cloud: Why did you choose Apache APISIX to implement k8s ingress controller?",
-      "cover": "https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png",
+      "image": "https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png",
+      "type": "video",
+      "tags": [],
       "date": "2020-12-11 17:16:00",
       "path": "/zh/usercase/tencent-cloud"
     }

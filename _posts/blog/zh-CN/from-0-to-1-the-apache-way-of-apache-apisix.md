@@ -1,9 +1,10 @@
 ---
 title: "从 0 到 1：Apache APISIX 的 Apache 之路"
+avatar: "https://avatars.githubusercontent.com/u/26448043?s=460&u=9a51a2ee99658ea30918952675fdffeca8b5dc4c&v=4"
+author: "温铭"
+href: "https://github.com/moonming"
 date: 2019-12-26
 ---
-
-作者：温铭
 
 Apache APISIX 是一个很年轻的项目，2019 年 6 月份开源，7 月份加入到 CNCF 全景图，10 月份进入 Apache 孵化器，所以我会和大家分享一下 APISIX 是如何从 0 到 1，进入 Apache 孵化器的。
 

@@ -61,8 +61,8 @@ const MobileNavContext = ({ links, language, ...props }: Props) => {
             </NavLink.Mobile>
           ),
         )}
-        <Button as="a" href="/form-api7-trial" colorScheme="blue" w="full" size="lg" mt="5">
-          {language === 'zh-CN' ? '预约演示' : 'Request Demo'}
+        <Button as="a" href="https://dashboard.apiseven.com" target="_blank" colorScheme="blue" w="full" size="lg" mt="5" _hover={{ color: "var(--chakra-colors-white)", background: "var(--chakra-colors-blue-600)", textDecoration: "none" }}>
+          {language === 'zh-CN' ? '体验 Demo' : 'Dashboard'}
         </Button>
 
         <Menu>
@@ -106,8 +106,8 @@ const DesktopNavContent = ({ links, language, ...props }: Props) => {
         ))}
       </HStack>
       <HStack spacing="8" minW="240px" justify="space-between">
-        <Button as="a" href="/form-api7-trial" colorScheme="blue" fontWeight="bold">
-          {language === 'zh-CN' ? '预约演示' : 'Request Demo'}
+        <Button as="a" href="https://dashboard.apiseven.com" target="_blank" colorScheme="blue" fontWeight="bold" _hover={{ color: "var(--chakra-colors-white)", background: "var(--chakra-colors-blue-600)", textDecoration: "none" }}>
+          {language === 'zh-CN' ? '体验 Demo' : 'Dashboard'}
         </Button>
 
         <Menu>

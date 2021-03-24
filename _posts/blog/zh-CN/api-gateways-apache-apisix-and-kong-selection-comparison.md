@@ -1,9 +1,10 @@
 ---
 title: "API 网关 Apache APISIX 和 Kong 的选型对比"
+avatar: "https://avatars.githubusercontent.com/u/26448043?s=460&u=9a51a2ee99658ea30918952675fdffeca8b5dc4c&v=4"
+author: "温铭"
+href: "https://github.com/moonming"
 date: 2020-01-18
 ---
-
-作者：温铭
 
 Apache APISIX 和 Kong 都是开源的微服务 API 网关，那么在这两者之间，如何去做比较和选择呢？
 

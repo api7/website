@@ -1,5 +1,6 @@
 ---
 title: "Envoy and Apache APISIX: Another way to implement Envoy filter"
+avatar: ""
 date: 2020-12-16
 ---
 

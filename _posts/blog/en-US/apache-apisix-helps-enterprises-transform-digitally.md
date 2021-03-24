@@ -1,5 +1,6 @@
 ---
 title: "Apache APISIX helps Enterprises Transform Digitally"
+avatar: ""
 date: 2021-02-04
 ---  
 

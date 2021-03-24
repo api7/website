@@ -1,6 +1,9 @@
 ---
 title: "腾讯云：为什么选择 Apache APISIX 来实现 k8s ingress controller?"
 date: 2020-05-07 
+avatar: ""
+author: ""
+href: ""
 ---  
 
 <div style="text-align: center">

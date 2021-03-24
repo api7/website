@@ -1,9 +1,10 @@
 ---
 title: "aispeech: Why have we rewritten a k8s ingress controller?"
+avatar: "https://avatars.githubusercontent.com/u/4413028?s=460&u=e140a6d2bf19c426da6498b8888edc96509be649&v=4"
+author: "Jin Wei"
+href: "https://github.com/gxthrj"
 date: 2020-05-07 
 ---  
-
-Author: Jin Wei
 
 **Preface**
 

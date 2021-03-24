@@ -1,9 +1,10 @@
 ---
 title: "Install Apache APISIX from Helm Charts"
+avatar: "https://avatars.githubusercontent.com/u/10428333?s=460&u=f48ef50c5621a1616a3ede50221547e34270e061&v=4"
+author: "Chao Zhang"
+href: "https://github.com/tokers"
 date: 2021-02-26
 ---
-
-Author: [Chao Zhang](https://github.com/tokers)
 
 A few days ago, [Zhiliu Inc](https://www.apiseven.com/) released an online Helm Charts repository. Users can easily install Apache APISIX, Apache apisix-dashboard and Apache apisix-ingress-controller from it (rather than cloning the corresponding project in advance).
 

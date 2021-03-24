@@ -61,7 +61,7 @@ const App: NextPage<Props, any> = ({ t }) => {
               Learn More
             </Button> */}
           </Box>
-          <Center flex="1" shadow="lg" minH="26rem" maxW={{ lg: 'xl' }}>
+          <Center flex="1" shadow="lg" minH={[0, 420]} maxW={{ lg: 'xl' }}>
             <Img
               objectFit="contain"
               w="full"

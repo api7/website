@@ -1,9 +1,10 @@
 ---
 title: "如何彻底避免正则表达式的灾难性回溯？"
+avatar: "https://avatars.githubusercontent.com/u/26448043?s=460&u=9a51a2ee99658ea30918952675fdffeca8b5dc4c&v=4"
+author: "温铭"
+href: "https://github.com/moonming"
 date: 2020-12-17
 ---  
-
-作者：温铭 
 
 正则表达式的灾难性回溯（Catastrophic Backtracking）是指，正则在匹配的时候回溯过多，造成 CPU 100%，正常服务被阻塞。
 

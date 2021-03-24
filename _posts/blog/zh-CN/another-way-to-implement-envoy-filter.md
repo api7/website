@@ -1,5 +1,6 @@
 ---
 title: "Envoy 与 Apache APISIX: filter 的另一种实现方式"
+avatar: ""
 date: 2020-12-16
 ---
 

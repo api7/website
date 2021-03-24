@@ -1,9 +1,10 @@
 ---
 title: "贝壳找房：如何基于 Apache APISIX 搭建网关"
+avatar: ""
+author: "王辉"
+href: ""
 date: 2020-12-11
 ---
-
-作者：王辉
 
 我是王辉，在贝壳找房负责 API 网关系统的开发，我们使用 Apache APISIX 作为生产系统的 API 网关，每天处理过亿的生产流量，性能优异，而且很稳定。正好 APISIX 刚刚加入 Apache 孵化器，除了恭喜之外，我想来分享下贝壳找房当初为什么选择 Apache APISIX，以及使用过程中的一些心得。
 

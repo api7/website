@@ -62,6 +62,7 @@ const App: NextPage<Props, any> = ({ t }) => {
             colorScheme="blue"
             fontWeight="bold"
             flex={{ md: '1' }}
+            _hover={{ color: "var(--chakra-colors-white)", background: "var(--chakra-colors-blue-600)", textDecoration: "none" }}
           >
             {t("home-text29")}
           </Button>
@@ -74,6 +75,7 @@ const App: NextPage<Props, any> = ({ t }) => {
             h="16"
             px="10"
             fontWeight="bold"
+            _hover={{ color: "#1A202C", background: "var(--chakra-colors-gray-100)", textDecoration: "none" }}
           >
             {t("home-text30")}
           </Button>

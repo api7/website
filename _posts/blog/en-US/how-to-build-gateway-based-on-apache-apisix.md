@@ -1,9 +1,10 @@
 ---
 title: "BEKE: How to build a gateway based on Apache APISIX"
+avatar: ""
+author: "Wang Hui"
+href: ""
 date: 2020-12-11
 ---  
-
-Author: Wang Hui
 
 I'm Wang Hui and I'm in charge of API gateway system development at BEKE. We use Apache APISIX as the API gateway for our production system, which handles over 100 million production traffic every day with excellent performance and stability. APISIX just joined the Apache Incubator, so besides congratulations, I'd like to share why we chose Apache APISIX in the first place and what we learned during the process of using it.
 

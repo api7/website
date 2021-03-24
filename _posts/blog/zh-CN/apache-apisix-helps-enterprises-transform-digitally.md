@@ -1,5 +1,6 @@
 ---
 title: "Apache APISIX 助力企业数字化转型"
+avatar: ""
 date: 2021-02-04
 ---
 

@@ -2,6 +2,12 @@
   "news": {
     "zh-CN": [
       {
+        "title": "首发｜支流科技宣布获顺为数百万美元 A 轮领投、真格基金跟投",
+        "logo": "https://static.apiseven.com/logo/infoq.png",
+        "date": "2021-03-23",
+        "url": "https://www.infoq.cn/article/GjqRuZMOdoDPXDlYiC4r"
+      },
+      {
         "title": "36氪首发｜ 云原生 API 处理平台「支流科技」完成百万美元 Pre-A 轮融资，已有近200名代码贡献者",
         "logo": "https://static.apiseven.com/logo/36kr.png",
         "date": "2021-02-03",
@@ -93,6 +99,12 @@
       }
     ],
     "en-US": [
+      {
+        "title": "APISEVEN raises millions of dollars in Series A founding round led by Shunwei Capital and followed by ZhenFund",
+        "logo": "https://static.apiseven.com/logo/infoq.png",
+        "date": "2021-03-23",
+        "url": "https://www.infoq.cn/article/GjqRuZMOdoDPXDlYiC4r"
+      },
       {
         "title": "APISEVEN raises $1 Million in Pre-A funding round, with nearly 200 code contributors",
         "logo": "https://static.apiseven.com/logo/36kr.png",
