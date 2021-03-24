@@ -60,17 +60,12 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
           text="Copy share link"
           style={{ backgroundColor: "#1769FF" }}
           onClick={() => {
-            const text =
-              window.location !== window.parent.location
-                ? `https://www.apiseven.com/en/contributor-graph?repo=${legend.join(
-                    ","
-                  )}`
-                : `${window.location.protocol +
-                    "//" +
-                    window.location.host +
-                    window.location.pathname}?repo=${legend.join(
-                    ","
-                  )}`;
+            const text = `${window.location.protocol +
+              "//" +
+              window.location.host +
+              window.location.pathname}?repo=${legend.join(
+                ","
+              )}`
 
             copy(text);
           }}
