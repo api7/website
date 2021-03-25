@@ -72,13 +72,13 @@ export const EN_US_Links: Link[] = [
     children: [
       {
         label: 'About',
-        description: 'About Shenzhen Zhiliu Technolody',
+        description: 'About us',
         href: '/about',
         icon: <MdWeb />,
       },
       {
         label: "News",
-        description: "Get latest news about Zhiliu Technology",
+        description: "Get latest news about us",
         href: "/news",
         icon: <MdWeb />
       },

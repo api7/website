@@ -110,7 +110,7 @@ const App: NextPage<Props, any> = ({ t }) => {
               language === 'zh-CN' ? (
                 <Text>版权所有 &copy; {new Date().getFullYear()} 深圳支流科技有限公司 保留一切权利</Text>
               ) : (
-                <Text>Copyright &copy;Zhiliu Technology {new Date().getFullYear()}. All rights reserved.</Text>
+                <Text>Copyright &copy;Shenzhen Zhiliu Technology Co.,Ltd {new Date().getFullYear()}. All rights reserved.</Text>
               )
             }
             {
