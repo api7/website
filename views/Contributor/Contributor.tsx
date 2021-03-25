@@ -35,7 +35,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
     window.addEventListener('message', function (event) {
       setLegend(event.data);
     })
-  });
+  }, []);
 
   return (
     <SWrapper>
@@ -49,7 +49,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
           text="Share on Twitter"
           style={{ backgroundColor: "rgb(29, 161, 242)" }}
           onClick={() => {
-            window.location.href = `https://twitter.com/share?text=Amazing tools to view your repo contributor over time!&url=https://www.apiseven.com/zh/contributor-graph?repo=${legend.join(
+            window.location.href = `https://twitter.com/share?text=Amazing tools to view your repo contributor over time!&url=https://www.apiseven.com/en/contributor-graph?repo=${legend.join(
               ","
             )}`;
           }}
