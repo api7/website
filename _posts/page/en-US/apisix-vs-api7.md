@@ -16,5 +16,6 @@ date: 2020-11-13 14:54:00
 |                                                             ARM64 Support                                                             |                         SSL Certificate Management                          |
 |                                                Support key-auth, JWT, basic-auth，IdP                                                 |                          Enterprise-Class Security                          |
 |                                                            Fault Injection                                                            |                             More Paid Plug-Ins                              |
+
 | For further functions, please refer to：[Click to view](https://github.com/apache/apisix/blob/e9a59ac5e8618737f69eddbaf05097b7ffab46ff/README.md#features) | [SLA-Based Business Support](https://www.apiseven.com/business-support) |
 |                                           [Download Now](https://github.com/apache/apisix)                                            |           [Request a Demo](https://apiseven.mikecrm.com/pvdVjd5)            |
