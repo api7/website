@@ -48,7 +48,6 @@ const App: NextPage<Props, any> = ({ t }) => {
       <Box as="section" pt={{ base: '30' }}>
         <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
           <SimpleGrid
-            mt="16"
             columns={{ base: 2, md: 2, lg: 6 }}
             color="gray.500"
             alignItems="center"
@@ -56,12 +55,19 @@ const App: NextPage<Props, any> = ({ t }) => {
             spacing={{ base: '12', lg: '12' }}
             fontSize="2xl"
           >
-            <Image src="https://static.apiseven.com/brand/tencent.svg" />
-            <Image src="https://static.apiseven.com/brand/Airwallex%20Logo%20-%20White.svg" />
-            <Image src="https://static.apiseven.com/brand/logo%20horizontal%20w.%20background.png" />
-            <Image src="https://static.apiseven.com/brand/Untitled2.svg" />
-            <Image src="https://p3.ssl.qhimg.com/t011e94f0b9ed8e66b0.png" />
-            <Image src="https://static.apiseven.com/brand/1588907670-WechatIMG631-removebg-preview.png" />
+            <Image src="https://apisix.apache.org/img/showcase/huawei.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/qcloud.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/10086.png" maxHeight="60px" />
+            <Image src="https://static.apiseven.com/brand/Airwallex%20Logo%20-%20White.svg" maxHeight="60px" />
+            <Image src="https://p3.ssl.qhimg.com/t011e94f0b9ed8e66b0.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/xueqiu.png" maxHeight="60px" />
+
+            <Image src="https://static.apiseven.com/brand/1588907670-WechatIMG631-removebg-preview.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/taikang2.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/aispeech.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/TravelSky2.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/ke2.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/nasa2.png" maxHeight="60px" />
           </SimpleGrid>
         </Box>
       </Box>

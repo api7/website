@@ -40,26 +40,6 @@ const App: NextPage<Props, any> = ({ t }) => {
             <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')} textAlign="justify">
               {t("home-text24")}
             </Text>
-            {/* <Button
-              className="group"
-              mt="8"
-              colorScheme="blue"
-              size="lg"
-              px="8"
-              fontWeight="bold"
-              h="14"
-              iconSpacing="3"
-              rightIcon={
-                <Box
-                  as={FaArrowRight}
-                  fontSize="sm"
-                  transition="transform 0.2s"
-                  _groupHover={{ transform: 'translateX(2px)' }}
-                />
-              }
-            >
-              Learn More
-            </Button> */}
           </Box>
           <Center flex="1" shadow="lg" minH={[0, 420]} maxW={{ lg: 'xl' }}>
             <Img

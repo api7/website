@@ -45,26 +45,6 @@ const App: NextPage<Props, any> = ({ t }) => {
             <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')}>
               {t("home-block5-desc")}
             </Text>
-            {/* <Button
-              className="group"
-              mt="8"
-              colorScheme="blue"
-              size="lg"
-              px="8"
-              fontWeight="bold"
-              h="14"
-              iconSpacing="3"
-              rightIcon={
-                <Box
-                  as={FaArrowRight}
-                  fontSize="sm"
-                  transition="transform 0.2s"
-                  _groupHover={{ transform: 'translateX(2px)' }}
-                />
-              }
-            >
-              Learn More
-            </Button> */}
           </Box>
         </Stack>
       </Box>
