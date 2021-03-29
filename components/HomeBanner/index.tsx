@@ -1,5 +1,4 @@
-import { Box, IconButton, Text } from '@chakra-ui/react'
-import { HiX } from 'react-icons/hi'
+import { Box, Text } from '@chakra-ui/react'
 import { withTranslation } from 'i18n'
 import React from "react";
 import { TFunction } from "next-i18next";
@@ -30,17 +29,6 @@ const App: NextPage<Props, any> = ({ t }) => {
         >
           {t("text5")}
         </Box>
-        <IconButton
-          position={{ base: 'absolute', md: 'relative' }}
-          insetEnd="3"
-          top="0"
-          size="sm"
-          fontSize="1.5em"
-          variant="unstyled"
-          display="inline-flex"
-          aria-label="Close Banner"
-          icon={<HiX />}
-        />
       </Text>
     </Box>
   )
