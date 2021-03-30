@@ -50,24 +50,25 @@ const App: NextPage<Props, any> = ({ t }) => {
           <SimpleGrid
             columns={{ base: 2, md: 2, lg: 6 }}
             color="gray.500"
+            mt="12"
             alignItems="center"
             justifyItems="center"
             spacing={{ base: '12', lg: '12' }}
             fontSize="2xl"
           >
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/airwallex.svg" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/taikang-full.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/efactoryfoundation-full.webp" maxHeight="80px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/nasa.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/weibo-full.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/TravelSky2.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/airwallex-2.png" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/taikang-2.png" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/eFactory%20Foundation-2.png" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/NASA-2.png" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/weibo-2.png" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/hangxin-2.png" />
 
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/tencent.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/qingcloud.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/chinamobile.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/naixue-full.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/xdf3.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/tal.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/tencent-2.png" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/QING-2.png" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/mobile-2.png" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/naixue-2.png" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/xindongfang-2.png" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/haoweilai-2.png" />
           </SimpleGrid>
         </Box>
       </Box>
