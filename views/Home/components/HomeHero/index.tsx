@@ -56,8 +56,8 @@ const App: NextPage<Props, any> = ({ t }) => {
             fontSize="2xl"
           >
             <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/airwallex.svg" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/efactoryfoundation.png" maxHeight="60px" />
             <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/taikang-full.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/efactoryfoundation-full.webp" maxHeight="80px" />
             <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/nasa.png" maxHeight="60px" />
             <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/weibo-full.png" maxHeight="60px" />
             <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/TravelSky2.png" maxHeight="60px" />
