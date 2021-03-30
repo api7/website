@@ -58,7 +58,7 @@ const App: NextPage<Props, any> = ({ t }) => {
           >
             <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/airwallex-2.png" />
             <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/taikang-2.png" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/eFactory%20Foundation-2.png" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/eFactory-2.png" />
             <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/NASA-2.png" />
             <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/weibo-2.png" />
             <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/hangxin-2.png" />
