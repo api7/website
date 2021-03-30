@@ -55,19 +55,19 @@ const App: NextPage<Props, any> = ({ t }) => {
             spacing={{ base: '12', lg: '12' }}
             fontSize="2xl"
           >
-            <Image src="https://apisix.apache.org/img/showcase/huawei.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/qcloud.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/10086.png" maxHeight="60px" />
-            <Image src="https://static.apiseven.com/brand/Airwallex%20Logo%20-%20White.svg" maxHeight="60px" />
-            <Image src="https://p3.ssl.qhimg.com/t011e94f0b9ed8e66b0.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/xueqiu.png" maxHeight="60px" />
-
-            <Image src="https://static.apiseven.com/brand/1588907670-WechatIMG631-removebg-preview.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/taikang2.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/aispeech.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/airwallex.svg" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/efactoryfoundation.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/taikang-full.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/nasa.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/weibo-full.png" maxHeight="60px" />
             <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/TravelSky2.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/ke2.png" maxHeight="60px" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/202103/nasa2.png" maxHeight="60px" />
+
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/tencent.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/qingcloud.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/chinamobile.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/naixue-full.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/xdf3.png" maxHeight="60px" />
+            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/tal.png" maxHeight="60px" />
           </SimpleGrid>
         </Box>
       </Box>
