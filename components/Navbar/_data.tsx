@@ -1,6 +1,11 @@
 import * as React from 'react'
 import { IoCalendar, IoGrid, IoHelpBuoy } from 'react-icons/io5'
+import { AiFillGithub, AiOutlineProject, AiOutlineTeam } from 'react-icons/ai'
 import { MdWeb } from 'react-icons/md'
+import { CgReadme } from 'react-icons/cg'
+import { SiMeetup } from 'react-icons/si'
+import { MdCompare } from 'react-icons/md'
+import { TiNews } from 'react-icons/ti'
 
 export interface Link {
   label: string
@@ -25,17 +30,17 @@ export const EN_US_Links: Link[] = [
         label: "Apache APISIX",
         href: "http://apisix.apache.org/",
         description: "A dynamic, real-time, high-performance API gateway.",
-        icon: <IoHelpBuoy />
+        icon: <AiFillGithub />
       }, {
         label: "Apache APISIX Ingress Controller",
         href: "https://github.com/apache/apisix-ingress-controller",
         description: "Integrated with Kubernetes cluster management capabilities, it supports assertive dynamic configuration of distribution rules for ingress traffic.",
-        icon: <IoHelpBuoy />
+        icon: <AiFillGithub />
       }, {
         label: "Service Mesh",
         href: "#",
         description: "Coming soon",
-        icon: <IoHelpBuoy />
+        icon: <AiFillGithub />
       }
     ]
   },
@@ -53,12 +58,12 @@ export const EN_US_Links: Link[] = [
         label: 'DevCon',
         description: 'Watch Apache APISIX DevCon 2020 Records',
         href: '/resources/apisix-devcon-2020',
-        icon: <IoCalendar />,
+        icon: <SiMeetup />,
       }, {
         label: 'Contributor Graph',
         description: 'Generate Contributor Graph from GitHub',
         href: '/contributor-graph',
-        icon: <IoHelpBuoy />,
+        icon: <AiOutlineProject />,
       }, {
         label: 'Documentation',
         description: 'Coming soon',
@@ -80,13 +85,13 @@ export const EN_US_Links: Link[] = [
         label: "News",
         description: "Get latest news about us",
         href: "/news",
-        icon: <MdWeb />
+        icon: <TiNews />
       },
       {
         label: 'Team',
         description: 'No one can whistle a symphony. It takes a whole orchestra to play it',
         href: '/team',
-        icon: <MdWeb />,
+        icon: <AiOutlineTeam />,
       },
       {
         label: 'Careers',
@@ -107,12 +112,12 @@ export const EN_US_Links: Link[] = [
         label: 'Business Support',
         description: 'Features included in commercial products',
         href: '/business-support',
-        icon: <MdWeb />,
+        icon: <IoHelpBuoy />,
       }, {
         label: "Apache APISIX vs API7",
         href: "/apisix-vs-api7",
         description: "Difference between Apache APISIX and API7",
-        icon: <IoHelpBuoy />
+        icon: <MdCompare />
       }
     ]
   },
@@ -130,17 +135,17 @@ export const ZH_CN_Links: Link[] = [
         label: "Apache APISIX",
         href: "http://apisix.apache.org/",
         description: "高性能、可扩展的微服务 API 网关",
-        icon: <IoHelpBuoy />
+        icon: <AiFillGithub />
       }, {
         label: "Apache APISIX Ingress Controller",
         href: "https://github.com/apache/apisix-ingress-controller",
         description: "基于 Apache APISIX 并集成 Kubernetes 集群管理能力，支持申明式动态配置入口流量的分发规则。",
-        icon: <IoHelpBuoy />
+        icon: <AiFillGithub />
       }, {
         label: "Service Mesh",
         href: "#",
         description: "敬请期待",
-        icon: <IoHelpBuoy />
+        icon: <AiFillGithub />
       }
     ]
   },
@@ -158,18 +163,18 @@ export const ZH_CN_Links: Link[] = [
         label: '开发者大会',
         description: '观看 Apache APISIX DevCon 2020 大会录像',
         href: '/resources/apisix-devcon-2020',
-        icon: <IoCalendar />,
+        icon: <SiMeetup />,
       }, {
         label: '贡献者趋势',
         description: '获取开源项目贡献者趋势图',
         href: '/contributor-graph',
-        icon: <IoHelpBuoy />,
+        icon: <AiOutlineProject />,
       },
       {
         label: '产品文档',
         description: '敬请期待',
         href: '#',
-        icon: <IoHelpBuoy />,
+        icon: <CgReadme />,
       }
     ],
   }, {
@@ -179,7 +184,7 @@ export const ZH_CN_Links: Link[] = [
         label: '商业支持',
         description: '获取 API7 产品商业支持内容',
         href: '/business-support',
-        icon: <IoGrid />,
+        icon: <IoHelpBuoy />,
       }, {
         label: '预约演示',
         description: '联系我们，预约产品演示。',
@@ -189,7 +194,7 @@ export const ZH_CN_Links: Link[] = [
         label: "Apache APISIX vs API7",
         href: "/apisix-vs-api7",
         description: "产品能力、商业支持对比",
-        icon: <IoHelpBuoy />
+        icon: <MdCompare />
       }
     ]
   },
@@ -206,13 +211,13 @@ export const ZH_CN_Links: Link[] = [
         label: "新闻报道",
         description: "获取支流科技相关新闻",
         href: "/news",
-        icon: <MdWeb />
+        icon: <TiNews />
       },
       {
         label: '团队成员',
         description: '团队成员热爱开源、技术背景深厚',
         href: '/team',
-        icon: <MdWeb />,
+        icon: <AiOutlineTeam />,
       },
       {
         label: '工作机会',
