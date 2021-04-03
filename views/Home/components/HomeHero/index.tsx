@@ -45,7 +45,7 @@ const App: NextPage<Props, any> = ({ t }) => {
           </Box>
         </Stack>
       </Box>
-      <Box as="section" pt={{ base: '30' }}>
+      <Box as="section" pt={{ base: '30', lg: language === 'zh-CN' ? '30' : '0' }}>
         <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto">
           <SimpleGrid
             columns={{ base: 2, md: 2, lg: 6 }}

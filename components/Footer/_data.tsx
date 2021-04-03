@@ -149,7 +149,7 @@ export const ZH_CN_links: LinkGroupData[] = [
         label: "深圳软件产业基地 5E 座",
         href: "#"
       }, {
-        label: "杭州财富金融中心 2 幢 46 楼",
+        label: "杭州财富金融中心 2 幢",
         href: "#"
       }, {
         label: "wenming@api7.ai",

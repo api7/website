@@ -34,7 +34,7 @@ const App: NextPage<Props, any> = ({ t }) => {
           </Center>
           <Box maxW={{ lg: 'lg' }}>
             <Heading
-              size="2xl"
+              size="xl"
               mt="10"
               fontWeight="extrabold"
               letterSpacing="tight"

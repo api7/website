@@ -29,7 +29,7 @@ const App: NextPage<Props, any> = ({ t }) => {
         <Stack spacing={{ base: '4', lg: '20' }} direction={{ base: 'column', lg: 'row' }}>
           <Box maxW={{ lg: 'lg' }}>
             <Heading
-              size="2xl"
+              size="xl"
               mt="10"
               fontWeight="extrabold"
               letterSpacing="tight"
@@ -37,7 +37,7 @@ const App: NextPage<Props, any> = ({ t }) => {
             >
               {t("home-text23")}
             </Heading>
-            <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')} textAlign="justify">
+            <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')} textAlign="start">
               {t("home-text24")}
             </Text>
           </Box>
