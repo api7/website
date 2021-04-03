@@ -47,10 +47,10 @@ const App: NextPage<Props, any> = ({ t }) => {
         >
           <SimpleGrid
             flex="1"
-            w={{ base: 'full', lg: 'auto' }}
+            w={{ base: 'full' }}
             maxW={{ lg: '3xl' }}
             columns={{ base: 1, md: 2, lg: 4 }}
-            spacing={{ base: '12', md: '10' }}
+            spacing={{ base: '12', md: '6' }}
             fontSize="sm"
             marginEnd={{ md: '4', lg: '16' }}
           >
