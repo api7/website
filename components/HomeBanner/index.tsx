@@ -1,6 +1,7 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Text, IconButton } from '@chakra-ui/react'
+import { HiX } from 'react-icons/hi'
 import { withTranslation } from 'i18n'
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { TFunction } from "next-i18next";
 import { NextPage } from "next";
 
@@ -9,6 +10,22 @@ type Props = {
 };
 
 const App: NextPage<Props, any> = ({ t }) => {
+  const [show, setShow] = useState(false)
+
+  useEffect(() => {
+    if (sessionStorage.getItem("DISABLE_HOME_BANNER") === "true") {
+      return
+    }
+
+    if (["/zh", "/en", "/"].includes(window.location.pathname)) {
+      setShow(true)
+    }
+  }, [])
+
+  if (!show) {
+    return null
+  }
+
   return (
     <Box as="header" bgGradient="linear(to-r, blue.500, purple.500)" color="white" py="2">
       <Text px="10" align={{ base: 'start', md: 'center' }} fontSize="sm" position="relative">
@@ -29,6 +46,21 @@ const App: NextPage<Props, any> = ({ t }) => {
         >
           {t("text5")}
         </Box>
+        <IconButton
+          position={{ base: 'absolute', md: 'relative' }}
+          insetEnd="3"
+          top="0"
+          size="sm"
+          fontSize="1.5em"
+          variant="unstyled"
+          display="inline-flex"
+          aria-label="Close Banner"
+          icon={<HiX />}
+          onClick={() => {
+            sessionStorage.setItem("DISABLE_HOME_BANNER", "true")
+            setShow(false)
+          }}
+        />
       </Text>
     </Box>
   )
