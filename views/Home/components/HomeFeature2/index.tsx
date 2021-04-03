@@ -41,7 +41,7 @@ const App: NextPage<Props, any> = ({ t }) => {
               {t("home-text24")}
             </Text>
           </Box>
-          <Center flex="1" shadow="lg" minH={[0, 420]} maxW={{ lg: 'xl' }}>
+          <Center flex="1" minH={[0, 420]} maxW={{ lg: 'xl' }}>
             <Img
               objectFit="contain"
               w="full"
