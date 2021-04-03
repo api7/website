@@ -46,7 +46,7 @@ const App: NextPage<Props, any> = ({ t }) => {
         </Stack>
       </Box>
       <Box as="section" pt={{ base: '30' }}>
-        <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
+        <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto">
           <SimpleGrid
             columns={{ base: 2, md: 2, lg: 6 }}
             color="gray.500"
@@ -54,21 +54,28 @@ const App: NextPage<Props, any> = ({ t }) => {
             alignItems="center"
             justifyItems="center"
             spacing={{ base: '12', lg: '12' }}
-            fontSize="2xl"
           >
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/airwallex-2.png" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/taikang-2.png" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/eFactory-3.png" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/NASA-2.png" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/weibo-2.png" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/hangxin-2.png" />
-
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/tencent-2.png" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/QING-2.png" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/mobile-2.png" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/naixue-2.png" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/xindongfang-2.png" />
-            <Image src="https://api7-website-1301662268.file.myqcloud.com/20210330/gray/haoweilai-2.png" />
+            {
+              [
+                "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/airwallex-2.png",
+                "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/taikang-2.png",
+                "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/eFactory-3.png",
+                "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/NASA-2.png",
+                "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/weibo-2.png",
+                "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/hangxin-2.png",
+                "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/tencent-2.png",
+                "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/QING-2.png",
+                "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/mobile-2.png",
+                "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/naixue-2.png",
+                "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/xindongfang-2.png",
+                "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/haoweilai-2.png"
+              ].map(item => (
+                <>
+                  <Image src={item} key={item} display={{ base: 'flex', lg: 'none' }} />
+                  <Image src={item} key={item} maxW="200" display={{ base: 'none', lg: 'flex' }} />
+                </>
+              ))
+            }
           </SimpleGrid>
         </Box>
       </Box>
