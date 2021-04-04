@@ -21,7 +21,7 @@ const App: NextPage<Props, any> = ({ t }) => {
     <Box as="section" bg={mode('gray.100', 'gray.800')} pb="20">
       <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
         <Stack spacing={{ base: '4', lg: '20' }} direction={{ base: 'column-reverse', lg: 'row' }}>
-          <Center flex="1" shadow="lg" minH={[0, 420]} maxW={{ lg: 'xl' }}>
+          <Center flex="1" minH={[0, 420]} maxW={{ lg: 'xl' }}>
             <Img
               objectFit="contain"
               w="full"
@@ -34,7 +34,7 @@ const App: NextPage<Props, any> = ({ t }) => {
           </Center>
           <Box maxW={{ lg: 'lg' }}>
             <Heading
-              size="2xl"
+              size="xl"
               mt="10"
               fontWeight="extrabold"
               letterSpacing="tight"
@@ -45,26 +45,6 @@ const App: NextPage<Props, any> = ({ t }) => {
             <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')}>
               {t("home-block5-desc")}
             </Text>
-            {/* <Button
-              className="group"
-              mt="8"
-              colorScheme="blue"
-              size="lg"
-              px="8"
-              fontWeight="bold"
-              h="14"
-              iconSpacing="3"
-              rightIcon={
-                <Box
-                  as={FaArrowRight}
-                  fontSize="sm"
-                  transition="transform 0.2s"
-                  _groupHover={{ transform: 'translateX(2px)' }}
-                />
-              }
-            >
-              Learn More
-            </Button> */}
           </Box>
         </Stack>
       </Box>

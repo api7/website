@@ -1,6 +1,14 @@
 {
   "zh-CN": [
     {
+      "title": "Apache APISIX Ingress Controller 中的流量切分",
+      "image": "https://api7-website-1301662268.file.myqcloud.com/ingress_controller_cover.png",
+      "type": "article",
+      "tags": [],
+      "date": "2021-03-27",
+      "path": "/zh/blog/traffic-split-in-apache-apisix-ingress-controller"
+    },
+    {
       "title": "使用 Cypress 获取前端测试覆盖率",
       "image": "https://static.apiseven.com/logo/cypress.png",
       "type": "article",
@@ -114,6 +122,14 @@
     }
   ],
   "en-US": [
+    {
+      "title": "Traffic Split in Apache APISIX Ingress Controller",
+      "image": "https://api7-website-1301662268.file.myqcloud.com/ingress_controller_cover.png",
+      "type": "article",
+      "tags": [],
+      "date": "2021-03-27",
+      "path": "/en/blog/traffic-split-in-apache-apisix-ingress-controller"
+    },
     {
       "title": "Get Front-End Test Coverage with Cypress",
       "image": "https://static.apiseven.com/logo/cypress.png",

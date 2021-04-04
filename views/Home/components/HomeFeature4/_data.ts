@@ -25,7 +25,7 @@ export const EN_US_data: BlogData[] = [
       'https://static.apiseven.com/logo/geely-1.png',
     title: 'Digitalization of Industry, "Smart" Future',
     description:
-      'Cloud native has become a key driver of digital transformation for global enterprises. Zhiliu Technology and Geely are working together to achieve centralized management, visualization and security of APIs, laying the foundation for Geely\'s next "10 million vehicle" era.',
+      'Cloud native has become a key driver of digital transformation for global enterprises. Shenzhen Zhiliu Technology Co.,Ltd and Geely are working together to achieve centralized management, visualization and security of APIs, laying the foundation for Geely\'s next "10 million vehicle" era.',
     type: 'article',
     tags: [],
     href: '/en/usercase/geely'

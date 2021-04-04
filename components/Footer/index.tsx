@@ -47,10 +47,10 @@ const App: NextPage<Props, any> = ({ t }) => {
         >
           <SimpleGrid
             flex="1"
-            w={{ base: 'full', lg: 'auto' }}
+            w={{ base: 'full' }}
             maxW={{ lg: '3xl' }}
             columns={{ base: 1, md: 2, lg: 4 }}
-            spacing={{ base: '12', md: '10' }}
+            spacing={{ base: '12', md: '6' }}
             fontSize="sm"
             marginEnd={{ md: '4', lg: '16' }}
           >
@@ -110,7 +110,7 @@ const App: NextPage<Props, any> = ({ t }) => {
               language === 'zh-CN' ? (
                 <Text>版权所有 &copy; {new Date().getFullYear()} 深圳支流科技有限公司 保留一切权利</Text>
               ) : (
-                <Text>Copyright &copy;Zhiliu Technology {new Date().getFullYear()}. All rights reserved.</Text>
+                <Text>Copyright &copy;Shenzhen Zhiliu Technology Co.,Ltd {new Date().getFullYear()}. All rights reserved.</Text>
               )
             }
             {

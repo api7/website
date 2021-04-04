@@ -29,7 +29,7 @@ const App: NextPage<Props, any> = ({ t }) => {
         <Stack spacing={{ base: '4', lg: '20' }} direction={{ base: 'column', lg: 'row' }}>
           <Box maxW={{ lg: 'lg' }}>
             <Heading
-              size="2xl"
+              size="xl"
               mt="10"
               fontWeight="extrabold"
               letterSpacing="tight"
@@ -37,31 +37,11 @@ const App: NextPage<Props, any> = ({ t }) => {
             >
               {t("home-text23")}
             </Heading>
-            <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')} textAlign="justify">
+            <Text fontSize="lg" mt="6" color={mode('gray.600', 'gray.400')} textAlign="start">
               {t("home-text24")}
             </Text>
-            {/* <Button
-              className="group"
-              mt="8"
-              colorScheme="blue"
-              size="lg"
-              px="8"
-              fontWeight="bold"
-              h="14"
-              iconSpacing="3"
-              rightIcon={
-                <Box
-                  as={FaArrowRight}
-                  fontSize="sm"
-                  transition="transform 0.2s"
-                  _groupHover={{ transform: 'translateX(2px)' }}
-                />
-              }
-            >
-              Learn More
-            </Button> */}
           </Box>
-          <Center flex="1" shadow="lg" minH={[0, 420]} maxW={{ lg: 'xl' }}>
+          <Center flex="1" minH={[0, 420]} maxW={{ lg: 'xl' }}>
             <Img
               objectFit="contain"
               w="full"

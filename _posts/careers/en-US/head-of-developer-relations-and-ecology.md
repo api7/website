@@ -3,7 +3,7 @@ title: Head of Developer Relations and Ecology
 date: 2021-02-23 11:05:00
 ---
 
-For Apache APISIX and Shenzhen Zhiliu Technology, the open source community is the cornerstone, and we believe in "community over code".
+For Apache APISIX and Shenzhen Zhiliu Technology Co.,Ltd, the open source community is the cornerstone, and we believe in "community over code".
 
 Our users and contributors in the community have provided a great deal of support and assistance to APISIX, creating a healthy and sustainable ecosystem that makes Apache APISIX an open source project that developers enjoy participating in!
 

@@ -112,7 +112,7 @@ const DesktopNavContent = ({ links, language, ...props }: Props) => {
 
         <Menu>
           <MenuButton as={Button}>
-            {language === 'zh-CN' ? 'English' : '简体中文'}
+            {language === 'zh-CN' ? 'Language' : '切换语言'}
           </MenuButton>
           <MenuList>
             <MenuItem as="a" href={zhLang}>简体中文</MenuItem>

@@ -158,14 +158,13 @@ export const SArticle = styled.article`
   h3 {
     display: flex;
     margin: 0 0 30px;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   ol, ul {
     margin-top: 0;
     margin-bottom: 30px;
     display: block;
-    list-style-type: decimal;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0em;
