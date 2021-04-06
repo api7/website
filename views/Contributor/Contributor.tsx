@@ -82,7 +82,8 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       </Fab>
       <NextSeo title={t(`common:contributor-graph`)} />
       <div className="iframeBox">
-        <iframe src={`https://contributor-graph.apiseven.com/?chart=${chart}&repo=${repo}`} scrolling="no" style={{ overflow: "hidden" }}></iframe>
+<!--         <iframe src={`https://contributor-graph.apiseven.com/?chart=${chart}&repo=${repo}`} scrolling="no" style={{ overflow: "hidden" }}></iframe> -->
+        <iframe src={`https://contributor-graph-git-activity-line-apiseven.vercel.app/?chart=${chart}&repo=${repo}`} scrolling="no" style={{ overflow: "hidden" }}></iframe>
       </div>
     </SWrapper>
   );
