@@ -4,9 +4,9 @@ import { TFunction } from "next-i18next";
 import { NextSeo } from "next-seo";
 import { Fab, Action } from "react-tiny-fab";
 import copy from "copy-to-clipboard";
-import ShareIcon from "@material-ui/icons/Share";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkIcon from "@material-ui/icons/Link";
+import SubdirectoryArrowRightIcon from '@material-ui/icons/SubdirectoryArrowRight';
 
 import { withTranslation } from "../../i18n";
 import { SWrapper } from "./style";
@@ -59,7 +59,8 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
         event="click"
         mainButtonStyles={{ background: "#1DB954" }}
         alwaysShowTitle={true}
-        icon={<ShareIcon />}
+        icon={<SubdirectoryArrowRightIcon style={{transform: 'scaleY(-1)'}} />}
+        text="Share chart"
       >
         <Action
           text="Share on Twitter"
