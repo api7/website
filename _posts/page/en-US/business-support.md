@@ -29,7 +29,7 @@ The following table is the specific content:
 | Technical Support Contact                |           1           |        2         |                  2                  |
 | Technical Support Manager                |                       |                  |                  ✓                  |
 | Inspection                               |                       |                  |                  ✓                  |
-| Free additional development support time |       1 man-day       |    2 man-day     |              4 man-day              |
+| Free additional development support time |      8 Man-hour       |   16 Man-hour    |             32 Man-hour             |
 
 ## Toll
 
