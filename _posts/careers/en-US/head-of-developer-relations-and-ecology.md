@@ -9,23 +9,23 @@ Our users and contributors in the community have provided a great deal of suppor
 
 As our Developer Relations and Ecology Lead, you will be a solid support to the community.
 
-### Content
+## Content
 
-1. Connecting with members of the open source community in a variety of ways, whether face-to-face, blogs, forums, or other social channels and events.
-2. Communicating with partners and building a global API ecosystem together.
-3. Let APISIX run in more enterprises and complete more large-flow challenges;
-4. This position supports telecommuting.
+- Connecting with members of the open source community in a variety of ways, whether face-to-face, blogs, forums, or other social channels and events.
+- Communicating with partners and building a global API ecosystem together.
+- Let APISIX run in more enterprises and complete more large-flow challenges;
+- This position supports telecommuting.
 
-### Requirements
+## Requirements
 
-1. Understanding of the open source community and identification with the open source culture.
-2. Good in dealing with engineers.
-3. Happy to work with remote distribution teams.
-4. Solid writing skills and the ability to produce engaging content - including presentations, blogs, videos, etc.
+- Understanding of the open source community and identification with the open source culture.
+- Good in dealing with engineers.
+- Happy to work with remote distribution teams.
+- Solid writing skills and the ability to produce engaging content - including presentations, blogs, videos, etc.
 
-### Additional
+## Additional
 We're a remote work company with employees in 6 cities across China, and we do all of our collaboration through GitHub, Slack and Google Docs.
 
-### Contact
+## Contact
 
 [wenming@api7.ai](mailto:wenming@api7.ai)
