@@ -9,8 +9,8 @@ Provide original commercial support for companies that use Apache APISIX in the 
 
 ## Service Content
 
-Service support includes architecture review, code review, troubleshooting, diagnosis, suggestions, upgrades and security patches to ensure the normal operation of Apache APISIX.  
-If you have modified the core of Apache APISIX, or have custom plug-ins, it is recommended to purchase the advanced version so that we can understand these changes and locate and resolve faults faster.  
+Service support includes architecture review, code review, troubleshooting, diagnosis, suggestions, upgrades and security patches to ensure the normal operation of Apache APISIX.
+If you have modified the core of Apache APISIX, or have custom plug-ins, it is recommended to purchase the advanced version so that we can understand these changes and locate and resolve faults faster.
 The following table is the specific content:
 
 |                                          |                       |                  |                                      |
@@ -33,5 +33,5 @@ The following table is the specific content:
 
 ## Toll
 
-The subscription fee is charged quarterly.  
+The subscription fee is charged quarterly.
 [Contact us for a quote](https://www.apiseven.com/support-for-business-form/)

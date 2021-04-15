@@ -4,7 +4,7 @@ avatar: "https://avatars.githubusercontent.com/u/4413028?s=460&u=e140a6d2bf19c42
 author: "Jin Wei"
 href: "https://github.com/gxthrj"
 date: 2020-12-18
----  
+---
 
 ## Preface
 
@@ -42,7 +42,7 @@ matches:
 
 ![api-model](https://gateway-api.sigs.k8s.io/images/api-model.png)
 
-3. Role-oriented RBAC: The realization of multi-layer API, one of the ideas is to design resource objects from the perspective of users. These resources will eventually be mapped with the common roles of running applications on Kubernetes. 
+3. Role-oriented RBAC: The realization of multi-layer API, one of the ideas is to design resource objects from the perspective of users. These resources will eventually be mapped with the common roles of running applications on Kubernetes.
 
 ## What resource objects are abstracted by the Kubernetes Service APIs?
 
@@ -68,7 +68,7 @@ GatewayClass, Gateway, Route
 
 - Gateway and Route are in a many-to-many relationship.
 
-3. Route describes how traffic passing through a gateway is mapped to a service.  
+3. Route describes how traffic passing through a gateway is mapped to a service.
 
 ![schema-uml](https://gateway-api.sigs.k8s.io/images/schema-uml.svg)
 
