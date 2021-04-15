@@ -4,7 +4,7 @@ avatar: "https://avatars.githubusercontent.com/u/4413028?s=460&u=e140a6d2bf19c42
 author: "金卫"
 href: "https://github.com/gxthrj"
 date: 2020-12-18
----  
+---
 
 ## 前言
 
@@ -42,7 +42,7 @@ matches:
 
 ![api-model](https://gateway-api.sigs.k8s.io/images/api-model.png)
 
-3. 面向角色 RBAC：多层 API 的实现，其中一个思想就是从使用者的角度去设计资源对象。这些资源最终会与 Kubernetes 上运行应用程序的常见角色进行映射。 
+3. 面向角色 RBAC：多层 API 的实现，其中一个思想就是从使用者的角度去设计资源对象。这些资源最终会与 Kubernetes 上运行应用程序的常见角色进行映射。
 
 ## Kubernetes Service APIs  抽象出了哪些资源对象？
 
@@ -68,7 +68,7 @@ GatewayClass, Gateway, Route
 
 - Gateway 与 Route 是多对多的关系；
 
-3. Route 描述了通过网关的流量如何映射到服务。  
+3. Route 描述了通过网关的流量如何映射到服务。
 
 ![schema-uml](https://gateway-api.sigs.k8s.io/images/schema-uml.svg)
 

@@ -34,7 +34,7 @@ Once the Kubernetes cluster is ready, create a namespace called ingress-apisix, 
 
     kubectl create namespace ingress-apisix
 
-We will use Helm to deploy all the components of Ingress APISIX (Apache APISIX and apisix-ingress-controller), so please also follow the installation guide (https://helm.sh/docs/intro/install/) to install Helm. The helm chart for Apache APISIX and apisix-ingress-controller is located at apache/apisix-helm-chart (https://github.com/apache/apisix-helm-chart) and apache/apisix-ingress-controller (https://github.com/apache/apisix-ingress-controller), please clone these paths to obtain the corresponding charts.
+We will use Helm to deploy all the components of Ingress APISIX (Apache APISIX and apisix-ingress-controller), so please also follow the [installation guide](https://helm.sh/docs/intro/install/) to install Helm. The helm chart for Apache APISIX and apisix-ingress-controller is located at [apache/apisix-helm-chart](https://github.com/apache/apisix-helm-chart) and [apache/apisix-ingress-controller](https://github.com/apache/apisix-ingress-controller), please clone these paths to obtain the corresponding charts.
 
 ### **Installing Apache APISIX**
 
@@ -57,7 +57,7 @@ The above command will create two Kubernetes Service resources, apisix-gateway, 
 
 Also note: the allow.ipList field should be tailored to the EKS CIDR Ranges in our own Amazon EKS cluster, so that apisix-ingress-controller can be licensed by Apache APISIX (for pushing resources).
 
-See value.yaml (https://github.com/apache/apisix-helm-chart/blob/master/chart/apisix/values.yaml) for further information on all configuration items if there are any other requirements.
+See [value.yaml](https://github.com/apache/apisix-helm-chart/blob/master/charts/apisix/values.yaml) for further information on all configuration items if there are any other requirements.
 
 ### **Install apisix-ingress-controller**
 

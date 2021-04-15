@@ -8,7 +8,7 @@ date: 2020-12-16
 
 ### Envoy filter
 
-Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures. 
+Envoy is an L7 proxy and communication bus designed for large modern service oriented architectures.
 A pluggable filter chain mechanism allows filters to be written to perform different tasks and inserted into the main server.
 
 ![Envoy filter](https://static.apiseven.com/filters.png)
@@ -26,7 +26,7 @@ Developers can extend Envoy in three ways:
 | WASM  |        high-medium         | on the fence |  depends on language   | compilation time depends on language |
 
 1. Using C++ to extend
-   
+
 In this way, C++ code is written directly on the basis of Envoy for functional enhancement. After implementing a custom filter, the new binary file is recompiled to complete the upgrade. There are two problems with this way:
 
 - Limited by the C++ language, difficulty of getting started, scarcity of developers.
