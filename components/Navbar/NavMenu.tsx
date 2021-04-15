@@ -4,7 +4,7 @@ import * as React from 'react'
 
 type DivProps = Omit<HTMLChakraProps<'div'>, keyof HTMLMotionProps<'div'>>
 
-export const MotionDiv = motion.custom(
+export const MotionDiv = motion(
   React.forwardRef<HTMLDivElement, DivProps>(function HTMLDivElement(props, ref) {
     const chakraProps = Object.fromEntries(
       Object.entries(props).filter(([key]) => !isValidMotionProp(key)),
