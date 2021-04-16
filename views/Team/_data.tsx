@@ -29,7 +29,7 @@ export const members: Member[] = [
     description: 'Apache APISIX Founder & PMC',
     type: 'team'
   }, {
-    role: ' Product VP',
+    role: 'Partner / Product VP',
     image: 'https://api7-website-1301662268.file.myqcloud.com/team/members/wangyeliang-3.jpg',
     name: 'Yeliang Wang',
     description: '',
