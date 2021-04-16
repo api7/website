@@ -30,7 +30,7 @@ export const members: Member[] = [
     type: 'team'
   }, {
     role: ' Product VP',
-    image: 'https://api7-website-1301662268.file.myqcloud.com/team/members/wangyeliang.jpg',
+    image: 'https://api7-website-1301662268.file.myqcloud.com/team/members/wangyeliang-3.jpg',
     name: 'Yeliang Wang',
     description: '',
     type: 'team'
