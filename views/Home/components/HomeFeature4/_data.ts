@@ -3,6 +3,16 @@ import { BlogData } from './BlogCard'
 export const EN_US_data: BlogData[] = [
   {
     image:
+      'https://api7-website-1301662268.file.myqcloud.com/ingress_controller_cover.png',
+    title: 'Traffic Split in Apache APISIX Ingress Controller',
+    description:
+      'Traffic Split is a feature that splits and deliveries traffic to multiple backend services. Solutions like API Gateway (e.g. Apache APISIX and Traefik), Service Mesh (e.g. Istio and Linkerd) are capable of doing traffic splitting and implement functionalities like Canary Release and Blue-Green Deployment.',
+    type: 'article',
+    tags: ['Ingress Controller'],
+    href: '/en/blog/traffic-split-in-apache-apisix-ingress-controller'
+  },
+  {
+    image:
       'https://static.apiseven.com/202102/WechatIMG3731.jpeg',
     title: 'How Amazon EKS and APISIX ingress controller work together to manage complex traffic',
     description:
@@ -20,19 +30,19 @@ export const EN_US_data: BlogData[] = [
     tags: ['Airwallex', 'Microservices'],
     href: '/zh/apisix-devcon-2020/airwallex'
   },
-  {
-    image:
-      'https://static.apiseven.com/logo/geely-1.png',
-    title: 'Digitalization of Industry, "Smart" Future',
-    description:
-      'Cloud native has become a key driver of digital transformation for global enterprises. Shenzhen Zhiliu Technology Co.,Ltd and Geely are working together to achieve centralized management, visualization and security of APIs, laying the foundation for Geely\'s next "10 million vehicle" era.',
-    type: 'article',
-    tags: [],
-    href: '/en/usercase/geely'
-  },
 ]
 
 export const ZH_CN_data: BlogData[] = [
+  {
+    image:
+      'https://api7-website-1301662268.file.myqcloud.com/ingress_controller_cover.png',
+    title: 'Apache APISIX Ingress Controller 中的流量切分',
+    description:
+      '流量切分是指将流量按照定义好的规则和比例分摊到多个后端服务，像常见的 API 网关产品、服务网格 Sidecar Proxy，都提供了流量切分的功能，以此来实现细粒度的金丝雀发布，蓝绿部署等功能。',
+    type: '博客',
+    tags: ['Ingress Controller'],
+    href: '/zh/blog/traffic-split-in-apache-apisix-ingress-controller'
+  },
   {
     image:
       'https://static.apiseven.com/202102/WechatIMG3731.jpeg',
@@ -51,15 +61,5 @@ export const ZH_CN_data: BlogData[] = [
     type: 'video',
     tags: ['Airwallex', '微服务'],
     href: '/zh/apisix-devcon-2020/airwallex'
-  },
-  {
-    image:
-      'https://static.apiseven.com/logo/geely-1.png',
-    title: '支流科技与吉利汽车：产业数字化，「智造」未来',
-    description:
-      '云原生已经成为全球企业数字化转型关键的驱动力，支流科技与吉利合作，实现对 API 的集中管理、可视化和安全保障，为吉利下一个「千万辆」时代打好基础。',
-    type: '博客',
-    tags: ['吉利集团'],
-    href: '/zh/usercase/geely'
   },
 ]

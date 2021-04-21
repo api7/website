@@ -4,9 +4,9 @@ import { TFunction } from "next-i18next";
 import { NextSeo } from "next-seo";
 import { Fab, Action } from "react-tiny-fab";
 import copy from "copy-to-clipboard";
-import ShareIcon from "@material-ui/icons/Share";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkIcon from "@material-ui/icons/Link";
+import SubdirectoryArrowRightIcon from '@material-ui/icons/SubdirectoryArrowRight';
 
 import { withTranslation } from "../../i18n";
 import { SWrapper } from "./style";
@@ -29,13 +29,29 @@ const getParameterByName = (name, url = '') => {
 
 const Contributor: NextPage<Props, any> = ({ t, url }) => {
   const repo = getParameterByName('repo', url);
+  const chart = getParameterByName('chart', url);
   const [legend, setLegend] = useState([]);
+  const [chartType, setChartType] = useState('');
+  const [shareUrl, setShareUrl] = useState('https://www.apiseven.com/en/contributor-graph')
 
   useEffect(() => {
     window.addEventListener('message', function (event) {
-      setLegend(event.data);
+      if (event.data.chartType) {
+        setChartType(event.data.chartType)
+      }
+      if (event.data.legend) {
+        setLegend(event.data.legend);
+      }
     })
   }, []);
+
+  useEffect(() => {
+    const url = `${window.location.protocol +
+      "//" +
+      window.location.host +
+      window.location.pathname}/?chart=${chartType}&repo=${legend.join(",")}`
+    setShareUrl(url);
+  }, [chartType, legend])
 
   return (
     <SWrapper>
@@ -43,15 +59,14 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
         event="click"
         mainButtonStyles={{ background: "#1DB954" }}
         alwaysShowTitle={true}
-        icon={<ShareIcon />}
+        icon={<SubdirectoryArrowRightIcon style={{transform: 'scaleY(-1)'}} />}
+        text="Share chart"
       >
         <Action
           text="Share on Twitter"
           style={{ backgroundColor: "rgb(29, 161, 242)" }}
           onClick={() => {
-            window.location.href = `https://twitter.com/share?text=Amazing tools to view your repo contributor over time!&url=https://www.apiseven.com/en/contributor-graph?repo=${legend.join(
-              ","
-            )}`;
+            window.location.href = `https://twitter.com/share?text=Amazing tools to view your repo contributor over time!&url=${shareUrl}`;
           }}
         >
           <TwitterIcon />
@@ -60,14 +75,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
           text="Copy share link"
           style={{ backgroundColor: "#1769FF" }}
           onClick={() => {
-            const text = `${window.location.protocol +
-              "//" +
-              window.location.host +
-              window.location.pathname}?repo=${legend.join(
-                ","
-              )}`
-
-            copy(text);
+            copy(shareUrl);
           }}
         >
           <LinkIcon />
@@ -75,7 +83,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       </Fab>
       <NextSeo title={t(`common:contributor-graph`)} />
       <div className="iframeBox">
-        <iframe src={"https://contributor-graph.apiseven.com/?repo=" + repo} scrolling="no" style={{ overflow: "hidden" }}></iframe>
+        <iframe src={`https://contributor-graph.apiseven.com/?chart=${chart}&repo=${repo}`} scrolling="no" style={{ overflow: "hidden", height: '1000px' }}></iframe>
       </div>
     </SWrapper>
   );

@@ -31,7 +31,7 @@ const App: NextPage<Props, any> = ({ t }) => {
           letterSpacing="tight"
           lineHeight="1.2"
         >
-          {t("home-text26")}{' '}
+          {t("home-text26")}
           <Box
             as="mark"
             bg="unset"

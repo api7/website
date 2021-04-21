@@ -8,7 +8,7 @@ date: 2021-03-02
 
 ## 背景
 
-在[《使用 Cypress 让产品持续稳定交付》](stable-product-delivery-with-cypress)文章中，我们讨论了为什么选用 Cypress 作为 E2E 测试框架。在花了近两个月时间完善测试案例后，我们需要测试覆盖率来量化测试覆盖是否足够。本文将介绍如何使用 Cypress 获取 APISIX Dashboard 前端 E2E 覆盖率。
+在[《使用 Cypress 让产品持续稳定交付》](./stable-product-delivery-with-cypress)文章中，我们讨论了为什么选用 Cypress 作为 E2E 测试框架。在花了近两个月时间完善测试案例后，我们需要测试覆盖率来量化测试覆盖是否足够。本文将介绍如何使用 Cypress 获取 APISIX Dashboard 前端 E2E 覆盖率。
 
 ## 什么是代码覆盖率
 

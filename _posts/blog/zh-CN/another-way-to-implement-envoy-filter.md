@@ -29,7 +29,7 @@ Envoy 是面向服务架构设计的L7代理和通信总线，核心是一个 L3
 | WASM  |        high-medium         | on the fence |  depends on language   | compilation time depends on language |
 
 1.  编写 C++ 代码扩展
-   
+
 这种方式直接在 Envoy 基础上编写 C++ 代码进行功能增强，实现自定义的 filter 之后，重新编译新的二进制可执行文件，完成现有业务的升级替换。这种方式有以下两方面问题：
 - 受限于 C++ 语言，入门的难度，开发者稀缺。
 - 提高了部署、运维、升级的复杂性，Envoy将会变得越来越重，并且每次更改都需要重新编译二进制文件，不利于迭代和管理。

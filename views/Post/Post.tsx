@@ -128,7 +128,7 @@ const Page: NextPage<Props, any> = ({ t, content, data = {}, isSimple }) => {
                       </p>
                       <p>
                         {t("common:updatedAt")}&nbsp;
-                        {new Date(data.date).toLocaleDateString()}
+                        {shareUrl.indexOf("/zh") === -1 ? new Date(data.date).toLocaleDateString("en-US") : new Date(data.date).toLocaleDateString()}
                       </p>
                     </div>
                   </div>

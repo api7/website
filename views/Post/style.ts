@@ -24,9 +24,9 @@ export const SBox1 = styled.div`
   h1 {
     text-align: left;
     color: rgba(41, 41, 41, 1);
-    font-family: fell, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: Segoe UI;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 60px;
   }
 
@@ -46,12 +46,12 @@ export const SInner = styled.div`
   a {
     box-shadow: none;
     text-decoration: none;
-    color: #FF2500;
+    color: var(--chakra-colors-blue-500);
     font-weight: 300;
 
     :hover {
-      text-decoration: none;
-      opacity: .75;
+      text-decoration: underline;
+      color: var(--chakra-colors-blue-600);
     }
   }
 
@@ -139,19 +139,19 @@ export const SBox2 = styled.div`
 
 export const SArticle = styled.article`
   font-size: 16px;
-  font-family: initial;
-  font-weight: 300;
+  font-family: revert;
+  font-weight: 400;
   line-height: 1.618;
-  color: #586376;
-  word-break: break-all;
-
+  word-break: break-word;
+  color: #292929;
+  
   p {
     margin: 20px 0;
   }
 
   h2 {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 30px;
   }
 
@@ -172,14 +172,14 @@ export const SArticle = styled.article`
     padding-inline-start: 25px;
   }
 
-  p a {
+  a {
     box-shadow: none;
     text-decoration: none;
-    color: #ff2500;
+    color: var(--chakra-colors-blue-500);
 
     :hover {
-      text-decoration: none;
-      opacity: .75;
+      text-decoration: underline;
+      color: var(--chakra-colors-blue-600);
     }
   }
 

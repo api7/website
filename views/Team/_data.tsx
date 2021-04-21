@@ -29,6 +29,12 @@ export const members: Member[] = [
     description: 'Apache APISIX Founder & PMC',
     type: 'team'
   }, {
+    role: 'Partner / Product VP',
+    image: 'https://api7-website-1301662268.file.myqcloud.com/team/members/wangyeliang-3.jpg',
+    name: 'Yeliang Wang',
+    description: '',
+    type: 'team'
+  }, {
     role: 'Technical Consultant',
     image:
       'https://www.tetrate.io/about/img/people/sheng-wu.jpg',

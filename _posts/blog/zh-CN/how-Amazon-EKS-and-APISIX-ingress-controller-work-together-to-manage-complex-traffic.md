@@ -4,7 +4,7 @@ avatar: ""
 author: "亚马逊云科技 AWS云计算"
 href: ""
 date: 2021-02-07
----  
+---
 
 ## 背景
 
@@ -34,7 +34,7 @@ Kubernetes 集群就绪后，创建名为 ingress-apisix 的名称空间，后�
 
     kubectl create namespace ingress-apisix
 
-我们将使用 Helm 部署 Ingress APISIX（Apache APISIX 和 apisix-ingress-controller）的所有组件，因此也请按照安装指南(https://helm.sh/docs/intro/install/)  来安装 Helm。适用于 Apache APISIX 和 apisix-ingress-controller 的 helm chart 位于 apache/apisix-helm-chart (https://github.com/apache/apisix-helm-chart) 和 apache/apisix-ingress-controller (https://github.com/apache/apisix-ingress-controller) 路径下，请克隆这些路径以获得相应的 chart。
+我们将使用 Helm 部署 Ingress APISIX（Apache APISIX 和 apisix-ingress-controller）的所有组件，[因此也请按照安装指南](https://helm.sh/docs/intro/install/)  来安装 Helm。适用于 Apache APISIX 和 apisix-ingress-controller 的 helm chart 位于 [apache/apisix-helm-chart](https://github.com/apache/apisix-helm-chart) 和 [apache/apisix-ingress-controller](https://github.com/apache/apisix-ingress-controller) 路径下，请克隆这些路径以获得相应的 chart。
 
 ### **安装 Apache APISIX**
 
@@ -57,7 +57,7 @@ Apache APISIX 充当了apisix-ingress-controller的代理平面，应提前部�
 
 另外要注意：allow.ipList 字段应根据我们自己 Amazon EKS 集群中的 EKS CIDR Ranges 进行定制，这样 apisix-ingress-controller 即可由 Apache APISIX 进行授权（用于推送资源）。
 
-如果还有其他需求，请参阅 value.yaml (https://github.com/apache/apisix-helm-chart/blob/master/chart/apisix/values.yaml) 进一步了解所有配置项。
+如果还有其他需求，请参阅 [value.yaml](https://github.com/apache/apisix-helm-chart/blob/master/charts/apisix/values.yaml) 进一步了解所有配置项。
 
 ### **安装 apisix-ingress-controller**
 
