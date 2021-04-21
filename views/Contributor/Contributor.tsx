@@ -28,7 +28,7 @@ const getParameterByName = (name, url = '') => {
 };
 
 const Contributor: NextPage<Props, any> = ({ t, url }) => {
-  const repo = getParameterByName('repo', url);
+  const repo = getParameterByName('repo', url) || 'apache/apisix';
   const chart = getParameterByName('chart', url);
   const [legend, setLegend] = useState([]);
   const [chartType, setChartType] = useState('');
@@ -59,7 +59,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
         event="click"
         mainButtonStyles={{ background: "#1DB954" }}
         alwaysShowTitle={true}
-        icon={<SubdirectoryArrowRightIcon style={{transform: 'scaleY(-1)'}} />}
+        icon={<SubdirectoryArrowRightIcon style={{ transform: 'scaleY(-1)' }} />}
         text="Share chart"
       >
         <Action
@@ -83,7 +83,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       </Fab>
       <NextSeo title={t(`common:contributor-graph`)} />
       <div className="iframeBox">
-        <iframe src={`https://contributor-graph.apiseven.com/?chart=${chart}&repo=${repo}`} scrolling="no" style={{ overflow: "hidden", height: '1000px' }}></iframe>
+        <iframe src={`https://contributor-graph.apiseven.com/?chart=${chart}&repo=${repo}`} scrolling="no" style={{ overflow: "hidden", height: chartType === 'contributorMonthlyActivity' ? '1000px' : '1200px' }}></iframe>
       </div>
     </SWrapper>
   );
