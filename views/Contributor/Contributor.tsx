@@ -30,8 +30,8 @@ const getParameterByName = (name, url = '') => {
 const Contributor: NextPage<Props, any> = ({ t, url }) => {
   const repo = getParameterByName('repo', url) || 'apache/apisix';
   const chart = getParameterByName('chart', url);
-  const [legend, setLegend] = useState([]);
-  const [chartType, setChartType] = useState('');
+  const [legend, setLegend] = useState(repo.split(','));
+  const [chartType, setChartType] = useState('contributorOverTime');
   const [shareUrl, setShareUrl] = useState('https://www.apiseven.com/en/contributor-graph')
 
   useEffect(() => {
@@ -42,7 +42,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       if (event.data.legend) {
         setLegend(event.data.legend);
       }
-    })
+    });
   }, []);
 
   useEffect(() => {
@@ -51,6 +51,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       window.location.host +
       window.location.pathname}/?chart=${chartType}&repo=${legend.join(",")}`
     setShareUrl(url);
+    window.history.pushState(null, null, `?chart=${chartType}&repo=${legend.join(",")}`);
   }, [chartType, legend])
 
   return (
