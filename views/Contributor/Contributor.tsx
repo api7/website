@@ -43,7 +43,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       if (event.data.legend) {
         setLegend(event.data.legend);
       }
-    })
+    });
   }, []);
 
   useEffect(() => {
@@ -52,6 +52,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       window.location.host +
       window.location.pathname}/?chart=${chartType}&repo=${legend.join(",")}`
     setShareUrl(url);
+    window.history.pushState(null, null, `?chart=${chartType}&repo=${legend.join(",")}`);
   }, [chartType, legend])
 
   return (
