@@ -43,6 +43,12 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       if (event.data.legend) {
         setLegend(event.data.legend);
       }
+      if (event.data.share) {
+        if (event.data.share.to === 'twitter') {
+          window.location.href = `https://twitter.com/share?text=Amazing tools to view your repo contributor over time!&url=${event.data.share.url}`
+          return;
+        }
+      }
     });
   }, []);
 
@@ -57,32 +63,6 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
 
   return (
     <SWrapper>
-      <Fab
-        event="click"
-        mainButtonStyles={{ background: "#1DB954" }}
-        alwaysShowTitle={true}
-        icon={<SubdirectoryArrowRightIcon style={{ transform: 'scaleY(-1)' }} />}
-        text="Share chart"
-      >
-        <Action
-          text="Share on Twitter"
-          style={{ backgroundColor: "rgb(29, 161, 242)" }}
-          onClick={() => {
-            window.location.href = `https://twitter.com/share?text=Amazing tools to view your repo contributor over time!&url=${shareUrl}`;
-          }}
-        >
-          <TwitterIcon />
-        </Action>
-        <Action
-          text="Copy share link"
-          style={{ backgroundColor: "#1769FF" }}
-          onClick={() => {
-            copy(shareUrl);
-          }}
-        >
-          <LinkIcon />
-        </Action>
-      </Fab>
       <NextSeo title={t(`common:contributor-graph`)} />
       <div className="iframeBox">
         <iframe src={`https://contributor-graph.apiseven.com/?chart=${chart}&repo=${repo}${merge ? '&merge=true' : ''}`} scrolling="no" style={{ overflow: "hidden", height: chartType === 'contributorMonthlyActivity' ? '1000px' : '1200px' }}></iframe>
