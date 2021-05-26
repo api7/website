@@ -70,7 +70,7 @@ const App: NextPage<Props, any> = ({ t }) => {
             as="a"
             flex={{ md: '1' }}
             variant="outline"
-            href="mailto:wenming@api7.ai"
+            href="mailto:support@api7.ai"
             size="lg"
             h="16"
             px="10"
