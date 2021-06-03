@@ -35,17 +35,21 @@ const App: NextPage<Props, any> = ({ t }) => {
           </Text>
         </Box>
         {language === 'zh-CN' && (
-          <Stack spacing="8" direction={{ base: 'column', md: 'row' }} justifyContent="space-around">
+          <Stack spacing="0" direction={{ base: 'column', md: 'row' }} justifyContent="space-around">
             <Box textAlign="center" as="a" href="/zh/cert/huawei-stack-8.0" target="_blank">
-              <Image src="https://static.apiseven.com/logo-huawei-compatible.png" maxH="130px" />
+              <Image src="https://api7-website-1301662268.file.myqcloud.com/logo/logo-huawei-compatible2.png" maxH="130px" />
+              <br />
               <Text>华为云 Stack 8.0（鲲鹏）</Text>
             </Box>
+            <br />
             <Box textAlign="center" as="a" href="/zh/cert/huawei-kunpeng" target="_blank">
-              <Image src="https://static.apiseven.com/logo-huawei-compatible.png" maxH="130px" />
+              <Image src="https://api7-website-1301662268.file.myqcloud.com/logo/logo-huawei-compatible2.png" maxH="130px" />
+              <br />
               <Text>华为云鲲鹏云服务</Text>
             </Box>
-            <Box textAlign="center" as="a" href="/zh/cert/trusted-cloud" target="_blank">
+            <Box textAlign="center" as="a" href="/zh/cert/trusted-cloud" target="_blank" w="328px">
               <Image src="https://static.apiseven.com/%E5%8F%AF%E4%BF%A1%E4%BA%91.jpeg" maxH="130px" margin="0 auto" />
+              <br />
               <Text>可信开源项目</Text>
             </Box>
           </Stack>
