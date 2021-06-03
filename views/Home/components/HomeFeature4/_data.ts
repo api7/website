@@ -35,6 +35,15 @@ export const EN_US_data: BlogData[] = [
 export const ZH_CN_data: BlogData[] = [
   {
     image:
+      'https://api7-website-1301662268.file.myqcloud.com/logo/640.webp',
+    title: '中国信通院发布首批开源供应商名录',
+    description: '随着开源技术的热度不断攀升，开源软件应用已成为普遍现象。开源用户对开源软件的商业支持、云服务和服务的需求日益紧迫，因此梳理开源供应商名录势在必行。',
+    type: 'article',
+    tags: [],
+    href: 'https://mp.weixin.qq.com/s/DDCKSVshAbNQmCgY8Z4M4Q'
+  },
+  {
+    image:
       'https://api7-website-1301662268.file.myqcloud.com/ingress_controller_cover.png',
     title: 'Apache APISIX Ingress Controller 中的流量切分',
     description:
@@ -52,14 +61,5 @@ export const ZH_CN_data: BlogData[] = [
     type: '博客',
     tags: ['k8s', 'Amazon'],
     href: '/zh/blog/how-Amazon-EKS-and-APISIX-ingress-controller-work-together-to-manage-complex-traffic'
-  }, {
-    image:
-      'https://static.apiseven.com/Snip20210315_.png',
-    title: 'APISIX 与微服务网关模式在 Airwallex 的实践',
-    description:
-      '空中云汇（Airwallex）引入高性能开源网关 Apache APISIX 后提高了哪些性能，它的网关选型和网关架构是什么？以及它的分布式路由管理的结构是怎样的？',
-    type: 'video',
-    tags: ['Airwallex', '微服务'],
-    href: '/zh/apisix-devcon-2020/airwallex'
-  },
+  }
 ]

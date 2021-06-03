@@ -2,6 +2,12 @@
   "news": {
     "zh-CN": [
       {
+        "title": "中国信通院发布首批开源供应商名录",
+        "url": "https://mp.weixin.qq.com/s/DDCKSVshAbNQmCgY8Z4M4Q",
+        "date": "2021-05-18",
+        "logo": "https://api7-website-1301662268.file.myqcloud.com/logo/caict.jpeg"
+      },
+      {
         "title": "支流科技：社区是杠杆，让付费用户主动找来",
         "logo": "https://static.apiseven.com/logo/oschina.jpg",
         "date": "2021-03-23",
@@ -105,6 +111,12 @@
       }
     ],
     "en-US": [
+      {
+        "title": "The CAICT releases the list of Open Source suppliers",
+        "url": "https://mp.weixin.qq.com/s/DDCKSVshAbNQmCgY8Z4M4Q",
+        "date": "2021-05-18",
+        "logo": "https://api7-website-1301662268.file.myqcloud.com/logo/caict.jpeg"
+      },
       {
         "title": "Active community will attract more customers' attention",
         "logo": "https://static.apiseven.com/logo/oschina.jpg",
