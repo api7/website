@@ -23,7 +23,7 @@ const App: NextPage<Props, any> = ({ t }) => {
       <Box as="section" maxW="7xl" mx="auto" px={{ base: '6', md: '8' }} py={{ base: '12', md: '20' }}>
         <Box mb="12" textAlign="center">
           <Heading size="2xl" fontWeight="extrabold" lineHeight="normal">
-            可靠的高性能网关
+            {t("home-text32")}
           </Heading>
           <Text
             fontSize="lg"
@@ -31,22 +31,32 @@ const App: NextPage<Props, any> = ({ t }) => {
             fontWeight="medium"
             color={useColorModeValue('gray.600', 'whiteAlpha.700')}
           >
-            获得厂商和权威机构认证
+            {t("home-text33")}
           </Text>
         </Box>
         {language === 'zh-CN' && (
           <Stack spacing="8" direction={{ base: 'column', md: 'row' }} justifyContent="space-around">
-            <Box textAlign="center">
+            <Box textAlign="center" as="a" href="/zh/cert/huawei-stack-8.0" target="_blank">
               <Image src="https://static.apiseven.com/logo-huawei-compatible.png" maxH="130px" />
               <Text>华为云 Stack 8.0（鲲鹏）</Text>
             </Box>
-            <Box textAlign="center">
+            <Box textAlign="center" as="a" href="/zh/cert/huawei-kunpeng" target="_blank">
               <Image src="https://static.apiseven.com/logo-huawei-compatible.png" maxH="130px" />
               <Text>华为云鲲鹏云服务</Text>
             </Box>
-            <Box textAlign="center">
+            <Box textAlign="center" as="a" href="/zh/cert/trusted-cloud" target="_blank">
               <Image src="https://static.apiseven.com/%E5%8F%AF%E4%BF%A1%E4%BA%91.jpeg" maxH="130px" margin="0 auto" />
               <Text>可信开源项目</Text>
+            </Box>
+          </Stack>
+        )}
+        {language !== 'zh-CN' && (
+          <Stack spacing="8" direction={{ base: 'column', md: 'row' }} justifyContent="space-around">
+            <Box textAlign="center" as="a" href="https://www.linuxfoundation.org/" target="_blank">
+              <Image src="https://static.apiseven.com/logo-linux-silver-member.png" h="100px" margin="0 auto" />
+            </Box>
+            <Box textAlign="center" as="a" href="https://tarscloud.org/" target="_blank">
+              <Image src="https://static.apiseven.com/logo-tars-foundation.png" h="100px" margin="0 auto" />
             </Box>
           </Stack>
         )}
