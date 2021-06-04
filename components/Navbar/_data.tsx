@@ -38,8 +38,8 @@ export const EN_US_Links: Link[] = [
         icon: <AiFillGithub />
       }, {
         label: "Service Mesh",
-        href: "#",
-        description: "Coming soon",
+        href: "https://github.com/api7/apisix-mesh-agent",
+        description: "Agent of Apache APISIX to extend it as a Service Mesh Sidecar.",
         icon: <AiFillGithub />
       }
     ]
@@ -143,8 +143,8 @@ export const ZH_CN_Links: Link[] = [
         icon: <AiFillGithub />
       }, {
         label: "Service Mesh",
-        href: "#",
-        description: "敬请期待",
+        href: "https://github.com/api7/apisix-mesh-agent",
+        description: "Service Mesh Sidecar",
         icon: <AiFillGithub />
       }
     ]

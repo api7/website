@@ -28,7 +28,7 @@ export const EN_US_links: LinkGroupData[] = [
         href: "https://github.com/apache/apisix-ingress-controller",
       }, {
         label: "Service Mesh",
-        href: "#"
+        href: "https://github.com/api7/apisix-mesh-agent"
       }
     ]
   },
