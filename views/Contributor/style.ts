@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const SWrapper = styled.div`
   iframe {
     width: 100%;
-    min-height: 890px;
+    min-height: 800px;
     border: none;
-    margin-top: 40px;
   }
 
   @media (max-width: 480px) {

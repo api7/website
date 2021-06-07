@@ -2,11 +2,6 @@ import React, { useEffect, useState } from "react";
 import { NextPage } from "next";
 import { TFunction } from "next-i18next";
 import { NextSeo } from "next-seo";
-import { Fab, Action } from "react-tiny-fab";
-import copy from "copy-to-clipboard";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import LinkIcon from "@material-ui/icons/Link";
-import SubdirectoryArrowRightIcon from '@material-ui/icons/SubdirectoryArrowRight';
 
 import { withTranslation } from "../../i18n";
 import { SWrapper } from "./style";
@@ -65,7 +60,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
     <SWrapper>
       <NextSeo title={t(`common:contributor-graph`)} />
       <div className="iframeBox">
-        <iframe src={`https://contributor-graph.apiseven.com/?chart=${chart}&repo=${repo}${merge ? '&merge=true' : ''}`} scrolling="no" style={{ overflow: "hidden", height: chartType === 'contributorMonthlyActivity' ? '1000px' : '1200px' }}></iframe>
+        <iframe src={`https://contributor-graph.apiseven.com/?chart=${chart}&repo=${repo}${merge ? '&merge=true' : ''}`} scrolling="no" style={{ overflow: "hidden", height: chartType === 'contributorMonthlyActivity' ? '600px' : '1000px' }}></iframe>
       </div>
     </SWrapper>
   );
