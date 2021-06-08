@@ -36,7 +36,7 @@ export const ZH_CN_data: BlogData[] = [
   {
     image:
       'https://api7-website-1301662268.file.myqcloud.com/logo/640.webp',
-    title: '中国信通院发布首批开源供应商名录',
+    title: '支流科技进入中国信通院发布的首批开源供应商名录',
     description: '随着开源技术的热度不断攀升，开源软件应用已成为普遍现象。开源用户对开源软件的商业支持、云服务和服务的需求日益紧迫，因此梳理开源供应商名录势在必行。',
     type: 'article',
     tags: [],
