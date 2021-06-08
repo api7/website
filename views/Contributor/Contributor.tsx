@@ -28,7 +28,6 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
   const merge = getParameterByName('merge', url) || '';
   const [legend, setLegend] = useState([]);
   const [chartType, setChartType] = useState('');
-  const [shareUrl, setShareUrl] = useState('https://www.apiseven.com/en/contributor-graph')
 
   useEffect(() => {
     window.addEventListener('message', function (event) {
@@ -52,7 +51,6 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       "//" +
       window.location.host +
       window.location.pathname}/?chart=${chartType}&repo=${legend.join(",")}`
-    setShareUrl(url);
     window.history.pushState(null, null, `?chart=${chartType}&repo=${legend.join(",")}`);
   }, [chartType, legend])
 
@@ -60,7 +58,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
     <SWrapper>
       <NextSeo title={t(`common:contributor-graph`)} />
       <div className="iframeBox">
-        <iframe src={`https://contributor-graph.apiseven.com/?chart=${chart}&repo=${repo}${merge ? '&merge=true' : ''}`} scrolling="no" style={{ overflow: "hidden", height: chartType === 'contributorMonthlyActivity' ? '600px' : '1000px' }}></iframe>
+        <iframe src={`https://contributor-graph.apiseven.com/?chart=${chart}&repo=${repo}${merge ? '&merge=true' : ''}`} scrolling="no" style={{ overflow: "hidden", height: chartType === 'contributorMonthlyActivity' ? '800px' : '1100px' }}></iframe>
       </div>
     </SWrapper>
   );

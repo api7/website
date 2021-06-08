@@ -3,19 +3,6 @@ import styled from "styled-components";
 export const SWrapper = styled.div`
   iframe {
     width: 100%;
-    min-height: 800px;
     border: none;
-  }
-
-  @media (max-width: 480px) {
-    iframe {
-      min-height: 920px !important;
-    }
-  }
-
-  @media (max-width: 350px) {
-    iframe {
-      min-height: 1000px !important;
-    }
   }
 `
