@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NextPage } from "next";
 import { TFunction } from "next-i18next";
 import { NextSeo } from "next-seo";
@@ -7,10 +7,12 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { I18nContext } from "react-i18next";
 
 import { withTranslation } from "../../i18n";
 import { SWrapper } from "./style";
 import data from "../../data/about.json";
+import { getRequestDemoLink } from '../../helper'
 
 type Props = {
   t: TFunction;
@@ -18,6 +20,10 @@ type Props = {
 };
 
 const About: NextPage<Props, any> = ({ t, list = [] }) => {
+  const {
+    i18n: { language },
+  } = useContext(I18nContext);
+
   return (
     <SWrapper>
       <NextSeo title={t(`common:about`)} />
@@ -149,7 +155,7 @@ const About: NextPage<Props, any> = ({ t, list = [] }) => {
                 </p>
               </div>
               <div>
-                <a href="/form-api7-trial" target="_blank">
+                <a href={getRequestDemoLink(language)} target="_blank">
                   <span className="tip">{t("about-contact-detail2")}</span>
                 </a>
               </div>

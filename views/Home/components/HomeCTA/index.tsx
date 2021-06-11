@@ -1,16 +1,21 @@
 import { Box, Button, Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import React, { useContext } from "react";
-import { NextSeo } from "next-seo";
 import { TFunction } from "next-i18next";
 import { I18nContext } from "react-i18next";
 import { NextPage } from "next";
 import { withTranslation } from 'i18n';
+
+import { getRequestDemoLink } from '../../../../helper'
 
 type Props = {
   t: TFunction;
 };
 
 const App: NextPage<Props, any> = ({ t }) => {
+  const {
+    i18n: { language },
+  } = useContext(I18nContext);
+
   return (
     <Box as="section">
       <Box
@@ -55,7 +60,8 @@ const App: NextPage<Props, any> = ({ t }) => {
         >
           <Button
             as="a"
-            href="/form-api7-trial"
+            href={getRequestDemoLink(language)}
+            target="_blank"
             size="lg"
             h="16"
             px="10"

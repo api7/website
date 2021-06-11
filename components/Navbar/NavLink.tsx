@@ -18,6 +18,7 @@ const DesktopNavLink = React.forwardRef<HTMLAnchorElement, NavLinkProps>((props,
       color={mode('gray.600', 'gray.400')}
       transition="all 0.2s"
       {...rest}
+      target={rest.href?.startsWith('/') ? '_self' : '_blank'}
       _hover={{ color: 'gray.500' }}
       _active={{ color: 'blue.600' }}
       _activeLink={{
@@ -40,6 +41,7 @@ export const MobileNavLink = (props: NavLinkProps) => {
       height="14"
       fontWeight="semibold"
       borderBottomWidth="1px"
+      target={rest.href?.startsWith('/') ? '_self' : '_blank'}
       {...rest}
     />
   )

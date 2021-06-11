@@ -64,7 +64,7 @@ const MobileSubMenu = (props: SubmenuProps) => {
       <Collapse in={isOpen}>
         <Box pl="5">
           {link.children?.map((item, idx) => (
-            <NavLink.Mobile key={idx} href={item.href}>
+            <NavLink.Mobile key={idx} href={item.href} target={item.href.startsWith('/') ? '_self' : '_blank'}>
               {item.label}
             </NavLink.Mobile>
           ))}

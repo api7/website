@@ -7,6 +7,8 @@ import { SiMeetup } from 'react-icons/si'
 import { MdCompare } from 'react-icons/md'
 import { TiNews } from 'react-icons/ti'
 
+import { getRequestDemoLink } from '../../helper'
+
 export interface Link {
   label: string
   href?: string
@@ -106,7 +108,7 @@ export const EN_US_Links: Link[] = [
       {
         label: 'Request Demo',
         description: 'Contact us and request demo',
-        href: '/form-api7-trial',
+        href: getRequestDemoLink('en-US'),
         icon: <MdWeb />,
       }, {
         label: 'Business Support',
@@ -188,7 +190,7 @@ export const ZH_CN_Links: Link[] = [
       }, {
         label: '预约演示',
         description: '联系我们，预约产品演示。',
-        href: '/form-api7-trial',
+        href: getRequestDemoLink('zh-CN'),
         icon: <IoCalendar />,
       }, {
         label: "Apache APISIX vs API7",
