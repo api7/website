@@ -61,7 +61,7 @@ const MobileNavContext = ({ links, language, ...props }: Props) => {
             </NavLink.Mobile>
           ),
         )}
-        <Button as="a" href="https://dashboard.apiseven.com" target="_blank" colorScheme="blue" w="full" size="lg" mt="5" _hover={{ color: "var(--chakra-colors-white)", background: "var(--chakra-colors-blue-600)", textDecoration: "none" }}>
+        <Button as="a" href="/form-api7-trial" target="_blank" colorScheme="blue" w="full" size="lg" mt="5" _hover={{ color: "var(--chakra-colors-white)", background: "var(--chakra-colors-blue-600)", textDecoration: "none" }}>
           {language === 'zh-CN' ? '申请试用' : 'Request Demo'}
         </Button>
 
@@ -106,7 +106,7 @@ const DesktopNavContent = ({ links, language, ...props }: Props) => {
         ))}
       </HStack>
       <HStack spacing="8" minW="240px" justify="space-between">
-        <Button as="a" href="https://dashboard.apiseven.com" target="_blank" colorScheme="blue" fontWeight="bold" _hover={{ color: "var(--chakra-colors-white)", background: "var(--chakra-colors-blue-600)", textDecoration: "none" }}>
+        <Button as="a" href="/form-api7-trial" target="_blank" colorScheme="blue" fontWeight="bold" _hover={{ color: "var(--chakra-colors-white)", background: "var(--chakra-colors-blue-600)", textDecoration: "none" }}>
           {language === 'zh-CN' ? '申请试用' : 'Request Demo'}
         </Button>
 
