@@ -78,8 +78,8 @@ export const EN_US_links: LinkGroupData[] = [
         label: "Building 2, Hangzhou Fortune Financial Center",
         href: "#"
       }, {
-        label: "wenming@api7.ai",
-        href: "mailto:wenming@api7.ai"
+        label: "support@api7.ai",
+        href: "mailto:support@api7.ai"
       }
     ]
   },
@@ -152,8 +152,8 @@ export const ZH_CN_links: LinkGroupData[] = [
         label: "杭州财富金融中心 2 幢",
         href: "#"
       }, {
-        label: "wenming@api7.ai",
-        href: "mailto:wenming@api7.ai"
+        label: "support@api7.ai",
+        href: "mailto:support@api7.ai"
       }
     ]
   },
