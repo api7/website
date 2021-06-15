@@ -2,6 +2,22 @@
   "about": {
     "zh-CN": [
       {
+        "date": "2021 年 5 月",
+        "desc": "宣布基于 Apache APISIX 的服务网格项目正式开源"
+      },
+      {
+        "date": "2021 年 5 月",
+        "desc": "支流科技进入中国信通院发布的首批开源供应商名录"
+      },
+      {
+        "date": "2021 年 3 月",
+        "desc": "宣布获得顺为数百万美元 A 轮领投、真格基金跟投"
+      },
+      {
+        "date": "2021 年 2 月",
+        "desc": "宣布完成百万美元 Pre-A 轮融资"
+      },
+      {
         "date": "2020 年 12 月",
         "desc": "宣布完成真格基金百万美元天使轮融资"
       },
@@ -60,8 +76,24 @@
     ],
     "en-US": [
       {
+        "date": "May 2021",
+        "desc": "APISEVEN open sourced the Service Mesh project based on Apache APISIX"
+      },
+      {
+        "date": "May 2021",
+        "desc": "APISEVEN is one of the Open Source suppliers verified by CAICT"
+      },
+      {
+        "date": "March 2021",
+        "desc": "APISEVEN raises $1 Million in Series A Funding"
+      },
+      {
+        "date": "February 2021",
+        "desc": "APISEVEN raises $1 Million in Series Seed Funding"
+      },
+      {
         "date": "December 2020",
-        "desc": "APISEVEN raises $1 Million in Series Angel Funding Led by ZhenFund"
+        "desc": "APISEVEN raises $1 Million in Pre-Seed Funding Led by ZhenFund"
       },
       {
         "date": "December 2020",
