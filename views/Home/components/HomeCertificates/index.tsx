@@ -67,7 +67,7 @@ const App: NextPage<Props, any> = ({ t }) => {
               href="/zh/cert/huawei-kunpeng"
               target="_blank"
             >
-              <Image src="/static/images/huawei-compatible.jpeg" maxH="80px" />
+              <Image src="/static/images/huawei-compatible.jpeg" maxH="80px" margin="0 auto" />
               <br />
               <Text>华为云鲲鹏云服务</Text>
             </Box>
