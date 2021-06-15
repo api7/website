@@ -56,10 +56,7 @@ const App: NextPage<Props, any> = ({ t }) => {
               href="/zh/cert/huawei-stack-8.0"
               target="_blank"
             >
-              <Image
-                src="https://api7-website-1301662268.file.myqcloud.com/logo/logo-huawei-compatible2.png"
-                maxH="100px"
-              />
+              <Image src="/static/images/huawei-compatible.jpeg" maxH="100px" />
               <br />
               <Text>华为云 Stack 8.0（鲲鹏）</Text>
             </Box>
@@ -70,10 +67,7 @@ const App: NextPage<Props, any> = ({ t }) => {
               href="/zh/cert/huawei-kunpeng"
               target="_blank"
             >
-              <Image
-                src="https://api7-website-1301662268.file.myqcloud.com/logo/logo-huawei-compatible2.png"
-                maxH="100px"
-              />
+              <Image src="/static/images/huawei-compatible.jpeg" maxH="100px" />
               <br />
               <Text>华为云鲲鹏云服务</Text>
             </Box>
