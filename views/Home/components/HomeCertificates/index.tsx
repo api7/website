@@ -56,7 +56,7 @@ const App: NextPage<Props, any> = ({ t }) => {
               href="/zh/cert/huawei-stack-8.0"
               target="_blank"
             >
-              <Image src="/static/images/huawei-compatible.jpeg" maxH="100px" />
+              <Image src="/static/images/huawei-compatible.jpeg" maxH="80px" />
               <br />
               <Text>华为云 Stack 8.0（鲲鹏）</Text>
             </Box>
@@ -67,7 +67,7 @@ const App: NextPage<Props, any> = ({ t }) => {
               href="/zh/cert/huawei-kunpeng"
               target="_blank"
             >
-              <Image src="/static/images/huawei-compatible.jpeg" maxH="100px" />
+              <Image src="/static/images/huawei-compatible.jpeg" maxH="80px" />
               <br />
               <Text>华为云鲲鹏云服务</Text>
             </Box>
@@ -80,7 +80,7 @@ const App: NextPage<Props, any> = ({ t }) => {
             >
               <Image
                 src="https://static.apiseven.com/%E5%8F%AF%E4%BF%A1%E4%BA%91.jpeg"
-                maxH="100px"
+                maxH="80px"
                 margin="0 auto"
               />
               <br />
