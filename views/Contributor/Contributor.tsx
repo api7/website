@@ -39,7 +39,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       }
       if (event.data.share) {
         if (event.data.share.to === 'twitter') {
-          const shareText = chartType === 'contributorMonthlyActivity' ? 'monthly active contributor' : 'contributor over time'
+          const shareText = event.data.share.url.includes('contributorMonthlyActivity') ? 'monthly active contributor' : 'contributor over time'
           window.location.href = `https://twitter.com/share?text=Amazing tools to view your repo ${shareText}!&url=${event.data.share.url}`
           return;
         }
