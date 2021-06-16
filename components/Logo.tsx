@@ -1,10 +1,10 @@
-import { HTMLChakraProps, Box, Image } from '@chakra-ui/react'
-import * as React from 'react'
+import { HTMLChakraProps, Box, Image } from "@chakra-ui/react";
+import * as React from "react";
 
 export const Logo = () => {
   return (
     <Box as="a" href="/">
-      <Image src="https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png" alt="Logo" width="100px" />
+      <Image src="/static/images/api7-logo.png" alt="Logo" width="100px" />
     </Box>
-  )
-}
+  );
+};

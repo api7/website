@@ -10,7 +10,7 @@
     },
     {
       "title": "360：Apache APISIX 在基础运维平台项目中的实践",
-      "image": "https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png",
+      "image": "/static/images/api7-logo.png",
       "type": "article",
       "tags": [],
       "date": "2020-12-11 17:16:00",
@@ -34,7 +34,7 @@
     },
     {
       "title": "腾讯云：为什么选择 Apache APISIX 来实现 k8s ingress controller?",
-      "image": "https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png",
+      "image": "/static/images/api7-logo.png",
       "type": "video",
       "tags": [],
       "date": "2020-12-11 17:16:00",
@@ -52,7 +52,7 @@
     },
     {
       "title": "360: Apache APISIX in practice in the basic operation and maintenance platform project",
-      "image": "https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png",
+      "image": "/static/images/api7-logo.png",
       "type": "article",
       "tags": [],
       "date": "2020-12-11 17:16:00",
@@ -76,7 +76,7 @@
     },
     {
       "title": "Tencent Cloud: Why did you choose Apache APISIX to implement k8s ingress controller?",
-      "image": "https://static.apiseven.com/2020/05/Jietu20200312-103300-removebg-preview.png",
+      "image": "/static/images/api7-logo.png",
       "type": "video",
       "tags": [],
       "date": "2020-12-11 17:16:00",
