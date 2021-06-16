@@ -39,7 +39,8 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
       }
       if (event.data.share) {
         if (event.data.share.to === 'twitter') {
-          window.location.href = `https://twitter.com/share?text=Amazing tools to view your repo contributor over time!&url=${event.data.share.url}`
+          const shareText = chartType === 'contributorMonthlyActivity' ? 'monthly active contributor' : 'contributor over time'
+          window.location.href = `https://twitter.com/share?text=Amazing tools to view your repo ${shareText}!&url=${event.data.share.url}`
           return;
         }
       }
@@ -58,7 +59,7 @@ const Contributor: NextPage<Props, any> = ({ t, url }) => {
     <SWrapper>
       <NextSeo title={t(`common:contributor-graph`)} />
       <div className="iframeBox">
-        <iframe src={`https://contributor-graph.apiseven.com/?chart=${chart}&repo=${repo}${merge ? '&merge=true' : ''}`} scrolling="no" style={{ overflow: "hidden", height: chartType === 'contributorMonthlyActivity' ? '800px' : '1100px' }}></iframe>
+        <iframe src={`https://contributor-graph.apiseven.com/?chart=${chart}&repo=${repo}${merge ? '&merge=true' : ''}`} scrolling="no" style={{ overflow: "hidden", height: chartType === 'contributorMonthlyActivity' ? '1000px' : '1100px' }}></iframe>
       </div>
     </SWrapper>
   );
