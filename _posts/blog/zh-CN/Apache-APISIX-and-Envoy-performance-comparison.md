@@ -12,7 +12,7 @@ date: 2021-06-10
 
 也就是说， Envoy 是为了解决 Server Mesh 领域而诞生一款 L7 代理软件，这里我网上找了一张图，我理解的 Envoy 大概是如下的部署架构。（如果错了请大佬指教）
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/ujmKJxBwxO3kwDiaPwiaQkjUz3p3vk8GTRLqJ1IOOuxrSYrrl5hLbSB30gSXrQhF6dpCOL2qMJ2MsyoyY9yv7RQA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![图片](../static/images/20210617001.png)
 
 既然是 L7 的代理软件嘛，作为常年混迹 OpenResty 社区的老司机，自然忍不住把它拿来搞一搞，对比对比。
 
@@ -22,7 +22,7 @@ date: 2021-06-10
 
 这里附上一张在 APISIX 官网扒拉的图，真是一图胜千言，一看就知道这玩意儿是怎么工作的。
 
-![架构图](https://raw.githubusercontent.com/apache/apisix/master/docs/assets/images/apisix.png)
+![架构图](../static/images/20210617002.png)
 
 开搞吧，首先我们去官网找到两个产品的最版本：
 
@@ -45,7 +45,7 @@ Apache APISIX 1.5 和 Envoy 1.14
 ```text
 server {
   listen 1980;
-  
+
   access_log off;
   location = /hello {
     echo_duplicate 400 "1234567890";
@@ -55,7 +55,7 @@ server {
 
 - 网络架构示意图如下：（绿色正常负载，未跑满。红色为高压负载，要把进程资源跑满，主要是 CPU）
 
-![图片](../img/Apache-APISIX-vs-Envoy.png)
+![图片](../static/images/20210617003.png)
 
 #### 路由配置
 
@@ -122,7 +122,7 @@ static_resources:
         max_retries: 1000000000
 ```
 
-上面的 generate_request_id、dynamic_stats 和 circuit_breakers 部分，在 Envoy 内部是默认开启，但本次压测用不到，需要显式关闭或设置超大阈值从而提升性能。（谁能给我解释下为什么这玩意儿配置这么复杂 -_-!）
+上面的 generate*request_id、dynamic_stats 和 circuit_breakers 部分，在 Envoy 内部是默认开启，但本次压测用不到，需要显式关闭或设置超大阈值从而提升性能。（谁能给我解释下为什么这玩意儿配置这么复杂 -*-!）
 
 #### 压测结果
 
@@ -136,7 +136,7 @@ static_resources:
 
 注：原始数据公开在 gist 预览。（https://gist.github.com/aifeiasdf/9fc4585f6404e3a0a70c568c2a14b9c9）
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/ujmKJxBwxO3kwDiaPwiaQkjUz3p3vk8GTRlpQMad0jW2MHd8gicTX6Nz43koPHdWpV6V7pIJ3UTn3RvwwGER2PI1w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![图片](../static/images/20210617004.png)
 
 QPS：每秒钟完成的请求数，数量越多越好，数值越大代表单位时间内可以完成的请求数量越多。从 QPS 结果看，APISIX 性能是 Envoy 的 120% 左右，核心数越多 QPS 差距越大。
 
