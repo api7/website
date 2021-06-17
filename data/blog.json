@@ -1,6 +1,22 @@
 {
   "zh-CN": [
     {
+      "title": "Apache APISIX 和 Envoy 性能大比拼",
+      "image": "https://apache.org/logos/res/apisix/apisix.png",
+      "type": "article",
+      "tags": [],
+      "date": "2021-06-10",
+      "path": "/zh/blog/Apache-APISIX-and-Envoy-performance-comparison"
+    },
+    {
+      "title": "GigaOm 发布 API 网关评测报告：API7 和 Kong 企业版本性能对比",
+      "image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/da52e6a2b6674d7b812ba1a21b5dd516~tplv-k3u1fbpfcp-watermark.image",
+      "type": "article",
+      "tags": [],
+      "date": "2021-06-01",
+      "path": "/zh/blog/GigaOm-published-API-gateway-evaluation-report: API7-and-Kong-enterprise-performance-comparisonr"
+    },
+    {
       "title": "Apache APISIX Ingress Controller 中的流量切分",
       "image": "https://api7-website-1301662268.file.myqcloud.com/ingress_controller_cover.png",
       "type": "article",
