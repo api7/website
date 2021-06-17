@@ -14,7 +14,7 @@
       "type": "article",
       "tags": [],
       "date": "2021-06-01",
-      "path": "/zh/blog/api7-and-Kong-enterprise-performance-comparison.md"
+      "path": "/zh/blog/api7-and-Kong-enterprise-performance-comparison"
     },
     {
       "title": "Apache APISIX Ingress Controller 中的流量切分",
