@@ -2,6 +2,10 @@
   "about": {
     "zh-CN": [
       {
+        "date": "2021 年 6 月",
+        "desc": "宣布获得经纬中国数百万美元 A+ 轮融资"
+      },
+      {
         "date": "2021 年 5 月",
         "desc": "宣布基于 Apache APISIX 的服务网格项目正式开源"
       },
@@ -75,6 +79,10 @@
       }
     ],
     "en-US": [
+      {
+        "date": "June 2021",
+        "desc": "APISEVEN raises millions in Series A+ Funding led by Matrix Partners China"
+      },
       {
         "date": "May 2021",
         "desc": "APISEVEN open sourced the Service Mesh project based on Apache APISIX"
