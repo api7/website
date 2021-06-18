@@ -12,7 +12,7 @@ import { I18nContext } from "react-i18next";
 import { withTranslation } from "../../i18n";
 import { SWrapper } from "./style";
 import data from "../../data/about.json";
-import { getRequestDemoLink } from '../../helper'
+import { getRequestDemoLink } from "../../helper";
 
 type Props = {
   t: TFunction;
@@ -140,12 +140,6 @@ const About: NextPage<Props, any> = ({ t, list = [] }) => {
               </div>
             </div>
             <div className="col2">
-              <div>
-                <p>{t("about-contact-detail1")}</p>
-                <a href="mailto:support@api7.ai">
-                  <span>support@api7.ai</span>
-                </a>
-              </div>
               <div>
                 <p>{t("about-email-address")}</p>
                 <p>
