@@ -49,6 +49,7 @@ const App: NextPage<Props, any> = ({ t }) => {
             spacing="0"
             direction={{ base: "column", md: "row" }}
             justifyContent="space-around"
+            alignItems="center"
           >
             <Box
               textAlign="center"
@@ -56,8 +57,11 @@ const App: NextPage<Props, any> = ({ t }) => {
               href="/zh/cert/huawei-stack-8.0"
               target="_blank"
             >
-              <Image src="/static/images/huawei-compatible.jpeg" maxH="80px"  margin="0 auto"/>
-              <br />
+              <Image
+                src="/static/images/huawei-compatible.jpeg"
+                maxH="80px"
+                margin="0 auto 10px"
+              />
               <Text>华为云 Stack 8.0（鲲鹏）</Text>
             </Box>
             <br />
@@ -67,23 +71,26 @@ const App: NextPage<Props, any> = ({ t }) => {
               href="/zh/cert/huawei-kunpeng"
               target="_blank"
             >
-              <Image src="/static/images/huawei-compatible.jpeg" maxH="80px" margin="0 auto" />
-              <br />
+              <Image
+                src="/static/images/huawei-compatible.jpeg"
+                maxH="80px"
+                margin="0 auto 10px"
+              />
               <Text>华为云鲲鹏云服务</Text>
             </Box>
+            <br />
             <Box
               textAlign="center"
               as="a"
               href="/zh/cert/trusted-cloud"
               target="_blank"
-              w="328px"
+              w="201px"
             >
               <Image
                 src="https://static.apiseven.com/%E5%8F%AF%E4%BF%A1%E4%BA%91.jpeg"
                 maxH="80px"
-                margin="0 auto"
+                margin="0 auto 10px"
               />
-              <br />
               <Text>可信开源项目</Text>
             </Box>
           </Stack>
