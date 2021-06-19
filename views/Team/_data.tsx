@@ -37,7 +37,7 @@ export const members: Member[] = [
   }, {
     role: 'Technical Consultant',
     image:
-      '/static/images/wusheng.jpg',
+      '/static/images/wusheng.jpeg',
     name: 'Sheng Wu',
     github: 'https://github.com/wu-sheng',
     twitter: 'https://twitter.com/wusheng1108',
