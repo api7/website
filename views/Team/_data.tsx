@@ -37,7 +37,7 @@ export const members: Member[] = [
   }, {
     role: 'Technical Consultant',
     image:
-      'https://www.tetrate.io/about/img/people/sheng-wu.jpg',
+      '/static/images/wusheng.jpg',
     name: 'Sheng Wu',
     github: 'https://github.com/wu-sheng',
     twitter: 'https://twitter.com/wusheng1108',
