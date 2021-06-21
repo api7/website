@@ -2116,7 +2116,7 @@ dom-serializer@^1.0.1:
     domhandler "^3.0.0"
     entities "^2.0.0"
 
-dom7@^2.1.3:
+dom7@^2.1.5:
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/dom7/-/dom7-2.1.5.tgz#a79411017800b31d8400070cdaebbfc92c1f6377"
   integrity sha512-xnhwVgyOh3eD++/XGtH+5qBwYTgCm0aW91GFgPJ3XG+jlsRLyJivnbP0QmUBFhI+Oaz9FV0s7cxgXHezwOEBYA==
@@ -4215,11 +4215,6 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-ssr-window@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-1.0.1.tgz#30752a6a4666e7767f0b7e6aa6fc2fdbd0d9b369"
-  integrity sha512-dgFqB+f00LJTEgb6UXhx0h+SrG50LJvti2yMKMqAgzfUmUXZrLSv2fjULF7AWGwK25EXu8+smLR3jYsJQChPsg==
-
 ssr-window@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-2.0.0.tgz#98c301aef99523317f8d69618f0010791096efc4"
@@ -4405,13 +4400,13 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-swiper@5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-5.2.0.tgz#834aaf6053d324bcb60578ba50bb62f54342f9ca"
-  integrity sha512-pGyQ7+X7ndp6r6L0Wb+vjX5xaORdKws5mLucjen3yJrZYv9M18dd13xmSjPB8isgWVbwaFL7UxXvu8ojcfjajg==
+swiper@5.4.5:
+  version "5.4.5"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-5.4.5.tgz#a350f654bf68426dbb651793824925512d223c0f"
+  integrity sha512-7QjA0XpdOmiMoClfaZ2lYN6ICHcMm72LXiY+NF4fQLFidigameaofvpjEEiTQuw3xm5eksG5hzkaRsjQX57vtA==
   dependencies:
-    dom7 "^2.1.3"
-    ssr-window "^1.0.1"
+    dom7 "^2.1.5"
+    ssr-window "^2.0.0"
 
 symbol-observable@1.2.0:
   version "1.2.0"
