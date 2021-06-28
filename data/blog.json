@@ -1,6 +1,14 @@
 {
   "zh-CN": [
     {
+      "title": "有了 NGINX 和 Kong，为什么还需要 Apache APISIX",
+      "image": "https://apache.org/logos/res/apisix/apisix.png",
+      "type": "article",
+      "tags": [],
+      "date": "2021-06-25",
+      "path": "/zh/blog/why-we-need-Apache-APISIX"
+    },
+    {
       "title": "Apache APISIX 和 Envoy 性能大比拼",
       "image": "https://apache.org/logos/res/apisix/apisix.png",
       "type": "article",
