@@ -3,7 +3,7 @@
     "zh-CN": [
       {
         "title": "支流科技加入腾讯云原生加速器首期计划",
-        "logo": "",
+        "logo": "/static/images/20210706001.png",
         "date": "2021-06-30",
         "url": "https://mp.weixin.qq.com/s/x8yP9RSF9VQD8282HigYMw"
       },
@@ -123,6 +123,12 @@
       }
     ],
     "en-US": [
+      {
+        "title": "APISEVEN joins the first phase of Tencent Cloud Native Accelerator Program",
+        "logo": "/static/images/20210706001.png",
+        "date": "2021-06-30",
+        "url": "https://mp.weixin.qq.com/s/x8yP9RSF9VQD8282HigYMw"
+      },
       {
         "title": "APISEVEN raises millions in Series A+ Funding led by Matrix Partners China",
         "logo": "https://www.matrixpartners.com.cn/images/sample/logo.png",
