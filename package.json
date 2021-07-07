@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@types/node": "14.17.4",
-    "@types/react": "17.0.13",
+    "@types/react": "17.0.14",
     "@types/react-syntax-highlighter": "13.5.1",
     "@types/styled-components": "5.1.11",
     "babel-plugin-styled-components": "1.13.1",
