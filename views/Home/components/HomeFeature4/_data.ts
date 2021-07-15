@@ -54,12 +54,12 @@ export const ZH_CN_data: BlogData[] = [
   },
   {
     image:
-      'https://static.apiseven.com/202102/WechatIMG3731.jpeg',
-    title: 'Amazon EKS 和 APISIX ingress controller 如何配合使用来管理复杂流量',
+      'https://img.t.sinajs.cn/t6/style/images/global_nav/WB_logo-x2.png?id=1404211047727',
+    title: '基于 Apache APISIX，新浪微博 API 网关的定制化开发之路',
     description:
-      'Amazon Elastic Kubernetes Service（Amazon EKS）作为一种托管的 Kubernetes 服务，您可以在亚马逊云科技上轻松运行 Kubernetes 负载而无需对控制平面或节点进行安装和维护。',
+      'Apache APISIX 动态、高效、稳定等特性能够满足业务上快速响应要求，新浪微博技术团队基于 Apache APISIX 进行了定制化的开发。',
     type: '博客',
-    tags: ['k8s', 'Amazon'],
-    href: '/zh/blog/how-Amazon-EKS-and-APISIX-ingress-controller-work-together-to-manage-complex-traffic'
+    tags: ['网关', '定制化','云原生'],
+    href: '/zh/blog/the-road-to-customization-of-Sina-Weibo-API-gateway-based-on-Apache-APISIX'
   }
 ]
