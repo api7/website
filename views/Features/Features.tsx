@@ -55,8 +55,8 @@ const Features: NextPage<Props, any> = ({ t, list = [] }) => {
       <SSection>
         <div className="background"></div>
         <div className="titleBox">
-          <h1>API7 功能特性</h1>
-          <p>API7 为您提供生产可用的七层全流量处理平台</p>
+          <h1>{t(`common:features`)}</h1>
+          <p>{t(`features:features-title-decs`)}</p>
         </div>
         <SMenu>
           <ul className={currentHeight > 320 && "newmenu"}>
@@ -98,8 +98,7 @@ const Features: NextPage<Props, any> = ({ t, list = [] }) => {
 Features.getInitialProps = async (context) => {
   const { lng = "zh-CN" } = (context.req as any) || {};
 
-  // After adding the English version replace "zh-CN" with lng in line 84
-  const posts = features["zh-CN"];
+  const posts = features[lng];
 
   return {
     namespacesRequired: ["common"],
