@@ -13,7 +13,7 @@ const App: NextPage<Props, any> = ({ t }) => {
   const [show, setShow] = useState(false)
 
   useEffect(() => {
-    if (sessionStorage.getItem("DISABLE_HOME_BANNER") === "true") {
+    if (localStorage.getItem("DISABLE_HOME_BANNER") === "true") {
       return
     }
 
@@ -57,7 +57,7 @@ const App: NextPage<Props, any> = ({ t }) => {
           aria-label="Close Banner"
           icon={<HiX />}
           onClick={() => {
-            sessionStorage.setItem("DISABLE_HOME_BANNER", "true")
+            localStorage.setItem("DISABLE_HOME_BANNER", "true")
             setShow(false)
           }}
         />
