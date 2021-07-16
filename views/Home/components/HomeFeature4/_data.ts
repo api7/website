@@ -54,7 +54,7 @@ export const ZH_CN_data: BlogData[] = [
   },
   {
     image:
-      'https://img.t.sinajs.cn/t6/style/images/global_nav/WB_logo-x2.png?id=1404211047727',
+      '/static/images/weibo.png',
     title: '基于 Apache APISIX，新浪微博 API 网关的定制化开发之路',
     description:
       'Apache APISIX 动态、高效、稳定等特性能够满足业务上快速响应要求，新浪微博技术团队基于 Apache APISIX 进行了定制化的开发。',
