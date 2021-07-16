@@ -49,6 +49,10 @@ export default class MyDocument extends Document {
             src="https://www.googletagmanager.com/gtag/js?id=UA-176821176-1"
           ></script>
           <script
+            async
+            src="/static/tingyun-run.js"
+          ></script>
+          <script
             dangerouslySetInnerHTML={{
               __html: `
 window.dataLayer = window.dataLayer || [];
