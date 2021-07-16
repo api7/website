@@ -118,9 +118,12 @@ export const ZH_CN_links: LinkGroupData[] = [
       }, {
         label: "开发者大会",
         href: "/resources/apisix-devcon-2020"
-      }, , {
+      }, {
         label: "产品文档",
         href: "#"
+      }, {
+        label: "隐私政策",
+        href: "/privacy_policy"
       }
     ]
   },
